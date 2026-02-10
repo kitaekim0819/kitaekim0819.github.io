@@ -33,7 +33,7 @@ plugins:
 
 # Defines the pages that appear in the navigation header
 header_pages:
-- about.md # Or whatever your 'About' page file is named  
+- home.md  
 - cv.md
 - research.md
   
