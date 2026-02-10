@@ -6,7 +6,7 @@ permalink: /research/
 
 # Research
 
-This is where your research content will go. You can write in Markdown here.
+My research focuses on leveraging computational technologies, including AI and Machine Learning, to optimize business decisions and quantify their economic value.
 
-*   List item 1
-*   List item 2
+*   Computational Decision-Making (AI & Optimization)
+*   Economics of Information Systems (Value & Impact)
