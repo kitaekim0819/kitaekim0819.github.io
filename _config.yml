@@ -33,7 +33,6 @@ plugins:
 
 # Defines the pages that appear in the navigation header
 header_pages:
-- home.md  
 - research.md
   
 

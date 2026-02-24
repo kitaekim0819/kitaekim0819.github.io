@@ -4,7 +4,7 @@ title: Home
 permalink: /home/
 ---
 
-<img src="/assets/images/IMG_4702.JPG" alt="Kitae Kim" width="200" style="float: right; margin: 0 0 1em 1.5em; border-radius: 4px;" />
+<img src="/assets/images/IMG_4702.JPG" alt="Kitae Kim" width="200" style="float: left; margin: 0 1.5em 1em 0; border-radius: 4px;" />
 
 # Kitae Kim / 김기태
 
@@ -12,7 +12,7 @@ permalink: /home/
 School of Business, Korea Aerospace University
 
 Ph.D., Information Systems, KAIST  
-M.S., KAIST  
+M.S., Mangement Engineering, KAIST  
 B.S., Korea University
 
 [[CV]](/assets/files/Kitae_Kim_CV.pdf){:target="_blank"} [[Google Scholar]](https://scholar.google.com/citations?user=LWDcgLwAAAAJ&hl=en){:target="_blank"} [[LinkedIn]](https://www.linkedin.com/in/kitaekim0819){:target="_blank"}

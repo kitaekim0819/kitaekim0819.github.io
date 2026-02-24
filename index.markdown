@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-<img src="/assets/images/IMG_4702.JPG" alt="Kitae Kim" width="200" style="float: right; margin: 0 0 1em 1.5em; border-radius: 4px;" />
+<img src="/assets/images/IMG_4702.JPG" alt="Kitae Kim" width="200" style="float: left; margin: 0 1.5em 1em 0; border-radius: 4px;" />
 
 # Kitae Kim / 김기태
 
@@ -18,7 +18,7 @@ B.S., Civil & Environmental Engineering, Korea University
 
 ---
 
-My research focuses on **Machine Learning**, **Causal Inference**, and **Digital Marketing Analytics**. I work on AI-driven decision support systems and optimization frameworks for business applications. My work has been presented at ICIS, INFORMS, and AMCIS, and I have collaborated with industry partners including Google (Wharton AI Initiative), UNICEF, Samsung, and Kyobo Book.
+My research focuses on **Machine Learning**, **Causal Inference**, and **Digital Marketing Analytics**. I work on AI-driven decision support systems and optimization frameworks for business applications. My work has been presented at ICIS, INFORMS, and AMCIS, and I have collaborated with industry partners including Google, Wharton AI & Analtycis Initiative, UNICEF, Samsung, and Kyobo Book.
 
 ---
 
