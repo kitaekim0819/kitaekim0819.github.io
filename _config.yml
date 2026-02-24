@@ -30,6 +30,7 @@ github_username:  kitaekim0819
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Defines the pages that appear in the navigation header
 header_pages:
