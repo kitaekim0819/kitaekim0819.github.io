@@ -1,0 +1,278 @@
+%-------------------------
+% Academic CV - Kitae Kim
+% Clean format (DK-style)
+%-------------------------
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{ragged2e}
+
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+
+% Section: uppercase, bold, rule below, compact
+\titleformat{\section}{\normalsize\bfseries\MakeUppercase}{}{0em}{}
+\titlespacing{\section}{0pt}{10pt}{5pt}
+\newcommand{\sectionrule}{\vspace{-2pt}\rule{\linewidth}{0.4pt}\vspace{4pt}}
+
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{6pt}{3pt}
+
+% Left column width: unified across Positions, Education, Industry, Teaching
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{2.2cm}
+
+% Lists: minimal spacing
+\setlist{noitemsep, topsep=0pt, leftmargin=1.2em, itemindent=0pt, labelsep=0.35em}
+\setlist[itemize]{label=\textbullet}
+
+\newlength{\cvlabelwidth}
+\setlength{\cvlabelwidth}{6.5em}
+
+% Position block: left = date only (no italic), right = content
+\newcommand{\posblock}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\leftcolwidth}
+    \raggedright #1
+  \end{minipage}%
+  \hspace{0.8em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\leftcolwidth-0.8em\relax}
+    \raggedright
+    #2
+  \end{minipage}\par\vspace{0.8em}%
+}
+
+% Education block: left = year range only (no italic), right = degree + institution + GPA + advisor
+\newcommand{\edublock}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\leftcolwidth}
+    \raggedright #1
+  \end{minipage}%
+  \hspace{0.8em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\leftcolwidth-0.8em\relax}
+    \raggedright
+    #2
+  \end{minipage}\par\vspace{0.6em}%
+}
+
+% Industry block: left = year only (no italic), right = org name + Project/Role/Results
+\newcommand{\industryblock}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\leftcolwidth}
+    \raggedright #1
+  \end{minipage}%
+  \hspace{0.8em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\leftcolwidth-0.8em\relax}
+    \raggedright
+    #2
+  \end{minipage}\par\vspace{0.6em}%
+}
+
+% Teaching block: left = year (no italic), right = TA + course + institution + term
+\newcommand{\teachingblock}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\leftcolwidth}
+    \raggedright #1
+  \end{minipage}%
+  \hspace{0.8em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\leftcolwidth-0.8em\relax}
+    \raggedright
+    #2
+  \end{minipage}\par\vspace{0.4em}%
+}
+
+\begin{document}
+
+%---------- Header ----------
+\begin{center}
+  {\LARGE \textbf{Kitae Kim}}\\[4pt]
+  Assistant Professor\\
+  School of Business, Korea Aerospace University\\
+  Gyeonggi-do, 12921, Republic of Korea\\[2pt]
+  \href{mailto:kitaekim@kau.ac.kr}{kitaekim@kau.ac.kr} \ $|$ \ \href{mailto:kitaekim0819@gmail.com}{kitaekim0819@gmail.com}
+\end{center}
+\vspace{6pt}
+
+%---------- Positions ----------
+\section{Positions Held}\sectionrule
+
+\posblock{2026--Present}{\textbf{Assistant Professor}\\
+  School of Business, Korea Aerospace University, Gyeonggi-do, Republic of Korea}
+
+\posblock{2025--2026}{\textbf{Postdoctoral Researcher}\\
+  Korea Institute of Science and Technology Information (KISTI), Daejeon, Republic of Korea
+  \begin{itemize}
+    \item Led LLM-based semantic search system development for data platforms
+    \item Developed causal discovery and deep learning--based decision support system for semiconductor manufacturing
+  \end{itemize}}
+
+%---------- Education ----------
+\section{Education}\sectionrule
+
+\edublock{2021--2025}{\textbf{Ph.D.\ in Management Engineering} (Focus: Information Systems)\\
+  Korea Advanced Institute of Science and Technology (KAIST), Seoul\\
+  GPA: 3.91/4.3 \ $|$ \ Advisor: Prof.\ Sung-Hyuk Park}
+
+\edublock{2018--2020}{\textbf{M.S.\ in Management Engineering}\\
+  KAIST, Seoul\\
+  GPA: 3.82/4.3 \ $|$ \ Advisor: Prof.\ Yong-Jin Hyun}
+
+\edublock{2013--2017}{\textbf{B.S.\ in Civil \& Environmental Engineering}\\
+  Korea University, Seoul\\
+  GPA: 3.85/4.5\ $|$ \ Graduated with Honors}
+
+%---------- Research Interests ----------
+\section{Research Interests}\sectionrule
+
+Machine Learning, Causal Inference, Agentic AI, Human-AI Collaboration, Digital Platform Design, Digital Marketing Analytics, Operation Optimization
+
+%---------- Research Papers ----------
+\section{Research Papers and Work-in-Progress}\sectionrule
+
+\subsection{Under Review}
+\begin{itemize}
+  \item \textbf{Kim K.}, Lee M., Park SH., Park SJ., \textit{Optimizing Media Planning: Multimethod Evidence of a Prescriptive Media Budget Allocation Framework (MBAF).} Presented at HICSS 2022. Under 1\textsuperscript{st} round review at \textit{International Journal of Advertising}.
+  \item Kwon S., \textbf{Kim K.}, Park SH., \textit{Shorter, Newer? How Monetization Reshapes Creator Strategy on YouTube Shorts.} Presented at KrAIS Summer Workshop 2023. Under 2\textsuperscript{nd} round review at \textit{Internet Research}.
+\end{itemize}
+
+\subsection{Work in Progress}
+\begin{itemize}
+  \item \textbf{Kim K.}, Lee D., Park SH., Sim J., \textit{Digital Rule of Thumb: Impact of Autocomplete in Search Engines across Mobile and Personal Computer Channels} (SSRN: 5001062, 2024). Presented at SCECR 2022, INFORMS WDS 2022, ICIS 2022, WISE 2025; target: \textit{Information Systems Research}.
+  \item \textbf{Kim K.}, Lee M., Park SH., \textit{DMMM: Deep Marketing Mix Modeling and Optimal Budget Allocation.} Presented at INFORMS International 2025, AMCIS 2025; target: \textit{Management Science}.
+\end{itemize}
+
+\subsection{Other Peer-Reviewed Publications}
+\begin{itemize}
+  \item Lee, S., \textbf{Kim, K.}, Y.\ J., Park, B. (2025). Evaluating sponsorship effects influenced by involuntary media multitasking: Neuromarketing approach. \textit{International Journal of Applied Sports Sciences}.
+  \item Cho, H., \textbf{Kim, K.}, Lee, S. (2025). Mood transfer research between program and advertisement: Applying neuro-marketing. \textit{Journal of the Korea Convergence Society}.
+  \item Lee, S., \textbf{Kim, K.}, Hyun, Y.\ J., \& Park, B. (2024). From sensation to emotion: A neuromarketing study of sport sponsorship effects. \textit{Sport Marketing Quarterly}, 33(2), 99--115.
+  \item Lee, S.\ H., Hyun, Y.\ J., Park, B., \textbf{Kim, K.}, \& Kwun, Y.\ Y. (2022). How a sensational event influences sponsorship effects: Applying neuromarketing. \textit{Korean Journal of Sport Science}, 33(3), 451--463.
+\end{itemize}
+
+%---------- Conference Presentations ----------
+\section{Conference Presentations}\textit{(Presenter \uline{underlined})}\\
+\sectionrule\\
+\begin{itemize}
+  \item \textbf{\uline{Kim K.}}, Lee M., Park SH. (2025). DMMM: Deep Marketing Mix Model for Optimal Budget Allocation. \textit{AMCIS}, Montr\'eal, Canada.
+  \item \textbf{\uline{Kim K.}}, Lee M., Park SH. (2025). 4M: Machine Learning Based Marketing Mix Model. \textit{INFORMS International}, Singapore.
+  \item \textbf{\uline{Kim K.}}, Lee M., Park SH. (2025). Toward a Machine Learning Marketing Mix Model. \textit{KrAIS Summer Workshop}, Busan, Korea.
+  \item \textbf{\uline{Kim K.}}, Lee D., Park SH., Sim J. (2023). Modalities and Search Costs: A Case of Autocomplete. \textit{KrAIS Summer Workshop}, Seoul, Korea.
+  \item \uline{Kwon S.}, \textbf{Kim K.}, Park SH. (2023). Does Money Make Creators Work Harder? \textit{KrAIS Summer Workshop}, Seoul, Korea.
+  \item \textbf{Kim K.}, Lee D., Park SH., \uline{Sim J.} (2022). Modalities and Search Costs: A Case of Autocomplete in Search Engine. \textit{POST-ICIS KrAIS Workshop}, Copenhagen, Denmark.
+  \item \textbf{\uline{Kim K.}}, Lee D., Park SH., Sim J. (2022). Digital Rule of Thumb: A Natural Experiment on Autocomplete in Search Engines. \textit{ICIS}, Copenhagen, Denmark \textbf{(Travel Grant, KAIST)}.
+  \item \textbf{\uline{Kim K.}}, Lee D., Park SH., Sim J. (2022). Digital Rule of Thumb: A Natural Experiment on Autocomplete in Search Engines. \textit{INFORMS Workshop on Data Science}, Indianapolis, IN, USA.
+  \item \textbf{\uline{Kim K.}}, Park SH. (2022). How to Choose the Right Person? Social Media Marketing Optimization Framework. \textit{ICEC}, Daegu, Korea \textbf{(Best Research-in-Progress Paper)}.
+  \item \textbf{\uline{Kim K.}}, Lee D., Park SH., Sim J. (2022). Digital Rule of Thumb: A Natural Experiment on Autocomplete in Search Engines. \textit{SCECR}, Madrid, Spain.
+  \item Park SH., \uline{Lee M.}, \textbf{Kim K.}, Shin D. (2022). A Nonlinear Optimization Model of Advertising Budget Allocation across Multiple Digital Media Channels. \textit{HICSS}, Online.
+  \item Park SH., \uline{Lee M.}, \textbf{Kim K.}, Shin D. (2021). Nonlinear Optimization Model of Advertising Budget Allocation across Multiple Digital Media Channels. \textit{SCECR}, Online.
+\end{itemize}
+
+%---------- Industry Research Collaborations ----------
+\section{Industry Collaborations}\sectionrule
+
+\industryblock{2024--Present}{\textbf{Wharton AI \& Analytics Initiative (WAIAI) \& Google}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Response modeling with aggregate and event-level data
+  \item \makebox[\cvlabelwidth][l]{Role:} Submitted research proposal on deep learning--based marketing mix models and derivative-free optimization for budget allocation
+  \item \makebox[\cvlabelwidth][l]{Results:} In progress
+\end{itemize}}
+
+\industryblock{2023--Present}{\textbf{ImpactAI}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Deep learning--based marketing mix models and optimal budget allocation framework
+  \item \makebox[\cvlabelwidth][l]{Role:} Developed ML/DL marketing mix models and budget allocation strategy using derivative-free optimization
+  \item \makebox[\cvlabelwidth][l]{Results:} +30\% prediction accuracy; +10\% return on marketing spend
+\end{itemize}}
+
+\industryblock{2022--2023}{\textbf{UNICEF Korea}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Optimal advertising budget allocation across traditional and digital channels (donor lifetime value)
+  \item \makebox[\cvlabelwidth][l]{Role:} Analyzed 10-year advertising efficiency across UNICEF Korea marketing channels; recommended budgeting strategies
+  \item \makebox[\cvlabelwidth][l]{Results:} +7\% donors' lifetime donation
+\end{itemize}}
+
+\industryblock{2021--2022}{\textbf{PTKorea}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Advertising sales prediction for Samsung online store
+  \item \makebox[\cvlabelwidth][l]{Role:} Developed ML sales prediction algorithm and simulation with marketing activities
+  \item \makebox[\cvlabelwidth][l]{Results:} SKU-level prediction +30\% accuracy vs.\ baseline
+\end{itemize}}
+
+\industryblock{2021}{\textbf{Kyobo Book}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Deep learning sales forecasting system for books
+  \item \makebox[\cvlabelwidth][l]{Role:} Designed data pipeline and policy; developed LSTM-based SKU-level forecasting
+  \item \makebox[\cvlabelwidth][l]{Results:} +30\% forecasting accuracy
+\end{itemize}}
+
+\industryblock{2020--2022}{\textbf{REVU Corporation}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Optimal influencer portfolio recommendation for social media marketing
+  \item \makebox[\cvlabelwidth][l]{Funding:} $\sim$\$100K grant (Korea Ministry of SMEs and Startups)
+  \item \makebox[\cvlabelwidth][l]{Role:} Led end-to-end ML solution for influencer portfolio selection
+  \item \makebox[\cvlabelwidth][l]{Results:} +15\% KPI in field experiments (Korea \& Taiwan)
+\end{itemize}}
+
+\industryblock{2020}{\textbf{Eigene Korea}
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{Project:} Deep learning--based recommender systems
+  \item \makebox[\cvlabelwidth][l]{Role:} Developed Item2Vec-based recommendation algorithm for beauty products
+  \item \makebox[\cvlabelwidth][l]{Results:} Model deployed in production
+\end{itemize}}
+
+%---------- Teaching ----------
+\section{Teaching}\sectionrule
+\begin{itemize}
+  \item Financial Data Analytics, Teaching Assistant -- KAIST, Spring 2021, Spring 2022
+  \item IT-based Business Innovation, Teaching Assistant -- KAIST, Fall 2021
+  \item IT Management, Teaching Assistant -- KAIST, Fall 2022
+  \item IT Strategy and Business (Executive MBA), Teaching Assistant -- KAIST, Fall 2023
+  \item Introduction to AI and ML, Teaching Assistant -- KAIST, Spring 2024
+  \item IT System Design, Teaching Assistant -- KAIST, Fall 2024
+\end{itemize}
+
+%---------- Mentorship ----------
+\section{Mentorship}\sectionrule
+
+Mentored two master's students on thesis projects applying data analytics and causal inference in real-world business contexts.
+\begin{itemize}
+  \item Causal impact of same-day delivery on sales and returns by product category (DiD \& Matching, 2024)
+  \item Spillover effects of short-form video content on platform engagement (Staggered DiD \& Matching, 2025)
+\end{itemize}
+
+%---------- Coursework ----------
+\section{Coursework Training}\sectionrule
+
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{\textbf{Methods:}} Econometrics, Applied Econometrics, Probability and Statistics, Behavioral Science Research Methods, Business Modeling, IT Management Seminars
+  \item \makebox[\cvlabelwidth][l]{\textbf{Theory:}} IT Management, Industrial Organization, Marketing Theory, Consumer Behavior Theories, Advanced Marketing Issues
+\end{itemize}
+
+%---------- Technical Skills ----------
+\section{Technical Skills}\sectionrule
+
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{\textbf{Programming:}} Python, SQL
+  \item \makebox[\cvlabelwidth][l]{\textbf{Data Analysis:}} STATA
+  \item \makebox[\cvlabelwidth][l]{\textbf{Deep Learning:}} PyTorch, TensorFlow
+  \item \makebox[\cvlabelwidth][l]{\textbf{Optimization:}} CVXPY, Optuna
+  \item \makebox[\cvlabelwidth][l]{\textbf{Productivity:}} MS Word, Excel, PowerPoint
+\end{itemize}
+
+%---------- Academic Service ----------
+\section{Academic Service}\sectionrule
+
+\begin{itemize}
+  \item \makebox[\cvlabelwidth][l]{\textbf{Ad-hoc Review:}} ICIS, AMCIS, PACIS, WITS, CIST, KrAIS
+  \item \makebox[\cvlabelwidth][l]{\textbf{Award:}} Best Reviewer, KrAIS Summer Workshop, 2025
+\end{itemize}
+
+\end{document}
