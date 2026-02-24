@@ -3,6 +3,24 @@ layout: page
 title: Research
 permalink: /research/
 ---
+## Research Interests
+
+My research lies at the intersection of Information Systems (IS) and Applied Data Science, specifically focusing on how advanced computational technologies can be leveraged to augment business decision-making and how their economic impacts can be rigorously quantified.
+
+1. Augmenting Business Decisions through AI & Optimization
+Core Technologies: Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Mathematical Optimization.
+
+- Focus: Developing and implementing intelligent systems that solve complex business problems. I focus on the "How"—innovating with technical tools to enhance the efficiency and accuracy of organizational decision-making processes.
+
+2. Causal Inference & Impact Evaluation
+Methodology: Causal Inference, Econometrics, and Prescriptive Analytics.
+
+- Focus: Moving beyond simple correlations to understand the "Why." I utilize causal inference frameworks to measure the substantive impact of IT implementations on business performance, consumer behavior, and market dynamics.
+
+3. Economic Value of Intelligent Systems
+- Focus: Quantifying the ROI and strategic value of technological innovation. My work aims to bridge the gap between technical capability and business strategy, providing empirical evidence on how AI-driven systems transform traditional economic models.
+
+---
 
 ## Under Review
 
