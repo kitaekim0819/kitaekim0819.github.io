@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Home
+description: "한국항공대 김기태 | 항공대 김기태 | 한국항공대학교 경영학부 Kitae Kim 조교수. AI, 비즈니스 애널리틱스 연구."
 ---
 
-<img src="/assets/images/IMG_4702.JPG" alt="Kitae Kim" width="160" style="float: left; margin: 0 1.5em 1em 0; border-radius: 4px;" />
+<img src="/assets/images/IMG_4702.JPG" alt="한국항공대 김기태, Kitae Kim" width="160" style="float: left; margin: 0 1.5em 1em 0; border-radius: 4px;" />
 
 # Kitae Kim | 김기태 | 金奇台
 
-**Assistant Professor**  
-School of Business, Korea Aerospace University
+**한국항공대학교 경영학부 조교수** (Assistant Professor, School of Business, Korea Aerospace University)
 
 Ph.D., Information Systems, KAIST  
 M.S., Management Engineering, KAIST  
@@ -20,7 +20,7 @@ B.S., Korea University
 
 ---
 
-My research focuses on **Machine Learning**, **Causal Inference**, and **Data Analytics**. I work on AI-driven decision support systems and optimization frameworks for business applications. My work has been presented at ICIS, INFORMS, and AMCIS, and I have collaborated with industry partners including Google, Wharton AI & Analtycis Initiative, UNICEF, Samsung, and Kyobo Book.
+My research focuses on **Machine Learning**, **Causal Inference**, and **Data Analytics**. I work on AI-driven decision support systems and optimization frameworks for business applications. My work has been presented at WISE, WITS, ICIS, AMCIS, and INFORMS. I have collaborated with industry partners including Google, Wharton AI & Analtycis Initiative, UNICEF, Samsung, and Kyobo Book.
 
 ---
 
