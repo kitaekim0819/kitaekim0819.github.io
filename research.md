@@ -5,16 +5,13 @@ permalink: /research/
 ---
 ## Research Interests
 
-My research lies at the intersection of Information Systems (IS) and Applied Data Science, specifically focusing on how advanced computational technologies can be leveraged to augment business decision-making and how their economic impacts can be rigorously quantified.
+My research applies Applied AI and Data Science methods to **Decision Support** and **Digital Innovation**, using the methodology best suited to each research question.
 
-1. Augmenting Business Decisions through AI & Optimization
-Core Technologies: Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), and Mathematical Optimization.
+1. **Applied AI for Decision Support** — how firms should allocate marketing and media budgets; tackled via AI/ML and optimization (e.g., MBAF, DMMM).
 
-2. Causal Inference & Impact Evaluation
-Methodology: Causal Inference, Econometrics, and Prescriptive Analytics.
+2. **Digital Innovation** — how digital platform and search mechanisms shape user and creator behavior; tackled via causal inference (e.g., Digital Rule of Thumb, YouTube Shorts monetization study).
 
-3. Economic Value of Intelligent Systems
-- Focus: Quantifying the ROI and strategic value of technological innovation. My work aims to bridge the gap between technical capability and business strategy, providing empirical evidence on how AI-driven systems transform traditional economic models.
+3. **Applied Data Science** — data-driven and neurophysiological (EEG) analysis of consumer response, applied to marketing effectiveness measurement (e.g., sponsorship and mood-transfer studies).
 
 ---
 
@@ -22,7 +19,7 @@ Methodology: Causal Inference, Econometrics, and Prescriptive Analytics.
 
 - **Kim K.**, Lee M., Park SH., Park SJ., *Optimizing Media Planning: Multimethod Evidence of a Prescriptive Media Budget Allocation Framework (MBAF).* Presented at HICSS 2022. Under 1st round review at *International Journal of Advertising*.
 
-- Kwon S., **Kim K.**, Park SH., *Shorter, Newer? How Monetization Reshapes Creator Strategy on YouTube Shorts.* Presented at KrAIS Summer Workshop 2023. Under 2nd round review at *Internet Research*.
+- Kwon S., **Kim K.**, Park SH., *Shorter, Newer? How Monetization Reshapes Creator Strategy on YouTube Shorts.* Presented at KrAIS Summer Workshop 2023. Under 3rd round review at *Internet Research*.
 
 ---
 

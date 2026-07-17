@@ -20,7 +20,13 @@ B.S., Korea University
 
 ---
 
-My research focuses on **Machine Learning**, **Causal Inference**, and **Data Analytics**. I work on AI-driven decision support systems and optimization frameworks for business applications. My work has been presented at WISE, WITS, ICIS, AMCIS, and INFORMS. I have collaborated with industry partners including Google, Wharton AI & Analtycis Initiative, UNICEF, Samsung, and Kyobo Book.
+My research applies AI and Data Science methods to **Decision Support** and **Digital Innovation**, organized around three areas:
+
+- **Applied AI for Decision Support** — AI/ML and optimization for marketing and media budget allocation
+- **Digital Innovation** — causal inference on how digital platform and search mechanisms shape user and creator behavior
+- **Applied Data Science** — data-driven and neurophysiological (EEG) analysis of consumer response
+
+My work has been presented at WISE, WITS, ICIS, AMCIS, and INFORMS. I have collaborated with industry partners including Google, Wharton AI & Analytics Initiative, UNICEF, Samsung, and Kyobo Book.
 
 ---
 
