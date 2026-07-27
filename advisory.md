@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Advisory
-permalink: /advising/
+permalink: /advisory/
 ---
 
 ## Industry & Research Institute Advisory
