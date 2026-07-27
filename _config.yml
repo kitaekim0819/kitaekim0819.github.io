@@ -36,6 +36,8 @@ plugins:
 header_pages:
 - research.md
 - teaching.md
+- projects.md
+- advising.md
   
 
 # Exclude from processing.
