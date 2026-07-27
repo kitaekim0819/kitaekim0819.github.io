@@ -13,7 +13,7 @@ My applied research projects bridge machine learning, deep learning, and optimiz
 - **Role & Focus:** Developed research proposal on deep learning–based marketing mix models and derivative-free optimization for digital budget allocation.
 - **Status:** In progress
 
-### ImpactAI *(2023 – Present)*
+### ImpactAI *(2023 – 2025)*
 - **Project:** Deep Learning–Based Marketing Mix Models & Optimal Budget Allocation Framework
 - **Role & Focus:** Developed ML/DL marketing mix models (DMMM) and budget allocation strategy using derivative-free optimization.
 - **Results:** +30% prediction accuracy vs. traditional baselines; +10% return on marketing spend (ROAS).
