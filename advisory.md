@@ -3,25 +3,7 @@ layout: page
 title: Advisory
 permalink: /advisory/
 ---
-
-## Industry & Research Institute Advisory
-
-I provide technical and strategic advisory services to industry partners, start-ups, and national research institutes in the areas of **Machine Learning**, **Deep Learning Marketing Mix Modeling (DMMM)**, **Causal Inference**, and **AI-driven Decision Support Systems**.
-
-### Key Advisory Roles & Activities
-
-- **Research Institute Advisory — KISTI (Korea Institute of Science and Technology Information)**
-  - *Focus:* Technical advising on LLM-based semantic search architectures and deep learning / causal discovery frameworks for semiconductor manufacturing decision support.
-
-- **AI & Analytics Start-up Advisory — ImpactAI**
-  - *Focus:* Strategic advising on machine learning marketing mix modeling (DMMM) algorithms, derivative-free optimization, and automated digital media budget allocation.
-
-- **Industry & E-Commerce Advisory — UNICEF Korea, PTKorea, REVU Corp, Kyobo Book**
-  - *Focus:* Advising on data-driven donor allocation strategies, SKU-level demand forecasting pipelines, and social media influencer portfolio selection algorithms.
-
----
-
-## Student Mentorship & Academic Advising
+## Academic Advising
 
 I mentor and advise graduate and undergraduate students conducting research at the intersection of business analytics, applied machine learning, and digital platforms.
 
