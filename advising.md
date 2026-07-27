@@ -25,6 +25,12 @@ I provide technical and strategic advisory services to industry partners, start-
 
 I mentor and advise graduate and undergraduate students conducting research at the intersection of business analytics, applied machine learning, and digital platforms.
 
+### Ph.D. Dissertation Committee (Korea Aerospace University)
+
+- **Factors Influencing the Success of Smart Construction Technology: The Moderating and Mediating Effects of Innovativeness**
+  - *Role:* Dissertation Committee Member
+  - *Focus:* Evaluating empirical models and framework analysis on smart construction technology adoption, organizational innovativeness, and implementation performance.
+
 ### Master's Thesis Mentorship
 
 - **Spillover Effects of Short-Form Content on Platform Engagement** *(2025)*
