@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Advising & Consulting
+title: Advisory
 permalink: /advising/
 ---
 
