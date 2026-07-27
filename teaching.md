@@ -15,9 +15,22 @@ My teaching interests lie at the intersection of business analytics, operations 
 
 ---
 
-## Courses Taught
+## Courses Taught & Scheduled
 
-### Korea Aerospace University (KAU)
+### Upcoming Courses (Fall 2026)
+
+- **Management Science** — Undergraduate (Fall 2026)
+  - An introduction to mathematical modeling, linear programming, and optimization techniques for business decision-making.
+
+- **Introduction to Management Information Systems** — Undergraduate (Fall 2026)
+  - A foundational course covering how information technology, digital platforms, data infrastructure, and enterprise systems drive modern business operations and competitive strategy.
+
+- **Generative AI for Business** — Undergraduate & Master's (Fall 2026)
+  - An advanced course exploring Large Language Models (LLMs), generative AI architectures, prompt engineering, agentic AI frameworks, and strategic applications of generative technologies in business.
+
+---
+
+### Recent Courses (Spring 2026)
 
 - **BD4248: Management Science (경영과학)** — Undergraduate (Spring 2026)
   - **Course Evaluation:** 4.9 / 5.0
