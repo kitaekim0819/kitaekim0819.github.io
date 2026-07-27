@@ -48,4 +48,4 @@ I mentor and advise graduate and undergraduate students conducting research at t
 
 ## Prospective Students & Collaborators
 
-If you are a student or organization interested in research collaboration, technical advising, or thesis supervision, feel free to reach out via email (`kitaekim@kau.ac.kr`).
+If you are a student or organization interested in research collaboration, technical advising, or thesis supervision, feel free to reach out via email ([kitaekim@kau.ac.kr](mailto:kitaekim@kau.ac.kr)).
