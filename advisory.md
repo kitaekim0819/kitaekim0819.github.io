@@ -3,6 +3,14 @@ layout: page
 title: Advisory
 permalink: /advisory/
 ---
+## Industrial Advisory
+
+### BANDI — Semiconductor AI and Data Analytics Platform
+
+I advise on BANDI, a semiconductor AI and data analytics platform currently under development by the **Korea Institute of Science and Technology Information (KISTI)** and the **National Nanofab Center (NNFC)**.
+
+---
+
 ## Academic Advising
 
 I mentor and advise graduate and undergraduate students conducting research at the intersection of business analytics, applied machine learning, and digital platforms.
