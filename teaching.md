@@ -4,8 +4,6 @@ title: Teaching
 permalink: /teaching/
 ---
 
-## Courses Taught & Scheduled
-
 ### Fall 2026 Courses
 
 The syllabi below are publicly available as PDF downloads.
