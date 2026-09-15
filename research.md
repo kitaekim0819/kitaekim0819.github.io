@@ -17,9 +17,7 @@ My research applies Applied AI and Data Science methods to **Decision Support** 
 
 ## Under Review
 
-- **Kim K.**, Lee M., Park SH., Park SJ., *Optimizing Media Planning: Multimethod Evidence of a Prescriptive Media Budget Allocation Framework (MBAF).* Presented at HICSS 2022. Under 1st round review at *International Journal of Advertising*.
-
-- Kwon S., **Kim K.**, Park SH., *Shorter, Newer? How Monetization Reshapes Creator Strategy on YouTube Shorts.* Presented at KrAIS Summer Workshop 2023. Under 3rd round review at *Internet Research*.
+- **Kim K.**, Lee M., Park SH., Park SJ., *Optimizing Media Planning: Multimethod Evidence of a Prescriptive Media Budget Allocation Framework (MBAF).* Presented at HICSS 2022. Under 2nd round review at *International Journal of Advertising*.
 
 ---
 
@@ -32,6 +30,8 @@ My research applies Applied AI and Data Science methods to **Decision Support** 
 ---
 
 ## Publications
+
+- Kwon S., **Kim K.**, Park SH., *Shorter, Newer? How Monetization Reshapes Creator Strategy on YouTube Shorts.* Presented at KrAIS Summer Workshop 2023. Accepted at *Internet Research*.
 
 - Lee, S., **Kim, K.**, Y. J., Park, B. (2025). Evaluating sponsorship effects influenced by involuntary media multitasking: Neuromarketing approach. *International Journal of Applied Sports Sciences*.
 

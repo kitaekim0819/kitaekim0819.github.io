@@ -17,16 +17,21 @@ My teaching interests lie at the intersection of business analytics, operations 
 
 ## Courses Taught & Scheduled
 
-### Upcoming Courses (Fall 2026)
+### Fall 2026 Courses
+
+The syllabi below are publicly available as PDF downloads.
 
 - **Management Science** — Undergraduate (Fall 2026)
   - An introduction to mathematical modeling, linear programming, and optimization techniques for business decision-making.
+  - <a href="{{ '/assets/files/management-science-syllabus-fall-2026.pdf' | relative_url }}" download aria-label="Download Management Science syllabus (PDF)">Download syllabus (PDF)</a>
 
 - **Introduction to Management Information Systems** — Undergraduate (Fall 2026)
   - A foundational course covering how information technology, digital platforms, data infrastructure, and enterprise systems drive modern business operations and competitive strategy.
+  - <a href="{{ '/assets/files/management-information-systems-syllabus-fall-2026.pdf' | relative_url }}" download aria-label="Download Introduction to Management Information Systems syllabus (PDF)">Download syllabus (PDF)</a>
 
 - **Generative AI for Business** — Undergraduate & Master's (Fall 2026)
   - An advanced course exploring Large Language Models (LLMs), generative AI architectures, prompt engineering, agentic AI frameworks, and strategic applications of generative technologies in business.
+  - <a href="{{ '/assets/files/generative-ai-for-business-syllabus-fall-2026.pdf' | relative_url }}" download aria-label="Download Generative AI for Business syllabus (PDF)">Download syllabus (PDF)</a>
 
 ---
 
