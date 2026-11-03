@@ -1,0 +1,43 @@
+/* Loaded only by the course materials page. */
+.page-content > .wrapper {
+  max-width: none;
+  width: auto;
+  padding-inline: clamp(16px, 4vw, 72px);
+}
+
+.post-content > p,
+.post-content > ol,
+.post-content > blockquote {
+  max-width: 90ch;
+}
+
+.course-materials-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.course-materials-table table {
+  width: 100%;
+  min-width: 680px;
+  table-layout: fixed;
+  margin-bottom: 0;
+}
+
+.course-materials-table th,
+.course-materials-table td {
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  padding: clamp(10px, 1.2vw, 18px);
+}
+
+.course-materials-table th:nth-child(1) { width: 8%; }
+.course-materials-table th:nth-child(2) { width: 28%; }
+.course-materials-table th:nth-child(3) { width: 30%; }
+.course-materials-table th:nth-child(4) { width: 34%; }
+
+@media (max-width: 700px) {
+  .post-title { font-size: clamp(26px, 6vw, 36px); }
+  .course-materials-table table { font-size: 14px; }
+}

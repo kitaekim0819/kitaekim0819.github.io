@@ -4,6 +4,8 @@ title: AI Tutor & Course Materials
 permalink: /teaching/management-science-2026-fall/
 ---
 
+<link rel="stylesheet" href="{{ "/assets/css/course-materials.css" | relative_url }}">
+
 Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 **kau-ms-tutor** helps you review course concepts, check your formulations, and work through practice problems one hint at a time. The skill includes the text of 22 course references, so you can ask for materials by name.
@@ -35,6 +37,8 @@ Download original documents for complete figures, equations, and formatting. Qui
 
 Published lecture and practice materials by week. Quizzes and additional examples are grouped with the related lecture topic. Select **View notebook** to read formatted cells in your browser, or **Download** to edit and run a notebook in VS Code, Jupyter, or Google Colab.
 
+<div class="course-materials-table" markdown="1">
+
 | Week | Topic | Lecture materials | Quizzes & examples |
 | --- | --- | --- | --- |
 | Week 1 | Course introduction and linear programming | <a href="/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf" target="_blank" rel="noopener noreferrer">Course Introduction</a><br><a href="/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf" target="_blank" rel="noopener noreferrer">Chapter 1 - Introduction</a><br><a href="/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf" target="_blank" rel="noopener noreferrer">Chapter 2 - Linear Programming</a> | Quiz 1: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf)<br>Chapter 2 examples: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf) |
@@ -46,6 +50,8 @@ Published lecture and practice materials by week. Quizzes and additional example
 | Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice — View notebook](/assets/teaching/management-science-2026-fall/notebooks/week-7-chapter-5-practice.html) · <a href="/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb" download>Download</a><br>[Solutions — View notebook](/assets/teaching/management-science-2026-fall/notebooks/week-7-chapter-5-practice-solutions.html) · <a href="/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb" download>Download</a> | — |
 | Week 8 | Midterm exam | Exam materials are not published. | — |
 | Week 9 | Chapter 7 - Integer Programming | <a href="/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | — |
+
+</div>
 
 #### Assignments
 
