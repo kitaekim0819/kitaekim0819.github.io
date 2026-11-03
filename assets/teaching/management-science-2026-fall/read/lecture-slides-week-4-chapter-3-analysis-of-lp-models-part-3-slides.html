@@ -1,0 +1,446 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 3 — Analysis of LP Models part 3 (slides) — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a></nav><h1>Chapter 3 — Analysis of LP Models part 3 (slides)</h1><p>KAU Management Science — Fall 2026. Extracted reference text; diagrams, equations, and table layout may be incomplete. Check the original document when needed.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx">Open original document</a></p><main><pre>COURSE REFERENCE: Chapter 3 — Analysis of LP Models part 3 (slides).pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Slide 1
+
+
+CHAPTER 03
+Analysis of Linear Programming Models - Part 3
+Equality constraints and special cases: infeasible, unbounded, and multiple optima
+
+TEXTBOOK
+Modern Management Science, 9th ed.
+CHAPTER
+Ch. 3
+WEEK
+Week 4
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+Content prepared by the instructor; slide layout and formatting assisted by Claude (Anthropic).
+
+Slide 2
+Last Week
+Analysis with software
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+Google Colab: a free, cloud-based Python environment
+
+CVXPY: write the model the way the math reads, then hand it to a solver
+
+Many solvers, one interface: choose a solver that suits the problem class and size
+
+LP problems solved in six steps: 
+variables, 
+objective, 
+constraints, 
+problem, 
+solve, 
+results
+
+Slide 3
+
+
+PART 3
+Equality Constraints and Special Cases
+What the solver tells you when a model has no ordinary optimum
+
+Equality constraints (Example 3-3)
+
+Infeasible models (Example 3-4)
+
+Unbounded models (Example 3-5)
+
+Multiple optimal solutions (Example 3-1)
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+3 / 15
+
+Slide 4
+EXAMPLE 3-3
+Example 3-3: an equality constraint
+
+Chapter 3  ·  Analysis of Linear Programming Models
+PROBLEM
+K Electronics plans to hire skilled workers and apprentices as it expands into a new line of business. A skilled worker costs ₩10,000 per hour and an apprentice ₩5,000 per hour. The company has ₩150 million available for the new hiring plan, and under its agreement with the labor union this entire amount must be spent on hiring. Given its current situation, K Electronics plans to hire skilled workers for no more than 10,000 hours, while the union demands that apprentices be hired for at least 12,000 hours. Current cost analysis shows that a skilled worker earns the company ₩3,000 per hour and an apprentice ₩1,250 per hour. Management wants a hiring plan that maximizes total profit.
+FORMULATION
+
+Decision variables
+
+Objective function
+
+Constraints
+
+Slide 5
+EXAMPLE 3-3
+Example 3-3: from model to graph
+
+Chapter 3  ·  Analysis of Linear Programming Models
+FORMULATION
+
+Decision variables
+
+S = hours of skilled workers hired
+
+P = hours of apprentices hired
+
+Objective function
+
+Maximize  Z = 0.3S + 0.125P    (profit, unit: ₩10,000)
+
+Constraints
+
+S + 0.5P  =  15,000    (budget, unit:  ₩10,000)
+
+S  ≤  10,000    (skilled hours, unit: hours)
+
+P  ≥  12,000    (apprentice hours, unit: hours)
+
+S, P  ≥  0
+GRAPH
+
+
+Slide 6
+EXAMPLE 3-3
+Example 3-3: input and output
+
+Chapter 3  ·  Analysis of Linear Programming Models
+OUTPUT
+
+Status: optimal
+Maximum profit (Z): 4199.999942204862
+Optimal S: 8999.99884409724
+Optimal P: 12000.002311805523
+
+Status is optimal: the equality leaves only a line segment, but a best point still exists
+
+Hire skilled workers for 9,000 hours and apprentices for 12,000 hours
+
+The whole budget is spent: 9,000 + 0.5 × 12,000 = 15,000 (₩10,000s)
+
+Maximum profit: ₩42 million (Z = 4,200 in ₩10,000s)
+
+import cvxpy as cp
+ 
+# 1. Decision variables
+S = cp.Variable()
+P = cp.Variable()
+ 
+# 2. Objective: maximize total profit
+objective = cp.Maximize(0.3 * S + 0.125 * P)
+ 
+# 3. Constraints (note the == for equality)
+constraints = [
+    S + 0.5 * P == 15000,  # budget: spend all of it
+    S &lt;= 10000,            # skilled-worker hours
+    P &gt;= 12000,            # apprentice hours
+    S &gt;= 0,                # non-negativity
+    P &gt;= 0
+]
+ 
+# 4. Formulate and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+ 
+# 5. Print the results
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Maximum profit (Z):&quot;, problem.value)
+print(&quot;Optimal S:&quot;, S.value)
+print(&quot;Optimal P:&quot;, P.value)
+INPUT
+
+Slide 7
+SPECIAL CASES
+Not every LP model has an optimal solution
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+LP models
+
+Infeasible
+no feasible point at all
+
+Feasible
+the feasible region is not empty
+
+Unbounded
+objective grows without limit
+
+Has an optimal solution
+a finite best value exists
+
+Unique optimum
+exactly one optimal solution
+
+Multiple optima
+Multiple optimal solutions
+
+Slide 8
+EXAMPLE 3-4
+Example 3-4: an infeasible model
+
+Chapter 3  ·  Analysis of Linear Programming Models
+PROBLEM
+Architect Park has been commissioned by the government to design an affordable solar-energy house. The house consists of a residential area and an energy-control area: the residential area must be at least 105 m², and the energy-control area at least 30 m². Construction costs ₩2 million per m² for the residential area and ₩4 million per m² for the energy-control area. The government requires a design that maximizes total floor area within a total construction budget of ₩240 million.
+FORMULATION
+
+Decision variables
+
+Objective function
+
+Constraints
+
+Slide 9
+
+EXAMPLE 3-4
+Example 3-4: from model to graph
+
+Chapter 3  ·  Analysis of Linear Programming Models
+FORMULATION
+
+Decision variables
+
+R = residential area (m²)
+
+E = energy-control area (m²)
+
+Objective function
+
+Maximize  Z = R + E    (total area, m²)
+
+Constraints
+
+200R + 400E  ≤  24,000    (cost, ₩10,000s)
+
+R  ≥  105    (residential area, m²)
+
+E  ≥  30    (energy-control area, m²)
+
+R, E  ≥  0
+GRAPH
+
+Slide 10
+EXAMPLE 3-4
+Example 3-4: output
+
+Chapter 3  ·  Analysis of Linear Programming Models
+OUTPUT
+
+Status: infeasible
+Maximum total area: -inf
+Optimal R: None
+Optimal E: None
+
+Status is infeasible: no point satisfies all the constraints at once
+
+The minimum areas alone cost 200 × 105 + 400 × 30 = 33,000, above the 24,000 budget
+
+There is no solution to report: the variables are None and the objective is −inf
+
+Infeasible: relax a requirement or raise the budget
+
+import cvxpy as cp
+ 
+# 1. Decision variables
+R = cp.Variable()
+E = cp.Variable()
+ 
+# 2. Objective: maximize total floor area
+objective = cp.Maximize(R + E)
+ 
+# 3. Constraints
+constraints = [
+    200 * R + 400 * E &lt;= 24000,  # construction cost
+    R &gt;= 105,                    # residential area
+    E &gt;= 30,                     # energy-control area
+    R &gt;= 0,                      # non-negativity
+    E &gt;= 0
+]
+ 
+# 4. Formulate and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+ 
+# 5. Print the results
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Maximum total area:&quot;, problem.value)
+print(&quot;Optimal R:&quot;, R.value)
+print(&quot;Optimal E:&quot;, E.value)
+INPUT
+
+Slide 11
+EXAMPLE 3-5
+Example 3-5: an unbounded model
+
+Chapter 3  ·  Analysis of Linear Programming Models
+PROBLEM
+S Industries produces two special-purpose motors, type A and type B. To meet next month&#x27;s supply contracts, at least 1,000 units of each type must be produced. As a matter of company policy, the production volume of Type B motors should not exceed that of Type A motors by more than 500 units. The profit per unit is ₩200,000 for type A and ₩100,000 for type B. S Industries wants a production plan that maximizes total profit.
+FORMULATION
+
+Decision variables
+
+Objective function
+
+Constraints
+
+Slide 12
+EXAMPLE 3-5
+Example 3-5: from model to graph
+
+Chapter 3  ·  Analysis of Linear Programming Models
+FORMULATION
+
+Decision variables
+
+X₁ = units of type A motors produced
+
+X₂ = units of type B motors produced
+
+Objective function
+
+Maximize  Z = 20X₁ + 10X₂    (profit, ₩10,000s)
+
+Constraints
+
+X₁  ≥  1,000    (type A contract)
+
+X₂  ≥  1,000    (type B contract)
+
+X₂ −X₁ ≤  500    (company policy)
+
+X₁, X₂  ≥  0
+GRAPH
+
+
+Slide 13
+EXAMPLE 3-5
+Example 3-5: from model to graph
+
+Chapter 3  ·  Analysis of Linear Programming Models
+FORMULATION
+
+Decision variables
+
+X₁ = units of type A motors produced
+
+X₂ = units of type B motors produced
+
+Objective function
+
+Maximize  Z = 20X₁ + 10X₂    (profit, ₩10,000s)
+
+Constraints
+
+X₁  ≥  1,000    (type A contract)
+
+X₂  ≥  1,000    (type B contract)
+
+X₂ −X₁ ≤  500    (company policy)
+
+X₁, X₂  ≥  0
+GRAPH
+
+
+Slide 14
+EXAMPLE 3-5
+Example 3-5: input to output
+
+Chapter 3  ·  Analysis of Linear Programming Models
+OUTPUT
+
+Status: unbounded
+Maximum total profit: inf
+Optimal X1: None
+Optimal X2: None
+
+Status is unbounded: the feasible region has no upper limit, so profit grows without bound
+
+No finite optimum exists, so the variables have no value (None)
+
+In practice this signals a missing constraint, such as a capacity or demand limit
+
+Unbounded: a constraint is missing from the model
+
+import cvxpy as cp
+ 
+# 1. Decision variables
+X1 = cp.Variable()
+X2 = cp.Variable()
+ 
+# 2. Objective: maximize total profit
+objective = cp.Maximize(20 * X1 + 10 * X2)
+ 
+# 3. Constraints
+constraints = [
+    X1 &gt;= 1000,          # type A supply contract
+    X2 &gt;= 1000,          # type B supply contract
+    X2 – X1 &lt;= 500,      # company policy
+    X1 &gt;= 0,             # non-negativity
+    X2 &gt;= 0
+]
+ 
+# 4. Formulate and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+ 
+# 5. Print the results
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Maximum total profit:&quot;, problem.value)
+print(&quot;Optimal X1:&quot;, X1.value)
+print(&quot;Optimal X2:&quot;, X2.value)
+INPUT
+
+Slide 15
+MULTIPLE OPTIMAL SOLUTIONS
+Multiple optimal solutions
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+Some LP models have more than one optimal solution
+
+Example 3-1 with a modified objective function
+
+Maximize  Z = 15X₁ + 50X₂    (was 20X₁ + 50X₂)
+
+1.2X₁ + 4X₂  ≤  240    (assembly, hours)
+
+0.5X₁ + X₂  ≤  81    (inspection, hours)
+
+X₂  ≤  40    (chip supply, units)
+
+X₁, X₂  ≥  0
+
+The objective line is now parallel to the assembly constraint, so every point on segment BC is optimal (Z = 3,000)
+
+
+Try it yourself: interactive LP simulator (click to open)
+
+Slide 16
+SUMMARY
+Summary
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+What the solver&#x27;s status tells you
+
+optimal: a finite best solution exists (Ex. 3-3)
+
+infeasible: the constraints contradict one another (Ex. 3-4)
+
+unbounded: the objective grows without limit (Ex. 3-5)
+
+Equality constraints are written with == in CVXPY
+
+Multiple optima arise when the objective is parallel to a binding constraint
+STATUS CHEAT SHEET
+
+optimal
+value is finite; X.value is set
+infeasible
+value = -inf (max) or inf (min); X.value = None
+unbounded
+value = inf (max) or -inf (min); X.value = None
+equality constraint
+S + 0.5 * P == 15000
+next class
+post-optimality and sensitivity analysis</pre></main></body></html>

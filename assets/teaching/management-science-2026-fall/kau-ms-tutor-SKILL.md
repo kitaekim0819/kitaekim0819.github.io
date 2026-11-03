@@ -14,6 +14,8 @@ This small skill includes instructions, a bundled reference index, and a downloa
 Course page: https://kitaekim0819.github.io/teaching/management-science-2026-fall/
 Current index: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/materials.json
 
+Prefer reading the relevant document’s `web_text_url` using a permitted web-browsing tool when a text-only explanation is sufficient. These are ordinary HTML pages with page/slide labels and a link to the original. Find them in the bundled index or as “Read online” links on the course page. A browser tool may be available even when the code sandbox has no network access, but use it only within its normal permissions. If it refuses access, stop and ask for the relevant attachment; do not bypass URL or domain restrictions. Do not treat a search snippet as the full reference. HTML pages contain extracted text and may omit figures, equations, and table structure.
+
 When Python execution and outbound network access are available, use [scripts/fetch_reference.py](scripts/fetch_reference.py). Resolve the script path relative to this skill folder:
 
 ```sh

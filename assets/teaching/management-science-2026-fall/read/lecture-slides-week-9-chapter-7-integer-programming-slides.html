@@ -1,0 +1,390 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>[Chapter 7] Integer Programming (Slides) — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a></nav><h1>[Chapter 7] Integer Programming (Slides)</h1><p>KAU Management Science — Fall 2026. Extracted reference text; diagrams, equations, and table layout may be incomplete. Check the original document when needed.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx">Open original document</a></p><main><pre>COURSE REFERENCE: [Chapter 7] Integer Programming (Slides).pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Slide 1
+
+
+CHAPTER 07
+Integer Programming
+Decision Making / Game Theory / Systems Analysis
+
+TEXTBOOK
+Modern Management Science, 9th ed.
+CHAPTER
+Ch. 7
+WEEK
+Week 9
+Management Science  ·  Kitae Kim, 2026 Spring, Korea Aerospace University
+Made by Kitae Kim, formatted by Codex.
+
+Slide 2
+
+
+Introduction to Integer Programming (IP)
+How to solve IP
+Applications of IP
+Overview
+
+Slide 3
+RECAP
+Recap: Linear Programming Assumptions
+
+Chapter 7  ·  Integer Programming
+3
+Certainty
+Linearity
+    Proportionality
+    Additivity
+Divisibility: Variables may take fractional values
+
+Slide 4
+Integer Programming Models
+
+Chapter 7  ·  Integer Programming
+4
+Use Integer Programming when variables must take integer values rather than fractions or decimals (the divisibility assumption does not hold).
+Variables represent the number of units produced
+Model either-or decisions with binary variables (0 or 1)
+
+
+Slide 5
+Example 7-1: Problem and Data
+
+Chapter 7  ·  Integer Programming
+5
+Hankook Supermarket has secured KRW 15.5 billion to expand by opening stores and storage facilities. Each new store costs KRW 1 billion and earns KRW 30 million per month. Each storage facility costs KRW 3 billion and earns KRW 72 million per month. Management plans to open at least one storage facility and no more than five stores.
+Formulate an Integer Programming model to maximize profit within the available budget.
+
+Slide 6
+Example 7-1: Integer Programming Model
+
+Chapter 7  ·  Integer Programming
+6
+X1: Number of new stores
+X2: Number of new storage facilities
+Maximize Z = 0.3 X1 + 0.72 X2              (Monthly profit, unit: KRW 100 million)
+Subject to:     10X1 + 30X2 &lt;= 155       (Budget, unit: KRW 100 million)
+X1 &lt;= 5                             (Store limit)
+X2 &gt;= 1                             (Minimum storage facilities)
+X1 , X2 &gt;= 0
+X1, X2 are integers
+
+Slide 7
+Example 7-1: Integer Solution
+
+Chapter 7  ·  Integer Programming
+7
+Solution to the Integer Programming model
+
+Integer optimum (X₁ = 3, X₂ = 4)
+Z = KRW 378 million
+New stores
+
+Slide 8
+
+
+Introduction to Integer Programming (IP)
+How to solve IP
+Applications of IP
+
+Slide 9
+How to solve IP models?
+
+Chapter 7  ·  Integer Programming
+6
+LP relaxation
+Branch-and-bound method
+
+
+Slide 10
+SOLUTION METHODS
+Linear Programming Relaxation
+
+Chapter 7  ·  Integer Programming
+9
+LP relaxation: Ignore integrality constraints and find the optimal solution
+Then adjust any fractional values to integers
+
+LP relaxation optimum:
+Is (5, 3) or (5, 4) optimal?
+What about (3, 4)?
+
+
+
+Budget
+LP optimum (5, 3.5)
+
+Z = KRW 402 million
+Storage min.
+New stores
+Store limit
+New storage facilities
+
+Z = 0.3 X1 +0.72 X2
+
+Slide 11
+SOLUTION METHODS
+Branch-and-Bound Method
+
+Chapter 7  ·  Integer Programming
+10
+Branch-and-bound divides the feasible region into subproblems and analyzes each separately.
+An efficient method for solving Integer Programming models
+For Example 7-1, the LP relaxation optimum is (X1 = 5, X2 = 3.5).
+Branch into X2 &lt;= 3 and X2 &gt;= 4, then solve each subproblem.
+
+Slide 12
+SOLUTION METHODS
+Branch-and-Bound: First Branch
+
+Chapter 7  ·  Integer Programming
+11
+Case: X₂ ≤ 3
+
+
+
+Budget
+LP optimum (5, 3.5)
+
+Z = KRW 402 million
+Storage min.
+New stores
+Store limit
+New storage facilities
+
+Z = 0.3 X1 +0.72 X2
+10 X1 +30 X2 &lt;= 155
+
+Slide 13
+SOLUTION METHODS
+Branch-and-Bound: Further Branching
+
+Chapter 7  ·  Integer Programming
+12
+Case: X₂ ≥ 4
+
+X₁ ≥ 4
+
+X₁ ≤ 3
+
+
+
+Budget
+LP optimum (5, 3.5)
+
+Z = KRW 402 million
+Storage min.
+New stores
+Store limit
+New storage facilities
+
+Z = 0.3 X1 +0.72 X2
+10 X1 +30 X2 &lt;= 155
+
+Slide 14
+
+
+Introduction to Integer Programming (IP)
+How to solve IP
+Applications of IP
+
+Slide 15
+FIXED COSTS
+Fixed-Cost Problems
+
+Chapter 7  ·  Integer Programming
+13
+Linear programming assumes variable costs only, with no fixed costs
+In practice, firms also incur fixed costs
+Use Integer Programming to model fixed costs
+This brings us to mixed integer programming
+
+Total cost C(X) = aX + b   if X &gt; 0
+                         0   if X = 0
+
+     b
+
+Slide 16
+FIXED COSTS
+Fixed Costs and Economies of Scale
+
+Chapter 7  ·  Integer Programming
+14
+Fixed costs are a common source of economies of scale.
+
+Unit cost C(X)/X decreases as output increases.
+
+Add a binary variable Y and link it to X:
+Y = 1 if X &gt; 0 (producing)
+       0 if X = 0 (not producing)
+
+X ≤ cY, where c is production capacity
+&lt;Economies of Scale&gt;
+
+
+Slide 17
+FIXED COSTS
+Example 7-3: Problem and Data
+
+Chapter 7  ·  Integer Programming
+15
+K Manufacturing must produce 20,000 units using three machines. Each machine incurs a fixed cost when activated. The table lists each machine’s fixed cost, variable cost, and production capacity.
+Formulate an Integer Programming model to choose which machines to use and how much each should produce to minimize total production cost.
+Machine
+Fixed cost
+(KRW 10,000)
+Variable cost
+(KRW 10,000/unit)
+Capacity 
+(units)
+1
+300
+2
+8,000
+2
+100
+10
+13,000
+3
+200
+5
+14,000
+
+Slide 18
+FIXED COSTS
+Example 7-3: Model and Solution
+
+Chapter 7  ·  Integer Programming
+16
+Yⱼ = 1 if machine j operates
+        0 otherwise
+Xⱼ = Output of machine j,  j = 1, 2, 3
+X₁, X₂, X₃ ≥ 0
+Y₁, Y₂, Y₃ ∈ {0, 1}
+Optimal solution from CVXPY
+Total cost: KRW 765 million
+Y1 = 1
+Y2 = 0
+Y3 = 1
+X1 = 8,000
+X2 = 0 
+X3 = 12,000
+
+Slide 19
+CVXPY
+Integer Programming with CVXPY
+
+Chapter 7  ·  Integer Programming
+17
+Many real-world problems use mixed-Integer Programming models
+These models optimize over both integer and continuous variables
+CVXPY can solve integer and mixed-integer models using a solver that supports mixed-integer programming (MIP).
+Solver
+Problem type
+
+Slide 20
+CVXPY
+Integer Programming with CVXPY
+
+Chapter 7  ·  Integer Programming
+17
+If x must be integer: 
+x = cp.Variable(                           )
+If y must be 1 or 0:
+y = cp.Variable(                           )
+
+Slide 21
+CAPITAL BUDGETING
+Example 7-2: Investment Selection
+
+Chapter 7  ·  Integer Programming
+18
+H Group is considering three projects over the next three years. The table gives each project’s annual funding needs and present value of profit.
+Table 7.1  Investment plan (KRW 100 million)
+Present value discounts future investments and returns to today, then sums them. At a 10% annual rate, a project invests KRW 1 billion now and KRW 1 billion in year 1, then earns KRW 300 million annually from year 2 onward.
+
+PV = −10 − 10/1.1 + 3/1.1² + 3/1.1³ + …
+     = −10 − 10/1.1 + (3/1.1²)[1/(1 − 1/1.1)]
+     ≈ 8.2 (KRW 100 million)
+F, W, M ∈ {0, 1}
+Project
+Profit PV
+Year 1
+Year 2
+Year 3
+Factory expansion
+450
+100
+100
+100
+New warehouse
+200
+150
+50
+50
+Advanced machinery
+350
+50
+200
+100
+Available funds
+
+250
+400
+200
+
+Slide 22
+CAPITAL BUDGETING
+Example 7-2: CVXPY Model and Solution
+
+Chapter 7  ·  Integer Programming
+19
+F, W, M ∈ {0, 1}
+
+Status: optimal  ·  Profit PV: 800.0
+Factory: 1  ·  Warehouse: 0  ·  Machinery: 1
+import cvxpy as cp
+
+# 1. Binary project decisions
+X1 = cp.Variable(boolean=True) # Factory
+X2 = cp.Variable(boolean=True) # Warehouse
+X3 = cp.Variable(boolean=True) # Machinery
+
+# 2. Maximize present value of profit
+objective = cp.Maximize(
+    450*X1 + 200*X2 + 350*X3)
+
+# 3. Annual funding constraints
+constraints = [
+    100*X1 + 150*X2 + 50*X3 &lt;= 250,
+    100*X1 + 50*X2 + 200*X3 &lt;= 400,
+    100*X1 + 50*X2 + 100*X3 &lt;= 200
+]
+
+# 4. Define and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+
+# 5. Results (profit in KRW 100 million)
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Profit PV:&quot;, problem.value)
+print(&quot;Factory:&quot;, round(float(X1.value)))
+print(&quot;Warehouse:&quot;, round(float(X2.value)))
+print(&quot;Machinery:&quot;, round(float(X3.value)))
+
+Slide 23
+
+
+Introduction to Integer programming (IP)
+Use when decision variables must be integers
+LP divisibility assumption does not hold
+Binary variables (0/1) 
+How to solve IP
+LP relaxation
+Branch-and-bound:
+Applications of IP
+Mixed-integer programming (MIP): Fixed costs
+Use a MIP-capable solver in CVXPY to solve integer and mixed-integer models
+Summary</pre></main></body></html>

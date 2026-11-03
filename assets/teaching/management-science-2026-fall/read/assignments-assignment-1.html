@@ -1,0 +1,269 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Assginment #1 — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a></nav><h1>Assginment #1</h1><p>KAU Management Science — Fall 2026. Extracted reference text; diagrams, equations, and table layout may be incomplete. Check the original document when needed.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf">Open original document</a></p><main><pre>COURSE REFERENCE: Assginment #1.pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+Management Science Assignment 1
+Total 9 problems
+
+
+
+
+Department: ______________________________
+
+Student ID: ______________________________
+
+Name: __________________________________
+
+
+
+
+                                        1
+
+Page 2
+Problem 1
+Company C produces Products 1 and 2. Each unit of Product 1 earns a profit of KRW 40,000,
+and each unit of Product 2 earns a profit of KRW 30,000. The company wants to maximize its
+total daily profit.
+
+Each unit of Product 1 requires 2 machine-hours and 1 labor-hour. Each unit of Product 2
+requires 1 machine-hour and 1 labor-hour. The company has 100 machine-hours and 80 labor-
+hours available per day. All units produced can be sold.
+
+Formulate a linear programming model to maximize total daily profit.
+
+
+
+
+                                             2
+
+Page 3
+Problem 2
+A workshop produces Products X and Y. Quantities x and y are continuous and nonnegative. Its
+weekly profit, in units of KRW 10,000, is described by the following model:
+
+                            Maximize     3x + 2y
+
+                            subject to
+
+                              x + y ≤ 70 (labor hours)
+
+                              2x + y ≤ 100 (machine hours)
+
+                              x, y ≥ 0
+
+Solve this model graphically. Show the feasible region and identify the unique optimal
+solution and the optimal objective value on your graph.
+
+
+
+
+                                              3
+
+Page 4
+Problem 3
+F Electronics produces standard amplifiers (s) and high-performance amplifiers (h). Each
+standard amplifier earns KRW 30,000 in profit, and each high-performance amplifier earns KRW
+50,000. Quantities are continuous and nonnegative. The daily profit-maximization model is:
+
+                     Maximize     3s + 5h (unit: KRW 10,000)
+
+                     subject to
+
+                             s + 2h ≤ 180 (assembly hours)
+
+                             s + h ≤ 140 (testing hours)
+
+                             h ≤ 45 (semiconductor chips)
+
+                             s, h ≥ 0
+
+Consider the production plan s = 100 and h = 40, with continuous quantities. (1) Calculate the
+unused amount of each resource (i.e. slack variables), (2) use it to classify each resource
+constraint as binding or nonbinding, and (3) discuss the managerial implications of the
+slack variables and binding or nonbinding constraints.
+
+
+
+
+                                              4
+
+Page 5
+Problem 4
+Write complete Python code using CVXPY to solve the following model from Problem 3.
+Here, s and h are the daily production quantities of standard and high-performance amplifiers.
+Print the optimization status, optimal objective value, and optimal values of s and h.
+
+                      Maximize z= 3s + 5h (unit: KRW 10,000)
+
+                      subject to
+
+                             s + 2h ≤ 180 (assembly hours)
+
+                             s + h ≤ 140 (testing hours)
+
+                             h ≤ 45 (semiconductor chips)
+
+                             s, h ≥ 0
+
+
+
+
+                                               5
+
+Page 6
+Problem 5
+Consider the following two models. In both models, x and y are continuous and nonnegative.
+
+                     Model A
+
+                            Maximize     2x + y
+
+                            subject to   x + y ≤ 5,
+
+                                         x ≥ 4,
+
+                                         y≥3
+
+                     Model B
+
+                            Maximize     2x + y
+
+                            subject to   x − y ≤ 4,
+
+                                         x ≥ 0,
+
+                                         y≥0
+
+A student claims, “Neither model has a finite optimal solution, so both models must be
+infeasible.” Evaluate this claim by giving the correct status of each model and explaining
+the mathematical distinction.
+
+
+
+
+                                                  6
+
+Page 7
+Problem 6
+Use the model from Problem 2 shown below. Suppose the coefficient of x changes from 3 to c,
+while the coefficient of y remains 2 and all constraints remain unchanged. The original optimal
+solution is (x, y) = (30, 40).
+
+
+
+                             Maximize      3x + 2y
+
+                             subject to
+
+                                x + y ≤ 70 (labor hours)
+
+                                2x + y ≤ 100 (machine hours)
+
+                                x, y ≥ 0
+
+
+
+Find the range of c for which this point remains optimal.
+
+
+
+
+                                                7
+
+Page 8
+Information for Problems 7 to 9
+Company Y produces cement blocks A, B, C, and D. Production quantities are continuous and
+measured in tons. Products pass through mixing, molding, testing, and drying; drying capacity is
+unlimited. Monthly capacities are 800 mixing hours, 700 molding hours, and 500 testing hours.
+Profit per ton is KRW 40,000, 80,000, 50,000, and 100,000, respectively. Company policy
+requires the quantity of A to be at least the quantity of B.
+
+The following model maximizes total monthly profit subject to the resource and policy
+constraints.
+
+                       Maximize     4A + 8B + 5C + 10D (unit: KRW 10,000)
+
+                       subject to
+
+                         2A + B + C + 3D ≤ 800 (mixing hours)
+
+                         A + 2B + C + 3D ≤ 700 (molding hours)
+
+                         A + B + C + 2D ≤ 500 (testing hours)
+
+                         A − B ≥ 0 (policy constraint)
+
+                         A, B, C, D ≥ 0
+
+The table below provides optimized and reoptimized results for Problems 7 to 9. Each row is a
+separate scenario; all other original model data remain unchanged.
+
+                                                                              Maximum
+     Scenario                                 A          B    C       D        profit
+                                                                            (KRW 10,000)
+
+     Original model                          200      200    100      0         2,900
+
+     Mixing capacity
+                                             200      200    100      0         2,900
+     increased to 801 hours
+
+     Molding capacity
+                                             201      201    98       0         2,902
+     increased to 701 hours
+
+     Testing capacity
+                                             199      199    103      0         2,903
+     increased to 501 hours
+
+     Production of D
+                                             199      199    100      1         2,898
+     fixed at 1 ton
+
+
+
+
+                                                  8
+
+Page 9
+Problem 7
+(1) Calculate the shadow price of three resources (mixing, molding, testing) in KRW per hour.
+(2) Explain what each shadow price means for Company Y. Compare the value of the resources
+based on the shadow price.
+
+
+
+
+                                              9
+
+Page 10
+Problem 8
+(1) Calculate Product D’s reduced cost in KRW per ton. (2) Explain why Company Y does not
+produce D in the original optimal plan and under which circumstance the company may
+produce D.
+
+
+
+
+                                            10
+
+Page 11
+Problem 9
+Company K offers Company Y up to 120 additional molding hours at KRW 30,000 per hour;
+fractional hours may be purchased. The original unit profits already deduct an in-house variable
+molding cost of KRW 20,000 per hour, which is avoided for each outsourced hour. Outsourcing
+adds usable molding capacity and changes no other original model data.
+
+Molding capacity is originally 700 hours. Its current shadow price remains valid when total
+molding capacity is between 500 and 750 hours, with all other data fixed.
+
+(1) Calculate the net additional cost and marginal net benefit when Company Y outsource
+one hour of molding to Company K. (2) Recommend the largest number of hours to
+outsource and calculate the resulting total profit gain.
+
+
+
+
+                                               11</pre></main></body></html>

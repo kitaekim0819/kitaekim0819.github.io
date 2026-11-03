@@ -1,0 +1,361 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 3 — Analysis of LP Models part 2 — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a></nav><h1>Chapter 3 — Analysis of LP Models part 2</h1><p>KAU Management Science — Fall 2026. Extracted reference text; diagrams, equations, and table layout may be incomplete. Check the original document when needed.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx">Open original document</a></p><main><pre>COURSE REFERENCE: Chapter 3 — Analysis of LP Models part 2.pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Slide 1
+
+
+CHAPTER 03
+Analysis of Linear Programming Models - Part 2
+Solving LP with Python and CVXPY
+
+TEXTBOOK
+Modern Management Science, 9th ed.
+CHAPTER
+Ch. 3
+WEEK
+Week 4
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+Content prepared by the instructor; slide layout and formatting assisted by Claude (Anthropic).
+
+Slide 2
+Last Week
+Solving a LP with a graph
+
+
+Constraints on a graph
+
+The objective function on a graph
+
+Finding the optimal solution
+
+Slack variables and binding constraints
+Chapter 3  ·  Analysis of Linear Programming Models
+
+Slide 3
+Last Week
+The simplex method
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+We let a computer solve a large problem instead
+
+The standard algorithm: the Simplex Method
+
+Mathematically, the optimum is always at a corner point of the feasible region
+
+Move from one corner to a better adjacent corner, iteratively, until no neighbouring corner is better
+https://www.youtube.com/shorts/ZT3b2awWE1I
+
+If there are 3 decision variables, can you solve the problem by hand?
+
+If there are hundreds of decision variables?
+
+Slide 4
+
+
+PART 2
+Analysis with Software
+From drawing the region to letting a solver find the corner
+
+Setting up the Colab environment
+
+Introduction to the CVXPY library
+
+Analyzing LP models with CVXPY (live demo): Examples 3-1 and 3-2
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+7 / 17
+
+Slide 5
+COLAB
+Setting up Google Colab
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+Colab (Colaboratory): a free, cloud-based Python environment provided by Google
+
+Notebooks are created and run directly from Google Drive
+
+Quick start (see Colab_Basics.pdf)
+
+1.  Open Google Drive
+
+2.  Install the Colab app (New → More → Connect more apps)
+
+3.  Create a Jupyter notebook (.ipynb) file
+
+All of today&#x27;s code runs in Colab: no local Python installation needed
+
+Slide 6
+CVXPY
+What is CVXPY?
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+An open-source, Python-embedded modeling language for convex optimization problems
+
+You write the problem the way the math reads, not in the restrictive standard form a solver requires
+
+Linear programs are a special case of convex problems, so CVXPY handles everything in this chapter
+
+Model in CVXPY, then hand the model to a solver of your choice
+Source: https://www.cvxpy.org/
+
+Slide 7
+CVXPY
+Many solvers, one interface
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+CVXPY supports a wide range of solvers
+cvxpy.org/tutorial/solvers
+
+Which problems a solver can handle, and how well, differ by solver
+
+Problem class: LP, QP, SOCP, MIP, …
+
+Performance: problem size, solution time, cost
+
+Widely used in industry (commercial)
+
+GUROBI, MOSEK, CPLEX
+
+Widely used in research (free)
+
+SCIPY, GLPK_MI (used in today&#x27;s demo)
+Problem classes supported by each solver (cvxpy.org)
+
+Slide 8
+CVXPY  ·  EXAMPLE 3-1
+CVXPY: Input (Example 3-1)
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+import cvxpy as cp
+ 
+# (1) Decision variables
+X1 = cp.Variable()
+X2 = cp.Variable()
+ 
+# (2) Objective function: maximize total profit
+z = cp.Maximize(20 * X1 + 50 * X2)
+ 
+# (3) Constraints
+constraints = [
+    1.2 * X1 + 4 * X2 &lt;= 240,   # assembly hours
+    0.5 * X1 + X2 &lt;= 81,        # inspection hours
+    X2 &lt;= 40,                   # chip supply
+    X1 &gt;= 0, X2 &gt;= 0            # non-negativity
+]
+ 
+# (4) Formulate the problem
+prob = cp.Problem(z, constraints)
+ 
+# (5) Solve it (verbose=True prints the solver log)
+prob.solve(solver=&#x27;GLPK_MI&#x27;, verbose=True)
+ 
+# (6) Print the results
+print(&quot;Optimal X1:&quot;, X1.value)
+print(&quot;Optimal X2:&quot;, X2.value)
+print(&quot;Max profit Z = 20X1 + 50X2:&quot;, prob.value)
+print(&quot;Status:&quot;, prob.status)
+EXAMPLE 3-1  ·  FULL CODE
+KEY CVXPY CALLS
+Decision variables
+cp.Variable()
+Objective
+cp.Maximize(expr)  or  cp.Minimize(expr)
+Constraints
+a Python list: [c1, c2, c3, …]
+Problem
+prob = cp.Problem(objective, constraints)
+Solve
+prob.solve()
+choose a solver
+prob.solve(solver=&#x27;NAME&#x27;)
+show the solver log
+prob.solve(verbose=True)
+Results
+X1.value,  prob.value,  prob.status
+
+Slide 9
+EXAMPLE 3-2
+Example 3-2: a minimization problem
+
+Chapter 3  ·  Analysis of Linear Programming Models
+PROBLEM
+The dietitian at the cafeteria of University A knows that, to stay healthy, each student must consume 66 g of protein and 9 mg of iron per day. These nutrients come from meat and vegetables: 1 kg of meat contains 300 g of protein and 30 mg of iron, and 1 kg of vegetables contains 20 g of protein and 10 mg of iron. The cafeteria buys meat at ₩6,000 per kg and vegetables at ₩1,000 per kg. The dietitian wants a purchasing plan that keeps students healthy at the lowest possible food cost.
+FORMULATION
+
+Decision variables
+
+Objective function
+
+Constraints
+
+Set up the model first: variables, objective, constraints
+
+Slide 10
+EXAMPLE 3-2
+Example 3-2: a minimization problem
+
+Chapter 3  ·  Analysis of Linear Programming Models
+PROBLEM
+The dietitian at the cafeteria of University A knows that, to stay healthy, each student must consume 66 g of protein and 9 mg of iron per day. These nutrients come from meat and vegetables: 1 kg of meat contains 300 g of protein and 30 mg of iron, and 1 kg of vegetables contains 20 g of protein and 10 mg of iron. The cafeteria buys meat at ₩6,000 per kg and vegetables at ₩1,000 per kg. The dietitian wants a purchasing plan that keeps students healthy at the lowest possible food cost.
+FORMULATION
+
+Decision variables
+
+X₁ = kg of meat bought per person per day
+
+X₂ = kg of vegetables bought per person per day
+
+Objective function
+
+Minimize  Z = 6000X₁ + 1000X₂       (₩)
+
+Constraints
+
+Protein:  300X₁ + 20X₂  ≥  66       (g)
+
+Iron:  30X₁ + 10X₂  ≥  9       (mg)
+
+Non-negativity:  X₁, X₂  ≥  0
+
+Slide 11
+EXAMPLE 3-2
+Example 3-2: from model to code
+
+Chapter 3  ·  Analysis of Linear Programming Models
+FORMULATION
+
+Decision variables
+
+X₁ = kg of meat per person per day
+
+X₂ = kg of vegetables per person per day
+
+Objective function
+
+Minimize  Z = 6000X₁ + 1000X₂
+
+Constraints
+
+300X₁ + 20X₂  ≥  66       (protein, g)
+
+30X₁ + 10X₂  ≥  9       (iron, mg)
+
+X₁, X₂  ≥  0
+
+import cvxpy as cp
+ 
+# 1. Decision variables
+x1 = cp.Variable()
+x2 = cp.Variable()
+ 
+# 2. Objective: minimize total food cost
+z = 6000 * x1 + 1000 * x2
+objective = cp.Minimize(z)
+ 
+# 3. Constraints: minimum nutrient requirements
+constraints = [
+    300 * x1 + 20 * x2 &gt;= 66,   # protein &gt;= 66 g
+    30 * x1 + 10 * x2 &gt;= 9,     # iron &gt;= 9 mg
+    x1 &gt;= 0,                    # non-negativity
+    x2 &gt;= 0
+]
+ 
+# 4. Formulate and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+ 
+# 5. Print the results
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Minimum food cost:&quot;, problem.value, &quot;won&quot;)
+print(&quot;Meat (X1):&quot;, x1.value, &quot;kg&quot;)
+print(&quot;Vegetables (X2):&quot;, x2.value, &quot;kg&quot;)
+INPUT
+
+Slide 12
+EXAMPLE 3-2
+Example 3-2: input and output
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+import cvxpy as cp
+ 
+# 1. Decision variables
+x1 = cp.Variable()
+x2 = cp.Variable()
+ 
+# 2. Objective: minimize total food cost
+z = 6000 * x1 + 1000 * x2
+objective = cp.Minimize(z)
+ 
+# 3. Constraints: minimum nutrient requirements
+constraints = [
+    300 * x1 + 20 * x2 &gt;= 66,   # protein &gt;= 66 g
+    30 * x1 + 10 * x2 &gt;= 9,     # iron &gt;= 9 mg
+    x1 &gt;= 0,                    # non-negativity
+    x2 &gt;= 0
+]
+ 
+# 4. Formulate and solve the problem
+problem = cp.Problem(objective, constraints)
+problem.solve()
+ 
+# 5. Print the results
+print(&quot;Status:&quot;, problem.status)
+print(&quot;Minimum food cost:&quot;, problem.value, &quot;won&quot;)
+print(&quot;Meat (X1):&quot;, x1.value, &quot;kg&quot;)
+print(&quot;Vegetables (X2):&quot;, x2.value, &quot;kg&quot;)
+INPUT
+
+Status: optimal
+Minimum food cost: 1499.999996424232 won
+Meat (X1): 0.19999999972075516 kg
+Vegetables (X2): 0.29999999809970107 kg
+OUTPUT
+
+Status is optimal: the solver found the true minimum
+
+Buy 0.2 kg of meat and 0.3 kg of vegetables per person per day
+
+The long decimals (0.1999…) are floating-point noise
+
+Minimum daily food cost: ₩1,500 per student
+
+Slide 13
+SUMMARY
+Summary
+
+Chapter 3  ·  Analysis of Linear Programming Models
+
+Analyzing optimization problems with software
+
+The basic algorithm: the simplex method
+
+A Python-based modeling package: CVXPY
+
+Many solvers exist, so choose one that suits your problem
+
+Solvers differ in the problem classes and sizes they can handle
+
+Solvers also search for the optimum differently, so their performance differs
+
+Model once in CVXPY; switch solvers with a single argument
+CVXPY IN SIX STEPS
+
+1  Decision variables
+x1 = cp.Variable()
+2  Objective
+z = cp.Maximize(...)  or  cp.Minimize(...)
+3  Constraints
+constraints = [c1, ..., cn]
+4  Problem
+prob = cp.Problem(z, constraints)
+5  Solve
+prob.solve()
+6  Results
+x1.value,  prob.value,  prob.status</pre></main></body></html>
