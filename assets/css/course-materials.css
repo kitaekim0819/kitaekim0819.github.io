@@ -28,3 +28,36 @@
 @media (max-width: 700px) {
   .course-materials-table table { font-size: 14px; }
 }
+
+#tutor-start-prompt {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 150px;
+  margin: 10px 0;
+  padding: 14px;
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+#copy-tutor-prompt {
+  padding: 10px 18px;
+  border: 1px solid #224b66;
+  border-radius: 4px;
+  background: #224b66;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+#copy-tutor-prompt:focus-visible { outline: 3px solid #cd8e2f; outline-offset: 3px; }
+#tutor-copy-status { margin-left: 10px; }
+.tutor-reference { border-bottom: 1px solid #ddd; padding: 12px 0; }
+.tutor-reference summary { cursor: pointer; font-weight: 600; }
+.tutor-reference pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f8f8f8;
+  padding: 16px;
+  line-height: 1.6;
+}
