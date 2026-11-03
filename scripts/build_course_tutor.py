@@ -49,3 +49,11 @@ for i,(f,text) in enumerate(zip(manifest['files'],texts),1):
 (ASSETS/'web-tutor-version.json').write_text(json.dumps({'version':version,'revision':revision,'reference_count':len(texts),'page_url':URL,'start_url':start_url},indent=2)+'\n')
 assert len(texts)==len(manifest['files'])
 print('Generated inline tutor:',version,'references:',len(texts))
+
+# Small visible entry point for installed tutors; independent of hidden page sections.
+reader=[f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Course reference index — KAU Management Science</title></head><body><h1>Management Science — Course reference index</h1><p>Materials version: {version}</p><p>Content revision: {revision}</p><p><a href="{URL}">Course page</a></p><p>Read the HTML text links below for course content. No PDF download is needed. Text extraction may omit diagrams and equation formatting. Week 7 is CVXPY practice; Week 8 was the midterm exam and private exam files are excluded.</p><ul>']
+for f in manifest['files']:
+    title=(f['group']+' — ' if f['group'] else '')+f['title'].replace('Assginment','Assignment')
+    reader.append(f'<li>{esc(title)} — <a href="{esc(f["web_text_url"])}?v={revision}">Read text</a></li>')
+reader.append('</ul></body></html>')
+(ASSETS/'read/index.html').write_text('\n'.join(reader)+'\n')

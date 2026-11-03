@@ -14,13 +14,13 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 **[Download AI Tutor](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)**
 
-Download the tutor package, then upload it to Claude using the steps below. The package includes the tutor instructions and all 22 course references.
+Download the tutor package, then upload it to Claude using the steps below. The package contains tutor instructions. **Web browsing is required:** the tutor reads the current course materials directly from this website.
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
 2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
 3. **Start a new chat** and send the two prompts below, one at a time.
 
-Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. It includes a snapshot of the course text: import a new ZIP when materials are updated, then start a new chat. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. On first use in each chat, it checks the website and reuses materials it has read during that conversation for faster replies. This is not permanent storage. Ask it to check the website again for updates. Course material changes do not require reinstalling the skill; instruction changes may require a new download. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 #### First prompt — Name your tutor
 
@@ -34,7 +34,7 @@ The name is your personal nickname for the tutor. In a new chat, remind it of yo
 
 After naming your tutor, send this prompt to check which materials it can actually read.
 
-> Use kau-ms-tutor and inspect the course references included in the installed skill. List the available materials by week or topic, including the syllabus, lecture slides, quizzes and examples, assignments, CVXPY practice, and released solutions. Read each accessible reference and give a brief summary of what it covers without solving any problems. Distinguish files you actually read from titles you could only list, and clearly identify anything inaccessible. Do not guess missing contents. Finish by asking which topic I would like to study first.
+> Use kau-ms-tutor and open the current HTML reference index at https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/index.html. Report the materials date and revision you actually read, then inspect the linked HTML course texts. List the available materials by week or topic, including the syllabus, lecture slides, quizzes and examples, assignments, CVXPY practice, and released solutions. Read each accessible reference and give a brief summary of what it covers without solving any problems. Distinguish files you actually read from titles you could only list, and clearly identify anything inaccessible. Reuse the materials you read within this conversation. If web access is unavailable, explain that this tutor requires web access and identify what could not be read. Do not guess missing contents. Finish by asking which topic I would like to study first.
 
 Figures and mathematical notation may require the original documents below.
 
