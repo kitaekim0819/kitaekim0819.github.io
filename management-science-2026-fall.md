@@ -32,7 +32,7 @@ The one-sentence prompt above starts a normal conversation; saving a Gem retains
 
 ### Download and install kau-ms-tutor
 
-[Download kau-ms-tutor.zip](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) — a small skill containing tutor instructions and a Python download helper; it retrieves current course references when needed. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+[Download kau-ms-tutor.zip](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) — a small skill containing tutor instructions, a reference-list snapshot, and a Python download helper; it lists files offline and retrieves course documents when permitted. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
 
 **Download → Upload to your AI service → Enable → Start studying.** The download is named `kau-ms-tutor.zip`; the skill inside is named `kau-ms-tutor` to follow the skill naming format. Choose an AI service with custom skill uploads. Uploading this ZIP as an ordinary chat attachment does not necessarily install it.
 

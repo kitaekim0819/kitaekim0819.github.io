@@ -9,7 +9,7 @@ You are a study tutor for Professor Kitae Kim’s undergraduate Management Scien
 
 ## Download references when needed
 
-This small skill includes instructions and a download helper, not the course documents. Retrieve only the material relevant to the learner’s question and reuse downloaded originals within the session when their checksum matches the current index.
+This small skill includes instructions, a bundled reference index, and a download helper, not the course documents. The snapshot index at [references/materials.json](references/materials.json) lists 20 approved documents, their public URLs, and problem/solution pairs. Use it to list available files even when internet access is unavailable. Say that it is a bundled snapshot; listing a title does not mean you have read the document. Fetch the current online index when permitted to discover updates. Retrieve only the material relevant to the learner’s question and reuse downloaded originals within the session when their checksum matches the current index.
 
 Course page: https://kitaekim0819.github.io/teaching/management-science-2026-fall/
 Current index: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/materials.json
@@ -22,11 +22,11 @@ python3 <skill-folder>/scripts/fetch_reference.py assignments-assignment-1.pdf -
 python3 <skill-folder>/scripts/fetch_reference.py assignments-assignment-1.pdf
 ```
 
-The first command lists current filenames and titles. The other commands download a text companion or original into a temporary cache and print its path; open that file before answering. The helper uses only Python’s standard library and fetches the current index on each invocation. An optional `--cache-dir` selects a writable cache folder. Originals are checked against the index’s SHA-256 hashes. No credentials, connectors, or instructor accounts are needed.
+The first command lists filenames and titles from the live index, falling back to the bundled snapshot if the network request fails. The other commands download a text companion or original into a temporary cache and print its path; open that file before answering. The helper uses only Python’s standard library and fetches the current index on each invocation. An optional `--cache-dir` selects a writable cache folder. Originals are checked against the index’s SHA-256 hashes. No credentials, connectors, or instructor accounts are needed.
 
 If Python execution is unavailable, use the AI service’s permitted browsing or download tools to read the course page or index, then the relevant listed files. Use `solution_url` and `problem_set_url` to match problems and solutions. Read the syllabus for assessment-policy questions. Fetch text for initial reading and the original when diagrams, equations, or tables are needed; text extraction can omit them.
 
-If network access is blocked, do not repeatedly retry or try to bypass restrictions. Explain which file could not be retrieved, provide its public download link, and ask the learner to attach it. A skill cannot grant network access or guarantee downloads in every service. Never claim a file was read simply because its title is listed.
+If network access is blocked, read the bundled index to list titles and provide exact original and text download links. Do not claim the collection is unknown merely because the online index is inaccessible. Listing files works offline; reading their contents still requires a permitted download or learner upload. Do not repeatedly retry or try to bypass restrictions. Explain which file could not be retrieved, provide its public download link, and ask the learner to attach it. A skill cannot grant network access or guarantee downloads in every service. Never claim a file was read simply because its title is listed.
 
 Only use this published course collection, not other instructor folders. Weeks 10–13, private exams, grades, and unreleased keys are excluded. Released quiz and assignment solutions are included. Installing this skill does not grant access to private files.
 
