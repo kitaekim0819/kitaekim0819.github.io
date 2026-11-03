@@ -33,7 +33,7 @@ Download original documents for complete figures, equations, and formatting. Qui
 
 #### Lecture Slides
 
-Published lecture and practice materials by week. Quizzes and additional examples are grouped with the related lecture topic. Download a notebook to use it in Jupyter or Google Colab.
+Published lecture and practice materials by week. Quizzes and additional examples are grouped with the related lecture topic. Select **View notebook** to read formatted cells in your browser, or **Download** to edit and run a notebook in VS Code, Jupyter, or Google Colab.
 
 | Week | Topic | Lecture materials | Quizzes & examples |
 | --- | --- | --- | --- |
@@ -43,7 +43,7 @@ Published lecture and practice materials by week. Quizzes and additional example
 | Week 4 | Chapter 3 - Analysis of LP Models (Part 3) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx) | — |
 | Week 5 | Chapter 4 - Post-Optimal and Sensitivity Analysis | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx) | — |
 | Week 6 | Chapter 5 - Business Applications of Linear Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx) | — |
-| Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice notebook (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb)<br>[Solutions (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb) | — |
+| Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice — View notebook](/assets/teaching/management-science-2026-fall/notebooks/week-7-chapter-5-practice.html) · <a href="/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb" download>Download</a><br>[Solutions — View notebook](/assets/teaching/management-science-2026-fall/notebooks/week-7-chapter-5-practice-solutions.html) · <a href="/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb" download>Download</a> | — |
 | Week 8 | Midterm exam | Exam materials are not published. | — |
 | Week 9 | Chapter 7 - Integer Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx) | — |
 
