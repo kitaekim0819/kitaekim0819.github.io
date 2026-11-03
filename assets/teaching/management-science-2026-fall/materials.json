@@ -243,6 +243,32 @@
       "resource_type": "solutions",
       "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf",
       "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/quizzes-chapter-3-quiz-2-solutions.html"
+    },
+    {
+      "section": "Practice Notebooks",
+      "title": "Chapter 5 CVXPY Practice",
+      "group": "Week 7",
+      "filename": "week-7-chapter-5-practice.ipynb",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.txt",
+      "bytes": 12800,
+      "sha256": "843d219f882315a4e0fe95afd8e10e77cf3a6fa55cfc49fbfbedf6ab3d2de7b2",
+      "resource_type": "problem_set",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-7-chapter-5-practice.html",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb"
+    },
+    {
+      "section": "Practice Notebooks",
+      "title": "Chapter 5 CVXPY Practice — Solutions",
+      "group": "Week 7",
+      "filename": "week-7-chapter-5-practice-solutions.ipynb",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.txt",
+      "bytes": 23435,
+      "sha256": "00c23b8d3ebf1ee4cb14e1ad12187754feb7594dee510ba4fef7996b1d3d183b",
+      "resource_type": "solutions",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-7-chapter-5-practice-solutions.html",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb"
     }
   ]
 }

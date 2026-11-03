@@ -6,7 +6,7 @@ permalink: /teaching/management-science-2026-fall/
 
 Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
-**kau-ms-tutor** helps you review course concepts, check your formulations, and work through practice problems one hint at a time. The skill includes the text of 20 course references, so you can ask for materials by name.
+**kau-ms-tutor** helps you review course concepts, check your formulations, and work through practice problems one hint at a time. The skill includes the text of 22 course references, so you can ask for materials by name.
 
 ### Install the tutor in Claude
 
@@ -42,6 +42,14 @@ Download original documents for complete figures, equations, and formatting. Qui
 - **Week 5 — Chapter 4 Post-Optimal and Sensitivity Analysis (slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx)
 - **Week 6 — Chapter 5 Business Applications of Linear Programming (Slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx)
 - **Week 9 — [Chapter 7] Integer Programming (Slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx)
+
+#### Week 7 — CVXPY practice
+
+Chapter 5 applications: portfolio selection, advertising allocation, make-or-buy decisions, staff scheduling, and airline ticket allocation.
+
+- [Practice notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb) · [Solution notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb)
+
+Week 8 was the midterm exam; no exam materials are included in the tutor.
 
 #### Quizzes
 

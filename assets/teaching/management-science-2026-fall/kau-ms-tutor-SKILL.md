@@ -9,7 +9,7 @@ You are a study tutor for Professor Kitae Kim’s undergraduate Management Scien
 
 ## Read the included course text
 
-All 20 approved course references are included as local text files in this skill. Use the relative links below to read them directly with the host’s file-reading tools. Resolve paths from the installed skill folder. No website access, download script, or user-provided URL is needed for these files. Do not ask learners to paste a URL when the needed text is already included.
+All 22 approved course references are included as local text files in this skill. Use the relative links below to read them directly with the host’s file-reading tools. Resolve paths from the installed skill folder. No website access, download script, or user-provided URL is needed for these files. Do not ask learners to paste a URL when the needed text is already included.
 
 Recognize ordinary requests such as “Quiz 2,” “Chapter 3 quiz,” and “Assignment 1.” Use the filenames and titles below to select the problem set, not its solution, when a learner requests questions. Read the matching solution when checking an attempt or explaining released practice solutions. If a request is ambiguous, ask which problem or chapter, rather than asking for a URL.
 
@@ -41,6 +41,13 @@ This is a snapshot of the approved Fall 2026 course collection. Updating the web
 - [Chapter 2 — Quiz #1 with Solutions](references/quizzes-chapter-2-quiz-1-solutions.txt)
 - [Chapter 3 — Additional examples for Chapter 3 with Solutions](references/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.txt)
 - [Chapter 3 — Quiz #2 with Solutions](references/quizzes-chapter-3-quiz-2-solutions.txt)
+
+- [Week 7 — Chapter 5 CVXPY Practice](references/week-7-chapter-5-practice.txt)
+- [Week 7 — Chapter 5 CVXPY Practice — Solutions](references/week-7-chapter-5-practice-solutions.txt)
+
+## Course week context
+
+Week 7 was hands-on Chapter 5 practice using CVXPY. Its exercise and solution notebooks are included as extracted text. Saved notebook outputs are historical results, not evidence that you executed code. Week 8 was the midterm exam, not a missing lecture; private exam materials are not included.
 
 ## Course sources and privacy
 

@@ -1,0 +1,201 @@
+COURSE REFERENCE: Chapter 5 Excercise.ipynb
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb
+
+Notebook text including markdown, code, and saved text output. Code has not been executed during extraction. Images are not included.
+
+Cell 1 (markdown)
+# Chapter 5: Five LP Applications with CVXPY
+Run each example independently. If needed, install CVXPY with `%pip install cvxpy`.
+CVXPY selects the solver automatically. The slides use the saved outputs in this notebook.
+Multiple optimal solutions may produce different allocations on other solver versions.
+Displayed values are rounded. Rounding does not enforce integer constraints.
+
+
+Cell 2 (markdown)
+## 1. Portfolio Selection
+
+An investor wants to allocate the entire investment budget across four assets to maximize expected annual return. Use the following return estimates and risk indices.
+
+| Asset | Variable | Expected annual return | Risk index |
+|---|---|---:|---:|
+| Equity fund (stocks) | S | 10% | 80 |
+| Bonds | B | 3% | 20 |
+| Income fund | I | 4% | 30 |
+| Money market fund | M | 1% | 0 |
+
+**Investment policies**
+
+- Invest the entire budget. Each variable represents a fraction of the total budget, so the fractions must sum to 1.
+- The portfolio's weighted average risk index must not exceed 40.
+- Invest no more than 75% in the equity fund.
+- The fraction invested in the income fund must be at least as large as the fraction invested in bonds.
+- Invest between 10% and 30% in the money market fund.
+- All investment fractions must be nonnegative.
+
+**Your task**
+
+1. Formulate an LP that maximizes expected annual return.
+2. Solve the model using CVXPY.
+3. Report each investment share as a percentage and the portfolio's expected annual return. Check the investment policies using the unrounded solution.
+
+The objective is an annual return expressed as a fraction. The code converts it and the investment shares to percentages for display.
+
+
+Cell 3 (code)
+# write your code here
+
+Cell 4 (markdown)
+## 2. Advertising Allocation
+
+A company is planning an advertising campaign using TV, radio, and newspapers. It wants to maximize total exposure. Additional placements in the same medium have smaller exposure and customer acquisition effects than the first block of placements.
+
+| Medium and placement block | Variable | Exposure per placement | New customers per placement | Cost per placement (KRW 10,000) |
+|---|---|---:|---:|---:|
+| TV: first 10 placements | T1 | 90 | 4,000 | 1,000 |
+| TV: additional placements | T2 | 55 | 1,500 | 1,000 |
+| Radio: first 15 placements | R1 | 25 | 2,000 | 300 |
+| Radio: additional placements | R2 | 20 | 1,200 | 300 |
+| Newspaper: first 20 placements | N1 | 10 | 1,000 | 100 |
+| Newspaper: additional placements | N2 | 5 | 800 | 100 |
+
+**Campaign requirements**
+
+- Spend no more than KRW 300 million, equivalent to 30,000 in units of KRW 10,000.
+- Attract at least 100,000 new customers, using the additive customer estimates in the table.
+- Use between 14 and 20 TV placements.
+- Use no more than 33 radio placements. The total number of radio placements must be at least twice the total number of TV placements.
+- Use at least 30 newspaper placements.
+- Limit the first blocks to 10 TV, 15 radio, and 20 newspaper placements. All variables must be nonnegative.
+
+**Your task**
+
+1. Define the six placement variables and formulate an LP that maximizes total exposure.
+2. Solve the model using CVXPY and report placements in each block and the total for each medium.
+3. Calculate total spending and expected new customers from the unrounded solution, and check the campaign requirements.
+
+Use continuous variables for this LP exercise. Rounded placement counts are for display and may not satisfy all constraints. The objective is measured in exposure units.
+
+
+Cell 5 (code)
+# write your code here
+
+Cell 6 (markdown)
+## 3. Make-or-Buy Decisions
+
+A manufacturer must meet demand for three products. It can produce each product internally or purchase finished units from an outside supplier. Internal production uses limited manufacturing, assembly, and quality-control capacity. Purchased finished units do not use these internal capacities in this model.
+
+| Product | Demand (units) | Internal production cost (KRW/unit) | Purchase cost (KRW/unit) |
+|---|---:|---:|---:|
+| A | 60,000 | 4,500 | 6,000 |
+| B | 40,000 | 5,000 | 7,000 |
+| C | 35,000 | 2,500 | 5,000 |
+
+| Internal process | Product A (min/unit) | Product B (min/unit) | Product C (min/unit) | Available capacity (minutes) |
+|---|---:|---:|---:|---:|
+| Manufacturing | 2 | 3 | 4 | 216,000 |
+| Assembly | 1.5 | 2 | 3 | 150,000 |
+| Quality control | 2 | 1.5 | 4 | 180,000 |
+
+**Decision rules**
+
+- For each product, internal production plus purchases must be at least its demand.
+- Internal production must stay within all three process capacities.
+- There is no separate limit on outside purchases.
+- All quantities must be nonnegative. Treat them as continuous variables for this LP exercise.
+
+**Your task**
+
+1. Let A, B, and C denote quantities made, and BA, BB, and BC denote quantities bought. Formulate an LP that minimizes total production and purchasing cost.
+2. Solve the model using CVXPY and report how much of each product to make and buy.
+3. Calculate capacity usage for each process using the unrounded solution. Identify any binding capacity constraints.
+
+The objective uses KRW. The code displays total cost in KRW million and rounds quantities to integers. Use unrounded values when checking costs and capacity usage.
+
+
+Cell 7 (code)
+# write your code here
+
+Cell 8 (markdown)
+## 4. Hourly Staff Scheduling
+
+A service operation needs staff from 9 a.m. to 7 p.m. It can hire two types of employees and choose their starting times. Determine a staffing plan that meets hourly demand at minimum daily cost.
+
+| Hour | Minimum staff required |
+|---|---:|
+| 9–10 a.m. | 5 |
+| 10–11 a.m. | 4 |
+| 11 a.m.–noon | 9 |
+| Noon–1 p.m. | 10 |
+| 1–2 p.m. | 9 |
+| 2–3 p.m. | 6 |
+| 3–4 p.m. | 4 |
+| 4–5 p.m. | 7 |
+| 5–6 p.m. | 4 |
+| 6–7 p.m. | 4 |
+
+| Employee type | Shift pattern | Cost per employee |
+|---|---|---:|
+| X-type | Work 4 consecutive hours, take a 1-hour break, then work 3 more hours | KRW 128,000 |
+| Y-type | Work 4 consecutive hours with no break | KRW 40,000 |
+
+**Scheduling rules**
+
+- Employees may start on the hour at 9, 10, or 11 a.m., noon, or 1, 2, 3, 4, 5, or 6 p.m.
+- Meet the total staffing requirement in every hour.
+- At least one X-type employee must be working in every hour. An X-type employee on break does not count toward coverage.
+- Charge the full shift cost for each employee. The model checks coverage only during the listed hours, including when a late-starting shift extends beyond 7 p.m.
+- All staffing variables must be nonnegative. Use continuous variables for this LP exercise.
+
+Let Xh and Yh denote the numbers of X-type and Y-type employees starting at hour h. In the code, labels 1–6 mean afternoon hours and 12 means noon. For example, X9 works from 9 a.m. to 1 p.m., takes a break from 1 to 2 p.m., and returns from 2 to 5 p.m. Y9 works from 9 a.m. to 1 p.m.
+
+**Your task**
+
+1. Define the 20 starting-time variables and formulate the cost-minimizing LP. Write separate constraints for total hourly coverage and X-type hourly coverage.
+2. Solve the model using CVXPY and report staffing by starting time and employee type, together with the minimum daily cost.
+3. Check hourly coverage using the unrounded solution. Explain why rounding continuous staff counts alone does not guarantee a feasible integer schedule.
+
+The model measures costs in KRW 10,000, so the two cost coefficients are 12.8 and 4. The printed total cost is converted to KRW.
+
+
+Cell 9 (code)
+# write your code here
+
+Cell 10 (markdown)
+## 5. Airline Ticket Allocation
+
+An airline operates four flight legs through Cheongju: Beijing–Cheongju, Shanghai–Cheongju, Cheongju–Jeju, and Cheongju–Tokyo. Each flight leg has 132 seats. The airline sells full-fare and discount tickets for eight origin–destination routes and wants to maximize total ticket revenue.
+
+Passengers traveling from Beijing or Shanghai to Jeju or Tokyo connect at Cheongju. Each connecting passenger uses one seat on each of the two flight legs. The fare below is for the entire origin–destination trip.
+
+| Route | Full fare (KRW 10,000) | Discount fare (KRW 10,000) | Full-fare demand | Discount demand | Variables (full / discount) |
+|---|---:|---:|---:|---:|---|
+| Beijing–Cheongju | 20 | 13 | 16 | 33 | BCF / BCD |
+| Beijing–Jeju | 30 | 19 | 6 | 44 | BJF / BJD |
+| Beijing–Tokyo | 31 | 21 | 11 | 45 | BTF / BTD |
+| Shanghai–Cheongju | 21 | 14 | 15 | 26 | SCF / SCD |
+| Shanghai–Tokyo | 31 | 23 | 9 | 39 | STF / STD |
+| Shanghai–Jeju | 29 | 19 | 7 | 56 | SJF / SJD |
+| Cheongju–Jeju | 9 | 7 | 8 | 64 | CJF / CJD |
+| Cheongju–Tokyo | 25 | 18 | 10 | 46 | CTF / CTD |
+
+**Sales and capacity rules**
+
+- Ticket sales for each route and fare class cannot exceed the corresponding demand. Demand is an upper bound, not a sales requirement.
+- Total passengers using any flight leg cannot exceed 132.
+- Beijing–Cheongju carries all passengers whose journeys start in Beijing, including connecting passengers.
+- Shanghai–Cheongju carries all passengers whose journeys start in Shanghai, including connecting passengers.
+- Cheongju–Jeju carries all passengers whose journeys end in Jeju, including passengers connecting from Beijing or Shanghai.
+- Cheongju–Tokyo carries all passengers whose journeys end in Tokyo, including passengers connecting from Beijing or Shanghai.
+- All ticket quantities must be nonnegative. Use continuous variables for this LP exercise.
+
+**Your task**
+
+1. Define the 16 ticket-sales variables and formulate an LP that maximizes revenue, with demand bounds and four shared-capacity constraints.
+2. Solve the model using CVXPY and report ticket sales by route and fare class, along with total revenue.
+3. Calculate the number of seats used on each flight leg and identify any unmet ticket demand.
+
+F denotes full fare and D denotes discount fare. The objective and printed revenue use units of KRW 10,000. Use unrounded values when checking revenue and seat usage.
+
+
+Cell 11 (code)
+# write your code here
