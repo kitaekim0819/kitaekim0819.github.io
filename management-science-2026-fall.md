@@ -41,15 +41,9 @@ Download original documents for complete figures, equations, and formatting. Qui
 - **Week 4 — Chapter 3 — Analysis of LP Models part 3 (slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx)
 - **Week 5 — Chapter 4 Post-Optimal and Sensitivity Analysis (slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx)
 - **Week 6 — Chapter 5 Business Applications of Linear Programming (Slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx)
+- **Week 7 — Chapter 5 CVXPY practice** · [Practice notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb) · [Solution notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb)
+- **Week 8 — Midterm exam** · No exam materials are included in the tutor.
 - **Week 9 — [Chapter 7] Integer Programming (Slides)** · [PPTX](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx)
-
-#### Week 7 — CVXPY practice
-
-Chapter 5 applications: portfolio selection, advertising allocation, make-or-buy decisions, staff scheduling, and airline ticket allocation.
-
-- [Practice notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb) · [Solution notebook](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb)
-
-Week 8 was the midterm exam; no exam materials are included in the tutor.
 
 #### Quizzes
 
