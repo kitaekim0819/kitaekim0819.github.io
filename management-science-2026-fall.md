@@ -14,7 +14,7 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 {% include course-tutor/start.html %}
 
-Try the tutor in **one conversation**: click **Copy tutor prompt**, paste it into a new AI chat with browsing available, and ask a study question. This does not create an installed skill. Start a new chat with a fresh prompt if you want to try it again.
+Try the tutor in **one conversation**: click **Copy tutor prompt**, paste it into a new AI chat with browsing available, and ask a study question. The copied prompt includes direct HTML text links so the tutor can read course content without opening PDFs. This does not create an installed skill. Start a new chat with a fresh prompt if you want to try it again.
 
 To check that it is working, ask: **“Tell me the materials version you read, then summarize Quiz 2’s Problem 1 without solving it.”** The tutor should read the page and identify what it actually accessed. If you like the tutor, install it below for repeated use.
 
