@@ -10,11 +10,13 @@ Download course materials or use them with Claude, Gemini, or ChatGPT. **No logi
 
 [Download the complete student bundle (ZIP)](/assets/teaching/management-science-2026-fall/student-tutor.zip) · [Student setup guide](/assets/teaching/management-science-2026-fall/START_HERE.txt) · [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt)
 
-### Use the AI tutor
+### Start the tutor with one prompt
 
-Open your preferred AI service. Paste the [tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt) into a new chat and ask a question. If the assistant can browse, give it this course page. If it cannot retrieve a document, download and attach that file yourself.
+Open a new chat in Claude, Gemini, or ChatGPT, then **copy and paste the entire prompt below**. This sets up the tutor for that conversation; repeat it when starting a new chat. Link access depends on the AI service and its available tools. If it cannot open the links, the prompt will guide you to attach the files instead.
 
-> Please act as my Management Science tutor using the instructions and materials at https://kitaekim0819.github.io/teaching/management-science-2026-fall/. Help me understand [topic]. Here is my attempt: [your work]. If you cannot access the materials, tell me which file to attach.
+> Act as my Management Science tutor for Professor Kitae Kim’s Fall 2026 course at Korea Aerospace University. First open and read https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt and follow those tutoring instructions throughout this chat. Use https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/materials.json to find the syllabus and relevant course materials; retrieve documents as needed and cite the file and page or slide. Help me learn through explanations, one hint at a time, and feedback on my attempts. Follow the syllabus’s AI-use rules and do not assist during live exams or quizzes. If you cannot open either link, tell me clearly and ask me to attach TUTOR_INSTRUCTIONS.md from the student bundle and the relevant course file; do not pretend you have read them. Once you have read the tutor instructions, briefly confirm you are ready and ask which topic I want to study and whether I prefer English or Korean.
+
+[Open the prompt as plain text](/assets/teaching/management-science-2026-fall/START_TUTOR.txt)
 
 The tutor helps you work through a problem with hints, checks your formulation, and explains relevant concepts. Follow the syllabus’s AI-use policy. Do not use the tutor during exams or quizzes, and disclose AI assistance when required.
 
