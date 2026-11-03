@@ -22,7 +22,7 @@ The tutor helps you work through a problem with hints, checks your formulation, 
 
 ### Course downloads
 
-The files below include public course policies and worked lecture examples. Weeks 10–13, private exams, individual grades, and separate answer keys are excluded from this collection.
+The files below include public course policies and worked lecture examples. Problem sets and released solutions are available separately below. Weeks 10–13, private exams, individual grades, and unreleased answer keys are excluded from this collection.
 
 Plain-text versions are provided for accessibility and AI retrieval. They may omit diagrams, image-based equations, or table formatting. Use the original document for complete figures and mathematical notation.
 
@@ -44,14 +44,14 @@ Plain-text versions are provided for accessibility and AI retrieval. They may om
 
 #### Quizzes
 
-- **Chapter 2 — Additional examples for Chapter 2** · [PDF](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf) · [Text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.txt)
-- **Chapter 2 — Quiz #1** · [PDF](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf) · [Text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.txt)
-- **Chapter 3 — Additional examples for Chapter 3** · [DOCX](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx) · [Text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.txt)
-- **Chapter 3 — Quiz #2** · [PDF](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf) · [Text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.txt)
+- **Chapter 2 — Additional examples for Chapter 2** · [Problem set (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf) · [Problem text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.txt) · [Solutions (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf) · [Solution text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.txt)
+- **Chapter 2 — Quiz #1** · [Problem set (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf) · [Problem text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.txt) · [Solutions (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf) · [Solution text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.txt)
+- **Chapter 3 — Additional examples for Chapter 3** · [Problem set (DOCX)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx) · [Problem text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.txt) · [Solutions (DOCX)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx) · [Solution text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.txt)
+- **Chapter 3 — Quiz #2** · [Problem set (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf) · [Problem text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.txt) · [Solutions (DOCX)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.docx) · [Solution text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.txt)
 
 #### Assignments
 
-- **Assginment #1** · [PDF](/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf) · [Text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.txt)
+- **Assignment #1** · [Problem set (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf) · [Problem text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.txt) · [Solutions (PDF)](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1-solutions.pdf) · [Solution text](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1-solutions.txt)
 
 ### For AI assistants
 

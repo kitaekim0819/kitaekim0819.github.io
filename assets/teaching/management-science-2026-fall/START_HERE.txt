@@ -25,7 +25,7 @@ The instructor can share the public course-page URL through the LMS. The page an
 
 ## Included materials
 
-The four folders contain the syllabus, lecture slides, quiz/practice questions, and assignment questions. Weeks 10–13 are excluded. Lecture slides include worked teaching examples. Separate solution documents, exams, grade records, recordings, backups, and student submissions are not included. Public syllabus grading policies and exam dates remain included.
+The four folders contain the syllabus, lecture slides, quiz/practice and assignment problem sets, and their released solutions. Weeks 10–13 are excluded. Lecture slides include worked teaching examples. Private exams, unreleased answer keys, grade records, recordings, backups, and student submissions are not included. Public syllabus grading policies and exam dates remain included.
 
 This is a snapshot, not an automatic sync. Download a new version when the instructor announces an update. Use CONTENTS.md to check which files are included.
 

@@ -112,7 +112,9 @@
       "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf",
       "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.txt",
       "bytes": 34972,
-      "sha256": "4ed57ca291423c496f5ae139f89a77231faa431c253ce2a310563224ae9d0ef0"
+      "sha256": "4ed57ca291423c496f5ae139f89a77231faa431c253ce2a310563224ae9d0ef0",
+      "resource_type": "problem_set",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf"
     },
     {
       "section": "Quizzes",
@@ -122,7 +124,9 @@
       "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf",
       "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.txt",
       "bytes": 44663,
-      "sha256": "2ec83a40b795ccfcdf884a88900ed09462faad2f22130c4a7a784af4de17dbcf"
+      "sha256": "2ec83a40b795ccfcdf884a88900ed09462faad2f22130c4a7a784af4de17dbcf",
+      "resource_type": "problem_set",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf"
     },
     {
       "section": "Quizzes",
@@ -132,7 +136,9 @@
       "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx",
       "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.txt",
       "bytes": 26304,
-      "sha256": "65897de86453beaa2288a2e24b5298637fc3277d81a4c9ce56769d1ad6b3fe14"
+      "sha256": "65897de86453beaa2288a2e24b5298637fc3277d81a4c9ce56769d1ad6b3fe14",
+      "resource_type": "problem_set",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx"
     },
     {
       "section": "Quizzes",
@@ -142,7 +148,9 @@
       "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf",
       "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.txt",
       "bytes": 5992719,
-      "sha256": "6043de2ca5fd0bb8d972f3dcfe68fd46ddb83aa07db1013246f412bc02dd525e"
+      "sha256": "6043de2ca5fd0bb8d972f3dcfe68fd46ddb83aa07db1013246f412bc02dd525e",
+      "resource_type": "problem_set",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.docx"
     },
     {
       "section": "Assignments",
@@ -152,7 +160,69 @@
       "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf",
       "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.txt",
       "bytes": 52344,
-      "sha256": "eea78217ce92074824e185238d5fde9a564af972055fe6f45f04d571ebba1967"
+      "sha256": "eea78217ce92074824e185238d5fde9a564af972055fe6f45f04d571ebba1967",
+      "resource_type": "problem_set",
+      "solution_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1-solutions.pdf"
+    },
+    {
+      "section": "Assignments",
+      "title": "Assginment #1 - Solutions",
+      "group": "",
+      "filename": "assignments-assignment-1-solutions.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1-solutions.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1-solutions.txt",
+      "bytes": 195308,
+      "sha256": "c5936c5faf703d49f6859444bfa221d4ed5d2d380639cd21248096dd918a4beb",
+      "resource_type": "solutions",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Additional examples for Chapter 2 with Solutions",
+      "group": "Chapter 2",
+      "filename": "quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.txt",
+      "bytes": 88512,
+      "sha256": "0b9c6ce8c3b5a7e6eecb385b7a8eddea5d7eaac6c767e28f5a594d6ea1eaa0cd",
+      "resource_type": "solutions",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Quiz #1 with Solutions",
+      "group": "Chapter 2",
+      "filename": "quizzes-chapter-2-quiz-1-solutions.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.txt",
+      "bytes": 2459304,
+      "sha256": "2c2755878f9d75348a35780c2a633906a98c7e6310de4612a75df5213a9ff7a5",
+      "resource_type": "solutions",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Additional examples for Chapter 3 with Solutions",
+      "group": "Chapter 3",
+      "filename": "quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.txt",
+      "bytes": 207556,
+      "sha256": "5bb9dcccd06b3478b67b16dc80a006bb6a8e9a7e751b716827b2d914a3011e88",
+      "resource_type": "solutions",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Quiz #2 with Solutions",
+      "group": "Chapter 3",
+      "filename": "quizzes-chapter-3-quiz-2-solutions.docx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.docx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.txt",
+      "bytes": 439092,
+      "sha256": "1252774ee29f4417506a50854c66738eff2427bc438e87c3610cb8b32baf3b84",
+      "resource_type": "solutions",
+      "problem_set_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf"
     }
   ]
 }
