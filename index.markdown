@@ -30,6 +30,14 @@ My work has been presented at WISE, WITS, ICIS, AMCIS, and INFORMS. I have colla
 
 ---
 
+### News
+
+**November 2026 | Silver Award for AI-Assisted Teaching**
+
+I received a Silver Award in Korea Aerospace University’s 2026 AI Teaching Practice Competition for developing interactive learning tools with generative AI. Using Google AI Studio, I built two web-based simulators for my Management Science course, covering optimization, decision analysis, and game theory. Students could change model parameters and observe the results before studying the underlying mathematics. Some students also used the shared prompts to build their own simulators.
+
+---
+
 ### Contact Information
 
 **Email:** kitaekim@kau.ac.kr \| kitaekim0819@gmail.com  
