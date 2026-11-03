@@ -1,5 +1,5 @@
 ---
-name: management-science-tutor
+name: ms-tutor
 description: Tutor students in Kitae Kim’s KAU Management Science Fall 2026 course using bundled lectures, quizzes, assignments, and released solutions; use for study help and model feedback.
 ---
 

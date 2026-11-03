@@ -8,6 +8,8 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 Download course materials or use them with Claude, Gemini, or ChatGPT. **No login is required for these downloads.**
 
+**[Download ms_tutor.zip — AI tutor skill](/assets/teaching/management-science-2026-fall/ms_tutor.zip)** · [Installation steps](#download-and-install-ms_tutor)
+
 [Download the complete student bundle (ZIP)](/assets/teaching/management-science-2026-fall/student-tutor.zip) · [Student setup guide](/assets/teaching/management-science-2026-fall/START_HERE.txt) · [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt)
 
 ### Start the tutor with one prompt
@@ -28,17 +30,23 @@ For a reusable tutor, open [Gemini](https://gemini.google.com/) on the web, choo
 
 The one-sentence prompt above starts a normal conversation; saving a Gem retains its instructions for future Gem chats. A website link alone does not upload all course files into the Gem. See [Google’s Gem setup guide](https://support.google.com/gemini/answer/15235603?hl=en).
 
-### Install the Claude tutor skill
+### Download and install ms_tutor
 
-[Download the tutor skill ZIP](/assets/teaching/management-science-2026-fall/management-science-tutor.zip) — includes the tutor instructions, all 20 approved course documents, and text companions. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+[Download ms_tutor.zip](/assets/teaching/management-science-2026-fall/ms_tutor.zip) — includes the tutor instructions, all 20 approved course documents, and text companions. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+
+**Download → Upload to your AI service → Enable → Start studying.** The download is named `ms_tutor.zip`; the skill inside is named `ms-tutor` to follow the skill naming format. Choose an AI service with custom skill uploads. Uploading this ZIP as an ordinary chat attachment does not necessarily install it.
+
+**Claude installation**
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (called **Create and edit files** in the updated layout).
 2. Open **Customize → Skills → + → Create skill → Upload a skill**, upload the ZIP, and enable it. During Claude’s interface rollout, **Customize** may appear as **Plugins**; look for the skill upload option there.
-3. Start a chat and say: **“Use management-science-tutor to help me study linear programming, one hint at a time.”** If your interface offers a skill picker under **+** or **/**, select the tutor there.
+3. Start a chat and say: **“Use ms-tutor to help me study linear programming, one hint at a time.”** If your interface offers a skill picker under **+** or **/**, select the tutor there.
+
+For another AI service, use its custom-skill import feature and follow its supported file-format requirements; some services require an extracted folder. If skill import is unavailable, paste the [full tutor instructions](#full-tutor-instructions) and attach relevant course files instead. This package has not been installation-tested across AI services.
 
 Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This package uses bundled files, so setup does not depend on Claude fetching the website. It is a snapshot: upload an updated package when course materials change. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
 
-[Claude skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [Interface changes](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page) · [Inspect SKILL.md](/assets/teaching/management-science-2026-fall/management-science-tutor-SKILL.md)
+[Claude skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [Interface changes](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page) · [Inspect SKILL.md](/assets/teaching/management-science-2026-fall/ms_tutor-SKILL.md)
 
 ### Save the tutor in Claude
 
