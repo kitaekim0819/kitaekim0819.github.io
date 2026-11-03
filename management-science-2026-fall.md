@@ -28,6 +28,18 @@ For a reusable tutor, open [Gemini](https://gemini.google.com/) on the web, choo
 
 The one-sentence prompt above starts a normal conversation; saving a Gem retains its instructions for future Gem chats. A website link alone does not upload all course files into the Gem. See [Google’s Gem setup guide](https://support.google.com/gemini/answer/15235603?hl=en).
 
+### Install the Claude tutor skill
+
+[Download the tutor skill ZIP](/assets/teaching/management-science-2026-fall/management-science-tutor.zip) — includes the tutor instructions, all 20 approved course documents, and text companions. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+
+1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (called **Create and edit files** in the updated layout).
+2. Open **Customize → Skills → + → Create skill → Upload a skill**, upload the ZIP, and enable it. During Claude’s interface rollout, **Customize** may appear as **Plugins**; look for the skill upload option there.
+3. Start a chat and say: **“Use management-science-tutor to help me study linear programming, one hint at a time.”** If your interface offers a skill picker under **+** or **/**, select the tutor there.
+
+Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This package uses bundled files, so setup does not depend on Claude fetching the website. It is a snapshot: upload an updated package when course materials change. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
+
+[Claude skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [Interface changes](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page) · [Inspect SKILL.md](/assets/teaching/management-science-2026-fall/management-science-tutor-SKILL.md)
+
 ### Save the tutor in Claude
 
 Open [Claude Projects](https://claude.ai/projects), click **+ New Project**, and name it **Management Science Tutor**. Choose **Set project instructions**, paste the full contents of [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt), and click **Save instructions**. Add the course documents you need to **project knowledge** using the **+** button, then start your study chats inside that project. Download and extract the student ZIP before uploading individual files; if a format is unsupported, use its text companion and provide original figures separately when needed.
