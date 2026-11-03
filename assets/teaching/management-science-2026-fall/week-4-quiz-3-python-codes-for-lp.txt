@@ -1,0 +1,124 @@
+COURSE REFERENCE: Quiz 3 — Python Codes for LP Worksheet
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-quiz-3-python-codes-for-lp.pdf
+
+Extracted text. Figures and equation layout may require the original document.
+
+Page 1
+Q1. Fill in the blanks for the given linear optimization model.
+
+ Maximize     Z = 20X1 + 50X2
+ Subject to   1.2X1 + 4X2 <= 240
+              0.5X1 + X2 <=81
+              X2<=40
+              X1, X2>=0
+
+ # import the cvxpy package
+ Import _____________
+
+ # decision variables
+ X1 = _____________
+
+ X2 = _____________
+
+ # objective functions
+ objective = _________________
+
+ # constraints
+ constraints = [
+     _________________________,          # assembly
+     _________________________,          # inspection
+     _________________________,          # chips
+     _________________________,          # non-negativity
+     _________________________           # non-negativity
+ ]
+
+ # Formulate the problem
+ prob = _________________________
+
+ # Solve the problem
+ ___________________
+
+ # Print the results
+ print("Optimal solution of X1:", _________________________)
+ print("Optimal solution of X2:", _________________________)
+ print("Optimal value:", _________________________)
+ print("Optimization status:", _________________________)
+
+
+
+
+                                                                  1
+
+Page 2
+Q2. Write the Python codes to solve the given linear optimization model.
+ Minimize    Z = 6000X1 + 1000X2
+ Subject to   300X1 + 20X2 >= 66
+              30X1 + 10X2 >= 9
+              X1, X2>=0
+
+ # import the cvxpy package
+
+
+
+ # decision variables
+
+
+
+
+ # objective functions
+
+
+
+ # constraints
+
+
+
+
+ # Formulate the problem
+
+
+
+
+ # Solve the problem
+
+
+
+
+ # Print the results
+
+
+
+
+                                                                           2
+
+Page 3
+Q3. Setup the linear optimization model to solve the following problem and then write the
+Python codes to solve the model.
+ K Electronics plans to hire skilled workers and apprentices as it expands its business operations.
+ The cost of employing a skilled worker is 10,000 won per hour, while an apprentice1 costs 5,000
+ won per hour. The company has a budget of 150 million won for this hiring initiative, and under
+ the terms of the labor union agreement, the entire amount must be allocated to this plan. Taking
+ current operational conditions into account, K Electronics intends to limit the employment of
+ skilled workers to a maximum of 10,000 hours. Additionally, the labor union requires that
+ apprentices be employed for a minimum of 12,000 hours. Current cost analysis indicates that
+ skilled workers generate a profit of 3,000 won per hour, whereas apprentices generate 1,250
+ won per hour. Management aims to formulate a hiring plan that maximizes total profit.
+
+
+ 1
+     apprentice: a person who is learning a work from a skilled employer
+
+ < Linear optimization model>
+
+
+
+
+                                                                                                  3
+
+Page 4
+< Python code>
+
+
+
+
+                 4

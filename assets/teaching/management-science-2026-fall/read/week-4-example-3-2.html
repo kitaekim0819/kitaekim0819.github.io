@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Example 3-2 — CVXPY — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Example 3-2 — CVXPY</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-example-3-2.ipynb">Original document</a></p><main><pre>COURSE REFERENCE: Example 3-2 — CVXPY
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-example-3-2.ipynb
+
+Notebook text. Saved outputs are historical; no code was executed for this publication.
+
+Cell 1 (code)
+import cvxpy as cp
+
+# 1. 의사결정 변수 정의
+x1 = cp.Variable()
+x2 = cp.Variable()
+
+# 2. 목적 함수 정의 (총 식품 구입비 최소화)
+z = 6000 * x1 + 1000 * x2
+objective = cp.Minimize(z)
+
+# 3. 제약 조건 정의 (최소 필요 영양소)
+constraints = [
+    300 * x1 + 20 * x2 &gt;= 66,  # 단백질 최소 66g 이상
+    30 * x1 + 10 * x2 &gt;= 9,    # 철분 최소 9mg 이상
+    x1 &gt;= 0,                   # 비음 조건
+    x2 &gt;= 0,                   # 비음 조건
+]
+
+# 4. 문제 정의 및 풀이
+problem = cp.Problem(objective, constraints)
+problem.solve()
+
+# 5. 결과 출력
+print(&quot;최적화 상태: &quot;,problem.status,)
+print(&quot;최소 식품 구입비: &quot;,problem.value, &quot;원&quot;)
+print(&quot;고기(X1) 최적 구매량: &quot;, x1.value, &quot;kg&quot;)
+print(&quot;야채(X2) 최적 구매량: &quot;, x2.value, &quot;kg&quot;)
+
+Saved output:
+최적화 상태:  optimal
+최소 식품 구입비:  1499.999996424232 원
+고기(X1) 최적 구매량:  0.19999999972075516 kg
+야채(X2) 최적 구매량:  0.29999999809970107 kg
+
+Cell 2 (code)
+
+
+</pre></main></body></html>

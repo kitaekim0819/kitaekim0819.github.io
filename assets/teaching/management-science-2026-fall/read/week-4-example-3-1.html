@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Example 3-1 — CVXPY — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Example 3-1 — CVXPY</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-example-3-1.ipynb">Original document</a></p><main><pre>COURSE REFERENCE: Example 3-1 — CVXPY
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-example-3-1.ipynb
+
+Notebook text. Saved outputs are historical; no code was executed for this publication.
+
+Cell 1 (code)
+# 필요한 패키지 import
+import cvxpy as cp
+
+Cell 2 (code)
+# 의사결정변수 정의 (Define decision variables)
+X1 = cp.Variable()
+X2 = cp.Variable()
+
+Cell 3 (code)
+# X1 확인
+X1
+
+Cell 4 (code)
+# X2 확인
+X2
+
+Cell 5 (code)
+# 목적 함수 정의 (총 이익 극대화) (Define the objective function (Maximize total profit))
+# 20 * X1 + 50 * X2 를 최대화합니다.
+objective = cp.Maximize(20 * X1 + 50 * X2)
+
+Cell 6 (code)
+# 제약 조건 정의 (Define constraints)
+constraints = [
+    1.2 * X1 + 4 * X2 &lt;= 240,  # 조립 공정 제약식 (Assembly process constraint)
+    0.5 * X1 + X2 &lt;= 81,     # 검사 공정 제약식 (Inspection process constraint)
+    X2 &lt;= 40,                # 반도체 칩 공급 제약 (Semiconductor chip supply constraint)
+    X1 &gt;= 0,                 # 비음 제약식 (Non-negativity constraint for X1)
+    X2 &gt;= 0                   # 비음 제약식 (Non-negativity constraint for X2)
+]
+
+Cell 7 (code)
+# 문제 구성 (Formulate the problem)
+prob = cp.Problem(objective, constraints)
+
+Cell 8 (code)
+# 문제 해결 (Solve the problem) - verbose=True 옵션을 추가하여 계산 과정 출력
+prob.solve() # 참고: 특별히 solver를 지정하지 않으면 CVXPY가 알아서 적절한 solver 선택함 (예시: prob.solve())
+
+
+Cell 9 (code)
+
+
+Cell 10 (code)
+# 중요: 최적화 결과 상태 검토. 다음 코드 실행 시 OPTIMAL이 아니라 INFEASIBLE, UNBOUNDED 등 다른 것이 나오면 코드를 잘 살펴보고 잘못된 것이 없는지 검토 필요
+print(&quot;status:&quot;, prob.status)
+
+Cell 11 (code)
+print(&quot;최대 이익 Z = 20X1+50X2:&quot;, prob.value)
+
+Cell 12 (code)
+# 결과 출력 (Print the results)
+print(&quot;최적해: X1 :&quot;, X1.value)
+
+Cell 13 (code)
+print(&quot;최적해: X2 :&quot;, X2.value)
+
+Cell 14 (code)
+
+
+</pre></main></body></html>

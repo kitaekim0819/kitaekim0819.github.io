@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quiz 3 — Python Codes for LP Solutions — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Quiz 3 — Python Codes for LP Solutions</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-quiz-3-python-codes-for-lp-solutions.ipynb">Original document</a></p><main><pre>COURSE REFERENCE: Quiz 3 — Python Codes for LP Solutions
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-4-quiz-3-python-codes-for-lp-solutions.ipynb
+
+Notebook text. Saved outputs are historical; no code was executed for this publication.
+
+Cell 1 (code)
+# import the cvxpy package
+import cvxpy as cp
+
+# decision variables
+X1 = cp.Variable()
+
+X2 = cp.Variable()
+
+# objective functions
+objective = cp.Maximize(20*X1+50*X2)
+
+# constraints
+constraints = [
+    1.2*X1 + 4*X2 &lt;= 240,  # assembly
+    0.5*X1 + X2 &lt;=81,  # inspection
+    X2 &lt;= 40,  # chips
+    X1 &gt;= 0,  # non-negativity
+    X2 &gt;= 0   # non-negativity
+]
+
+# Formulate the problem
+prob = cp.Problem(objective, constraints)
+
+# Solve the problem
+prob.solve()
+
+# Print the results
+print(&quot;Optimal solution of X1:&quot;, X1.value)
+print(&quot;Optimal solution of X2:&quot;, X2.value)
+print(&quot;Optimal value:&quot;, prob.solve)
+print(&quot;Optimization status:&quot;, prob.status)
+
+
+Saved output:
+Optimal solution of X1: 105.0000000073446
+Optimal solution of X2: 28.4999999952782
+Optimal value: &lt;bound method Problem.solve of Problem(Maximize(Expression(AFFINE, UNKNOWN, ())), [Inequality(Expression(AFFINE, UNKNOWN, ())), Inequality(Expression(AFFINE, UNKNOWN, ())), Inequality(Variable((), var2)), Inequality(Constant(CONSTANT, ZERO, ())), Inequality(Constant(CONSTANT, ZERO, ()))])&gt;
+Optimization status: optimal
+
+Cell 2 (code)
+import cvxpy as cp
+
+# decision variables
+X1 = cp.Variable()
+X2 = cp.Variable()
+
+# objective functions
+objective = cp.Minimize(6000*X1+1000*X2)
+
+# constraints
+constraints =[
+              300*X1 + 20*X2 &gt;= 66,
+              30*X1 + 10*X2 &gt;=9,
+              X1 &gt;= 0,
+              X2 &gt;= 0
+              ]
+
+# Formulate the problem
+prob = cp.Problem(objective, constraints)
+
+# Solve the problem
+prob.solve()
+
+
+# Print the results
+print(prob.status, prob.value, X1.value, X2.value)
+
+
+Saved output:
+optimal 1499.999996424232 0.19999999972075516 0.29999999809970107
+
+Cell 3 (code)
+import cvxpy as cp
+
+S = cp.Variable()
+P = cp.Variable()
+
+objective = cp.Maximize(3000*S + 1250*P)
+constraints = [
+    10000*S + 5000*P == 150000000,
+    S&lt;=10000,
+    P&gt;=12000,
+    S&gt;=0,
+    P&gt;=0
+]
+
+prob = cp.Problem(objective, constraints)
+prob.solve()
+print(prob.status, prob.value, S.value, P.value)
+
+
+Saved output:
+optimal 41999999.95451944 8999.999909038883 12000.000181922234
+
+</pre></main></body></html>

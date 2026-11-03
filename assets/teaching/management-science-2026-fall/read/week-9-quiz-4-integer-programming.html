@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quiz 4 — Integer Programming — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Quiz 4 — Integer Programming</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-9-quiz-4-integer-programming.pdf">Original document</a></p><main><pre>COURSE REFERENCE: Quiz 4 — Integer Programming
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-9-quiz-4-integer-programming.pdf
+
+Extracted text. Figures and equation layout may require the original document.
+
+Page 1
+Integer Programming
+
+Name: ________________________         Student ID: ________________________
+
+Example 7-1 Store and Storage Expansion
+Hankook Supermarket has secured KRW 15.5 billion to expand by opening stores and storage
+facilities. Each new store costs KRW 1 billion and earns KRW 30 million per month. Each storage
+facility costs KRW 3 billion and earns KRW 72 million per month. Management plans to open at least
+one storage facility and no more than five stores.
+(a) Formulate an Integer Programming model to maximize monthly profit within the available budget.
+(b) Solve the model by hand using branch-and-bound, without a computer. Show the branching tree,
+the LP relaxation solution and upper bound at each feasible node, and the reason for pruning each
+closed node. Report the optimal numbers of stores and storage facilities and the maximum monthly
+profit.
+
+Answer IP model
+
+Decision variables
+
+
+
+Objective function
+
+
+
+Constraints and variable domains
+
+
+
+
+                                                                                                     1
+
+Page 2
+Example 7-1 Branch and Bound Solution
+Draw the tree and record each feasible node’s LP solution and upper bound. Explain why each closed
+node is pruned.
+
+Branching tree and node calculations
+
+
+
+
+Additional calculations and pruning explanations
+
+
+
+
+Final answer
+Optimal decision: _________________________________________________________
+Maximum monthly profit (include units): ______________________________
+
+
+
+
+                                                                                                 2
+
+Page 3
+Example 7-2 Investment Selection
+H Group is considering three projects over the next three years. The table gives each project’s annual
+funding needs and present value of profit.
+Table 7.1 Investment plan (KRW 100 million)
+
+     Project                               Profit PV         Year 1          Year 2          Year 3
+     Factory expansion                        450              100            100             100
+     New warehouse                            200              150             50              50
+     Advanced machinery                       350              50             200             100
+     Available funds                           —               250            400             200
+
+Formulate a binary Integer Programming model to select projects that maximize the present value of
+profit, subject to the available funds in each year. Each project is either selected in full or not selected.
+
+Answer IP model
+
+Decision variables
+
+
+
+Objective function
+
+
+
+Constraints and variable domains
+
+
+
+
+                                                                                                           3
+
+Page 4
+Example 7-3 Machine Selection and Production
+K Manufacturing must produce 20,000 units using three machines. Each machine incurs a fixed cost
+when activated. The table lists each machine’s fixed cost, variable cost, and production capacity.
+
+                        Fixed cost                Variable cost                 Capacity
+     Machine
+                      (KRW 10,000)              (KRW 10,000/unit)                (units)
+     1                     300                          2                        8,000
+     2                     100                         10                        13,000
+     3                     200                          5                        14,000
+
+Formulate an Integer Programming model to choose which machines to use and how much each
+should produce to minimize total production cost.
+
+Answer IP model
+
+Decision variables
+
+
+
+Objective function
+
+
+
+Constraints and variable domains
+
+
+
+
+                                                                                                     4</pre></main></body></html>
