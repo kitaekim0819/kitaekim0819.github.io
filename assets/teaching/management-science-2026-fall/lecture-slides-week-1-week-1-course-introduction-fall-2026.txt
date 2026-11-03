@@ -1,0 +1,393 @@
+COURSE REFERENCE: Week 1_Course Introduction (Fall 2026).pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+Turning complex decisions into optimal solutions
+
+
+
+Management
+Science
+    COURSE CODE                 CLASS TIME                   CLASSROOM          I N S T RU C TO R
+
+    BD4248                      Tue 12:00–13:30              Lecture Hall 207   Kitae Kim
+
+
+
+Fall 2026 · School of Business, Korea Aerospace University
+
+Page 2
+WHY MANAGEMENT SCIENCE
+
+
+How do organizations find the best decision
+among countless possible options?
+Management science uses mathematical modeling and scientific analysis to find optimal solutions to complex decision-making
+problems, then applies them to real-world management to support rational decisions.
+
+
+
+
+        01                                              02                                                03
+
+     The Problem                                      The Method                                        The Decision
+                                              ›                                                     ›
+     Limited resources, competing                     Formulate the problem as a                        An optimal, defensible course
+     constraints, and too many                        mathematical model and solve                      of action that can actually be
+     alternatives to compare by hand                  it with data and computation                      implemented in the business
+
+
+
+
+“If you cannot measure it, you cannot manage it. If you cannot model it, you cannot optimize it.”
+
+
+
+
+Management Science · Fall 2026                                                                                                           2
+
+Page 3
+COURSE OBJECTIVES
+
+
+Four things you will take away from this course
+
+        01      Why it matters                                                      02    How it works
+                Understand the necessity of management science and                        Understand the various methodologies used in
+                how it is applied in real-world cases.                                    management science, such as optimization.
+
+
+
+
+        03      Solving with Python                                                 04    Where it is going
+                Acquire the ability to formulate and solve optimization                   Understand future directions of the field — AI and
+                problems using Python.                                                    quantum computing in management science.
+
+
+
+
+     Prerequisite · Python — basic programming will make the hands-on work from Week 4 onward far easier to follow.
+
+
+
+Management Science · Fall 2026                                                                                                                 3
+
+Page 4
+C O U R S E I N F O R M AT I O N
+
+
+What you need to know before we start
+
+     TIME & PLACE                                                CREDITS                                          COURSE CODES
+
+
+     Tuesday 12:00 – 13:30                                       3 credits / 3 hours per week                     BD4248 — Business Administration
+     Lecture Hall 207                                            Required major course · Year 2                   3BD3206 — Business Major
+
+
+
+
+     TEXTBOOK & REFERENCES                                                                           CLASS TYPE
+
+
+     Modern Management Science, 9th ed.                                                              Flipped Learning
+     Se-Heon Kim · Hanbit Academy · January 2023                                                     Watch → Solve together → Reflect
+     Lecture slides are built on this textbook.                                                      13 weeks run in this format.
+
+     Buying the book is not required, but it helps a great deal with practice problems and review.   Grading is absolute, not curved.
+
+
+
+
+Management Science · Fall 2026                                                                                                                       4
+
+Page 5
+HOW THIS CLASS RUNS
+
+
+Every week runs in three stages
+Learning starts before you walk into the room. Class time is not for listening to explanations — it is for solving problems together.
+
+
+
+          BEFORE CLASS                 60 min                  IN CLASS                    75 min                 AFTER CLASS                  30 min
+
+     Prepare                                            Solve together                                        Reflect
+     •     Watch the recorded lecture video             •    Quiz solutions and core concepts                 •   Write the weekly reflective log
+     •     Take the quiz or submit questions            •    Discussion, activities, Python labs              •   Complete and submit the
+                                                                                                                  assignment
+
+
+
+
+     If you arrive without having watched the video, those 75 minutes are simply lost. This is the most important commitment in the course.
+
+
+
+
+Management Science · Fall 2026                                                                                                                          5
+
+Page 6
+GRADING
+
+
+Six components, no curve
+
+                                                                  Mid-term Exam                20%          Week 8
+                             10%
+                                             20%
+                                                                  Final Exam                   20%          Week 15
+               10%
+
+
+                                                                  Quiz                         20%          Pre-class check · 8 times
+                                 Absolute
+                                   GRADING
+                                                                  Assignment                   20%          Weeks 3 · 6 · 10 · 13
+            20%                                    20%
+
+                                                                  Attendance                   10%          Checked every session
+
+
+
+                                     20%                          Participation                10%          Discussion and reflective logs
+
+
+                                                         The participation score includes the reflective logs of students.
+
+
+
+
+Management Science · Fall 2026                                                                                                               6
+
+Page 7
+G E N E R AT I V E A I P O L I C Y
+
+
+Generative AI is permitted — conditionally
+
+        ✓       Permitted                                                                       ✕     Not permitted
+                •      Brainstorming ideas and drafting outlines                                      •     Submitting AI output as your own work
+                •      Sentence correction and grammar checking                                       •     Using AI without disclosing that you did
+                •      Explaining concepts, generating draft code                                     •     Any use during exams and quizzes
+
+
+
+
+      The final work must be produced by you, and any use of AI requires a Generative AI Usage Statement.
+      The statement records the tool used, the purpose and scope of use, your main prompts, and your own contribution and revisions, followed by a self-check
+      pledge. Its content is not directly reflected in grading — it exists to ensure transparency.
+
+
+
+
+      Generative AI reflects social and cultural bias and can produce inaccurate results. If you submit AI-generated errors, the academic responsibility is yours.
+
+
+
+
+Management Science · Fall 2026                                                                                                                                       7
+
+Page 8
+YOUR INSTRUCTOR
+
+
+Questions are always welcome
+
+                                                                                               Office Hours
+            KK
+                          Kitae Kim                                                            No appointment needed — just drop by.
+                          Assistant Professor, School of Business
+
+                                                                                                   Tuesday                   14:00 – 16:00
+       EMAIL             kitaekim@kau.ac.kr
+                                                                                                   Wednesday                 15:00 – 17:00
+       OFFICE            Main Building 324
+
+       PHONE             02-300-0085                                                               Thursday                  12:00 – 14:00
+
+
+
+
+      SUPPORT FOR STUDENTS WITH DISABILITIES
+
+      Under the Rules Pertaining to Disabled Student Support, students are entitled to special conditions or assistance in attending class, receiving materials, completing
+      assignments, and writing exams. Please consult the instructor, the Academic Affairs Team, or the Student Affairs Team before registering for the class.
+
+
+
+
+Management Science · Fall 2026                                                                                                                                                8
+
+Page 9
+SEMESTER ROADMAP
+
+
+Where we are going over 16 weeks
+
+         Phase 1                 Phase 2                                  Phase 3                      Phase 4
+         Weeks 1–3                Weeks 4–7                                Weeks 9–11                  Weeks 12–14
+
+
+
+
+      Foundations and          Python labs and                      Integer, network, and        Game theory and
+     linear optimization   deeper solution analysis                  multi-criteria models     the future of the field
+
+
+
+
+                                              WEEK 8        Mid-term                         WEEK 15         Final
+
+
+
+                               Week 16 is reserved as a make-up session if one is needed.
+
+Page 10
+PHASE 1        ·   WEEKS 1–3
+
+
+Building the foundations
+
+     Week 1              Introduction to Management Science                Course introduction and application cases   Lecture · Questions
+
+
+
+
+     Week 2              Linear optimization and linear programming        Structure and formulation of an LP            Quiz · Discussion
+
+
+
+
+     Week 3              Development, application, and limitations         How far LP models can be pushed             Quiz · Assignment #1
+
+
+
+
+From Week 2 onward, every week begins with a pre-class video and a quiz.
+
+Management Science · Fall 2026                                                                                                                10
+
+Page 11
+PHASE 2        ·   WEEKS 4–7
+
+
+Solving in Python, then interpreting the answer
+
+     Week 4              Analysis of LP models using Python    Hands-on in Google Colab                Lab · Activity
+
+
+
+
+     Week 5              Post-optimality analysis              Reading what the solution implies      Quiz · Discussion
+
+
+
+
+     Week 6              Sensitivity analysis                  How the optimum responds to change   Quiz · Assignment #2
+
+
+
+
+     Week 7              Analyzing business problems with LP   Applications across real settings      Quiz · Discussion
+
+
+
+
+     Week 8              Mid-term Exam                         Covers Weeks 1–7                            Exam
+
+
+
+
+Set up a Google Colab account before the Week 4 lab.
+
+Management Science · Fall 2026                                                                                             11
+
+Page 12
+PHASE 3        ·   WEEKS 9–11
+
+
+Extending the models beyond linearity
+
+     Week 9              Integer optimization models                      Decisions with integer constraints      Lecture · Questions
+
+
+
+
+     Week 10             Network models and transportation                Linear and integer models on networks   Lab · Assignment #3
+
+
+
+
+     Week 11             Multi-criteria decision making 1                 Scoring methods and DEA                  Quiz · Discussion
+
+
+
+
+From here on, problems have several objectives that genuinely conflict.
+
+Management Science · Fall 2026                                                                                                          12
+
+Page 13
+PHASE 4        ·   WEEKS 12–14
+
+
+Modeling competition, then looking ahead
+
+     Week 12             Multi-criteria decision making 2    Goal programming                     Quiz · Discussion
+
+
+
+
+     Week 13             Game theory                         Analyzing strategic interaction    Quiz · Assignment #4
+
+
+
+
+     Week 14             The future of management science    Agentic AI and quantum computing   Lecture · Questions
+
+
+
+
+     Week 15             Final Exam                          Focused on Weeks 9–14                     Exam
+
+
+
+
+Week 16 is reserved as a make-up session if one is needed.
+
+Management Science · Fall 2026                                                                                         13
+
+Page 14
+GROUND RULES
+
+
+Five commitments for a good semester
+
+                                         The 60 minutes of video and the quiz before class are where this course starts. Without them, the in-class
+       1      Always prepare             problem solving does not work.
+
+
+                                         Submit what you do not understand as a pre-class question, or bring it to office hours — open three days a
+       2      Ask early                  week.
+
+
+
+       3      Bring your laptop          Python and Google Colab are used from Week 4 onward. You will need a machine you can work on.
+
+
+
+
+       4      Be transparent with AI     Use it for brainstorming and grammar, but the final work must be yours, and it comes with a usage statement.
+
+
+
+
+       5      Write the reflective log   The 30-minute log after class counts toward your participation score. Write it the same week.
+
+
+
+
+Management Science · Fall 2026                                                                                                                          14

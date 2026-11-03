@@ -1,0 +1,390 @@
+COURSE REFERENCE: Chapter 3 — Analysis of LP Models.pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Slide 1
+
+
+CHAPTER 03
+Analysis of Linear Programming Models
+Solving a two-variable model by drawing it
+
+TEXTBOOK
+Modern Management Science, 9th ed.
+CHAPTER
+Ch. 3, Example 3-1
+WEEK
+Week 3
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+Content prepared by the instructor; slide layout and formatting assisted by Claude (Anthropic).
+
+Slide 2
+LAST WEEK
+From a problem to a LP model
+
+Chapter 2  ·  Linear Programming Models
+13 / 32
+
+X₁, X₂ = cases of knives, forks produced next week
+Maximize
+8,000X₁ + 6,000X₂
+subject to
+0.2X₁ + 0.4X₂ ≤ 700
+0.5X₁ + 0.25X₂ ≤ 1,000
+X₁ ≥ 0,  X₂ ≥ 0
+Samyoung Industrial, a manufacturer of table knives and forks, is determining the production volume for each product to maximize profits using its current production facilities. This product is of excellent quality, so they wish to keep it as a manufactured item. Regarding the green process and the next week in which this product is handled, the available workforce for each process is 700 hours for the press process and 1,000 hours for the scroll process. Producing one bag of handles and knives requires 12 minutes (0.2 hours) of press process manpower and 30 minutes (0.5 hours) of scroll process manpower, while producing one case of forks requires 24 minutes (0.4 hours) of press process manpower and 15 minutes (0.25 hours) of scroll process manpower. Samyoung Industrial intends to select the weapons for handles and forks to maximize total profit over the next week.
+
+
+Slide 3
+LAST WEEK
+Step-by-step
+
+
+1
+Read carefully
+mark every number, unit and keyword
+
+2
+Set the decision variables
+what is proportional to what?
+
+3
+Write the objective function
+one expression, maximize or minimize
+
+4
+Write the constraints
+one line per limit, plus X ≥ 0
+
+5
+Assemble the model
+objective, subject to, constraints
+Chapter 2  ·  Linear Programming Models
+13 / 32
+
+Slide 4
+THIS HOUR
+What we will cover: Solving a LP with a graph
+
+
+Constraints on a graph
+
+The objective function on a graph
+
+Finding the optimal solution
+
+Slack variables and binding constraints
+Chapter 3  ·  Analysis of Linear Programming Models
+3 / 21
+
+Slide 5
+EXAMPLE 3-1  ·  PRODUCT MIX
+Example 3-1
+
+
+F Electronics makes a standard and a high-performance amplifier
+
+Each unit passes through assembly and then inspection
+
+Set today's output of each so that profit is as large as possible
+
+Standard
+High-performance
+Limits
+
+Assembly (h / unit)
+1.2
+4
+240 h
+
+Inspection (h / unit)
+0.5
+1
+81 h
+
+Special chip (per unit)
+—
+1
+40 chips
+
+Profit (10,000 won / unit)
+20
+50
+—
+Chapter 3  ·  Analysis of Linear Programming Models
+4 / 21
+
+Slide 6
+Read carefully
+Example 3-1 — what the words tell us
+
+
+“profit as large as possible”  →  maximize; the objective
+
+“how many of each”  →  two decision variables
+
+“240 hours … 81 hours”  →  two labor constraints, ≤
+
+“only 40 chips a day”  →  a supply constraint, ≤
+
+Units: hours per unit, chips per unit, 10,000 won per unit
+Chapter 3  ·  Analysis of Linear Programming Models
+5 / 21
+
+Slide 7
+THE MODEL
+Example 3-1
+
+
+Variables
+
+X₁ = standard amplifiers,   X₂ = high-performance amplifiers, per day
+
+Objective
+
+Maximize  Z = 20X₁ + 50X₂          (10,000 won)
+
+Constraints
+
+1.2X₁ + 4X₂ ≤ 240          (assembly, hours)
+
+0.5X₁ + X₂ ≤ 81          (inspection, hours)
+
+X₂ ≤ 40          (chips)
+
+X₁ ≥ 0,  X₂ ≥ 0
+Chapter 3  ·  Analysis of Linear Programming Models
+6 / 21
+
+Slide 8
+CONSTRAINT 1  ·  ASSEMBLY
+1.2X₁ + 4X₂ ≤ 240
+
+
+Draw the line 1.2X₁ + 4X₂ = 240: intercepts (0, 60) and (200, 0)
+
+The “≤” side is the side that contains the origin
+
+Every shaded point uses at most 240 assembly hours
+Chapter 3  ·  Analysis of Linear Programming Models
+7 / 21
+
+Slide 9
+CONSTRAINT 2  ·  INSPECTION
+0.5X₁ + X₂ ≤ 81
+
+
+Line 0.5X₁ + X₂ = 81: intercepts (0, 81) and (162, 0)
+
+Keep only the points that satisfy both constraints
+
+The two lines cross at (105, 28.5) — remember this point
+Chapter 3  ·  Analysis of Linear Programming Models
+8 / 21
+
+Slide 10
+CONSTRAINT 3  ·  CHIP SUPPLY
+X₂ ≤ 40
+
+
+A constraint with one variable is a horizontal (or vertical) line
+
+It caps high-performance output at 40 units a day
+
+A new corner appears at (66.7, 40)
+Chapter 3  ·  Analysis of Linear Programming Models
+9 / 21
+
+Slide 11
+NON-NEGATIVITY
+X₁ ≥ 0, X₂ ≥ 0 — the feasible region
+
+
+Only the first quadrant is allowed
+
+Feasible region: every point that satisfies all the constraints at once
+
+Here, a pentagon with corners O, A, B, C, D
+Chapter 3  ·  Analysis of Linear Programming Models
+10 / 21
+
+Slide 12
+FEASIBLE OR NOT
+Feasible and infeasible solutions
+
+
+Feasible solution: satisfies every constraint — e.g. (80, 20)
+
+Infeasible solution: breaks at least one — (0, 50) needs 50 chips
+
+(150, 30) breaks both labor constraints at once
+Chapter 3  ·  Analysis of Linear Programming Models
+11 / 21
+
+Slide 13
+THE OBJECTIVE
+Iso-profit lines
+
+
+Z = 20X₁ + 50X₂: every point on one line earns the same profit
+
+Z = 2500 passes through the region — many plans earn 2500
+
+Z = 4000 misses the region — no feasible plan earns 4000
+
+Larger Z moves the line outward, parallel to itself
+Chapter 3  ·  Analysis of Linear Programming Models
+12 / 21
+
+Slide 14
+THE OPTIMUM
+Push the line as far as it will go
+
+
+Slide the iso-profit line outward while it still touches the region
+
+The last point it touches is corner C
+
+C is where the assembly and inspection lines cross
+Chapter 3  ·  Analysis of Linear Programming Models
+13 / 21
+
+Slide 15
+FINDING C
+Two lines, two equations
+
+
+1.2X₁ + 4X₂ = 240     and     0.5X₁ + X₂ = 81
+
+From the second:  X₂ = 81 − 0.5X₁
+
+Substitute:  1.2X₁ + 4(81 − 0.5X₁) = 240
+
+−0.8X₁ + 324 = 240   →   X₁ = 105
+
+X₂ = 81 − 0.5(105) = 28.5
+
+Z = 20(105) + 50(28.5) = 3525
+Chapter 3  ·  Analysis of Linear Programming Models
+14 / 21
+
+Slide 16
+THE ANSWER
+Example 3-1 — optimal solution
+
+(X₁, X₂)  =  (105, 28.5)
+Maximum daily profit  3525 × 10,000 won  =  35,250,000 won
+
+Assembly:  1.2(105) + 4(28.5) = 240 hours — all of it
+
+Inspection:  0.5(105) + 28.5 = 81 hours — all of it
+
+Chips:  28.5 of 40 — 11.5 to spare
+Chapter 3  ·  Analysis of Linear Programming Models
+15 / 21
+
+Slide 17
+THE OPTIMUM
+Push the line as far as it will go
+
+
+Slide the iso-profit line outward while it still touches the region
+
+The last point it touches is corner C
+
+C is where the assembly and inspection lines cross
+Chapter 3  ·  Analysis of Linear Programming Models
+13 / 21
+
+Slide 18
+THE HALF UNIT
+What does 28.5 amplifiers mean?
+
+
+Half a unit: start it today, finish it tomorrow
+
+If output must be whole numbers, round — then re-check feasibility
+
+X₂ = 28  →  X₁ = 106,  Z = 3520
+
+X₂ = 29  →  X₁ = 103,  Z = 3510
+
+Rounding never beats the LP optimum — whole-number models are integer programming, Chapter 7
+Chapter 3  ·  Analysis of Linear Programming Models
+16 / 21
+
+Slide 19
+SLACK
+Slack variables
+
+
+A “≤” constraint need not use all of its capacity
+
+Slack  =  capacity  −  amount used
+
+S₁ = 240 − (1.2X₁ + 4X₂)          (assembly hours unused)
+
+S₂ = 81 − (0.5X₁ + X₂)          (inspection hours unused)
+
+S₃ = 40 − X₂          (chips unused)
+Chapter 3  ·  Analysis of Linear Programming Models
+17 / 21
+
+Slide 20
+BINDING
+Binding constraints — slack is zero
+
+
+S₁ = 240 − (1.2 × 105 + 4 × 28.5) = 0
+
+S₂ = 81 − (0.5 × 105 + 28.5) = 0
+
+Assembly and inspection are used 100% — both are binding
+
+The optimum sits exactly where these two lines cross
+Chapter 3  ·  Analysis of Linear Programming Models
+18 / 21
+
+Slide 21
+NON-BINDING
+Non-binding constraints — slack is positive
+
+
+S₃ = 40 − 28.5 = 11.5
+
+11.5 chips a day are left over
+
+The chip constraint is non-binding — its line does not touch C
+Chapter 3  ·  Analysis of Linear Programming Models
+19 / 21
+
+Slide 22
+THE INSIGHT
+What is holding production back?
+
+
+Not the chips — 11.5 a day go unused
+
+Assembly and inspection hours are the bottleneck
+
+More hours there would raise profit; more chips would not
+
+Binding constraints are where management should look first
+Chapter 3  ·  Analysis of Linear Programming Models
+20 / 21
+
+Slide 23
+IN SUMMARY
+Chapter 3
+
+
+Each constraint is a half-plane; together they form the feasible region
+
+Iso-profit lines: equal profit along a line, higher profit further out
+
+The optimum is a corner point — here C = (105, 28.5), Z = 3525
+
+Slack shows which constraints bind: assembly and inspection, not chips
+Practice  ·  draw Example 3-1 by hand, then ask Gen AI to draw it and compare
+Next week  ·  the same model in Python: Colab + CVXPY — bring your laptop

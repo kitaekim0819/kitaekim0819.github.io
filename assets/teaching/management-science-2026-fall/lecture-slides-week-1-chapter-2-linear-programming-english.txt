@@ -1,0 +1,732 @@
+COURSE REFERENCE: Chapter 2 — Linear Programming (English).pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+CHAPTER 02
+
+
+
+Linear Programming Models
+Turning a business problem into a model that can be solved
+
+
+     TEXTBOOK                                                          C HA PT E R                 WEEK
+
+     Modern Management Science, 9th ed.                                Ch. 2, Examples 2-1 – 2-6   Week 2
+
+
+
+Management Science · Fall 2026 · Kitae Kim, School of Business, Korea Aerospace University
+
+Content prepared by the instructor; slide layout and formatting assisted by Claude (Anthropic).
+
+Page 2
+THIS HOUR
+
+
+What we will cover
+
+         What makes a model linear
+
+         The three pillars of a linear programming model
+
+         Formulation: the five steps
+
+         Five worked cases
+
+         Assumptions and limits of linear programming
+
+
+
+
+Chapter 2 · Linear Programming Models                      2 / 32
+
+Page 3
+THE CORE IDEA
+
+
+Optimization
+
+         Alternatives — what could we do?
+
+         Preferences and constraints — which is better, and what is allowed?
+
+         Optimal solution — the best alternative that satisfies every constraint
+
+
+
+      Alternatives and preferences both linear → a linear optimization model
+
+
+
+
+Chapter 2 · Linear Programming Models                                              3 / 32
+
+Page 4
+QUICK CHECK
+
+
+Which of these are linear?
+
+       A         Z = 2X + 3Y                                  B    Y = 2X + 3X²
+
+
+       C         C = 8,000X₁ + 6,000X₂                        D    Y = log(X)
+
+
+       E         W = −2X + 3Y − Z                             F    Z=X/Y
+
+
+
+      Is every variable standing alone, to the first power, times a number?
+
+
+
+Chapter 2 · Linear Programming Models                                             4 / 32
+
+Page 5
+THE ANSWER
+
+
+A sum of first-degree terms — nothing else
+
+   LINEAR                                                   N OT L I N E A R
+
+
+     A       Z = 2X + 3Y                                      B      Y = 2X + 3X²    squared
+
+
+     C       C = 8,000X₁ + 6,000X₂                            D      Y = log(X)      a function of X
+
+
+     E       W = −2X + 3Y − Z                                 F      Z=X/Y           variables divided
+
+
+
+
+      F has no exponent — but dividing one variable by another is still nonlinear.
+
+
+
+Chapter 2 · Linear Programming Models                                                                    5 / 32
+
+Page 6
+SEEN AS A PICTURE
+
+
+Linear means straight — literally
+
+        Y = 2X + 3                      Y = 2X + 3X²    Y = X³           Y = log(X)    Y=1/X
+
+
+
+
+             LINEAR                      NOT LINEAR    NOT LINEAR         NOT LINEAR   NOT LINEAR
+
+
+
+
+      A linear constraint has a straight boundary — so the optimum sits at a corner.
+
+
+
+
+Chapter 2 · Linear Programming Models                                                               6 / 32
+
+Page 7
+DEFINITION
+
+
+Linear programming
+
+         Building a linear optimization model of a decision, and using it to choose the best option
+
+         Simplex method · Dantzig, 1947
+
+         Interior-point method · Karmarkar, 1984
+
+         The most widely used analytical tool in production, logistics and finance
+
+
+
+
+      “Programming” here means planning — the word predates computer programming.
+
+
+
+Chapter 2 · Linear Programming Models                                                                 7 / 32
+
+Page 8
+A P P L I C AT I O N S
+
+
+Where linear programming is used
+
+         Blending
+
+         Product mix
+
+         Transportation and distribution
+
+         Production planning and inventory
+
+         Financial engineering
+
+         Staffing, routing and network design
+
+
+
+Chapter 2 · Linear Programming Models           8 / 32
+
+Page 9
+SECTION 2 · OVERVIEW
+
+
+Every LP model has three parts
+
+         Decision variables — what are we deciding?
+
+         Objective function — what are we trying to do?
+
+         Constraints — what are the limits?
+
+
+
+      Miss one, or write a nonlinear line, and it is not a linear program.
+
+
+
+
+Chapter 2 · Linear Programming Models                                        9 / 32
+
+Page 10
+PILLAR 1
+
+
+Decision variables
+
+         The quantities we actually control
+
+         Ask: what number would you phone the factory and tell them?
+
+         Ask: what is proportional to what?
+
+         Always write the unit
+
+   E xa m p l e 2 - 1
+
+                X₁ = cases of knives produced next week
+                X₂ = cases of forks produced next week
+
+
+Chapter 2 · Linear Programming Models                                  10 / 32
+
+Page 11
+PILLAR 2
+
+
+Objective function
+
+         One linear expression — and exactly one
+
+         Maximize: profit · revenue · output
+
+         Minimize: cost · risk · time · waste
+
+         Every term must land in the same unit
+
+   E xa m p l e 2 - 1
+
+                Maximize                8,000X₁ + 6,000X₂            (won)
+                                        won per case × cases = won
+
+
+
+
+Chapter 2 · Linear Programming Models                                        11 / 32
+
+Page 12
+PILLAR 3
+
+
+Constraints
+
+         ≤ a ceiling — capacity, budget, supply
+
+         ≥ a floor — requirement, demand, standard
+
+         = a balance — must be met exactly
+
+         ≥ 0 non-negativity — never leave it out
+
+   E xa m p l e 2 - 1
+
+                0.2X₁ + 0.4X₂ ≤ 700
+                0.5X₁ + 0.25X₂ ≤ 1,000
+                X₁ ≥ 0, X₂ ≥ 0
+
+Chapter 2 · Linear Programming Models                12 / 32
+
+Page 13
+SECTION 3 · METHOD
+
+
+Formulation: five steps
+
+      1       Read the situation             mark every number, unit and keyword
+
+
+      2       Set the decision variables     what is proportional to what?
+
+
+      3       Write the objective function   one expression, maximize or minimize
+
+
+      4       Write the constraints          one line per limit, plus X ≥ 0
+
+
+      5       Assemble the model             objective, subject to, constraints
+
+
+
+
+Chapter 2 · Linear Programming Models                                               13 / 32
+
+Page 14
+STEP 1
+
+
+Read the situation
+
+         Mark every number
+
+         Mark every unit — won/case, hours/unit, %
+
+         Mark every keyword — available, at most, at least, exactly
+
+         Find the goal sentence — usually the last one
+
+         Ask: what is being decided, and by whom?
+
+
+      Most formulation errors are reading errors.
+
+
+
+Chapter 2 · Linear Programming Models                                 14 / 32
+
+Page 15
+STEP 2
+
+
+Set the decision variables
+
+         Ask what is proportional to what
+
+         Follow the units
+
+                    “30,000 won per unit” → the coefficient is 30,000
+
+         Read the denominator
+
+                    won per case → cases are the variable
+
+                    risk per 10,000 won → money is the variable
+
+
+      No unit, no variable.
+
+
+Chapter 2 · Linear Programming Models                                   15 / 32
+
+Page 16
+STEP 3
+
+
+Write the objective function
+
+         Find the goal sentence → maximize or minimize
+
+         One coefficient for each variable, added together
+
+                    8,000 won/case × X₁ cases = 8,000X₁ won
+
+                    6,000 won/case × X₂ cases = 6,000X₂ won
+
+         Every term in the same unit — and exactly one objective
+
+
+                Maximize                8,000X₁ + 6,000X₂
+
+
+
+Chapter 2 · Linear Programming Models                              16 / 32
+
+Page 17
+STEP 4
+
+
+Write the constraints
+
+         at least · minimum → ≥
+
+         at most · within · available → ≤
+
+         exactly · requests → =
+
+         then non-negativity → X ≥ 0
+
+   E xa m p l e 2 - 1 , p re s s p ro c e s s
+
+                0.2 h/case × X₁ + 0.4 h/case × X₂ ≤ 700 h
+                0.2X₁ + 0.4X₂ ≤ 700
+                Hours on the left, hours on the right.
+
+
+Chapter 2 · Linear Programming Models                       17 / 32
+
+Page 18
+STEP 5
+
+
+Assemble the model
+
+   X₁, X₂ = cases of knives, forks produced next week
+
+   Maximize                             8,000X₁ + 6,000X₂
+   subject to                           0.2X₁ + 0.4X₂ ≤ 700
+                                        0.5X₁ + 0.25X₂ ≤ 1,000
+                                        X₁ ≥ 0, X₂ ≥ 0
+
+
+      Variables defined · one objective · one line per limit · non-negativity · all linear
+
+
+   That is the whole method. Five cases follow — only the story changes.
+
+
+Chapter 2 · Linear Programming Models                                                        18 / 32
+
+Page 19
+CASE 1 · PRODUCT MIX
+
+
+Example 2-1
+
+         Samyoung Industries makes table knives and forks, and exports all of it
+
+         Both products pass through a press process and a polish process
+
+         Set next week’s production so that total profit is as large as possible
+
+                                        Knife   Fork    Available
+
+      Press (h / case)                   0.2     0.4     700 h
+
+      Polish (h / case)                  0.5    0.25    1,000 h
+
+      Profit (won / case)               8,000   6,000      —
+
+
+
+
+Chapter 2 · Linear Programming Models                                              19 / 32
+
+Page 20
+CASE 1 · THE MODEL
+
+
+Example 2-1
+
+         Variables
+                    X₁ = cases of knives, X₂ = cases of forks, per week
+         Objective
+                    Maximize 8,000X₁ + 6,000X₂        (won)
+         Constraints
+                    0.2X₁ + 0.4X₂ ≤ 700      (press, hours)
+                    0.5X₁ + 0.25X₂ ≤ 1,000      (polish, hours)
+                    X₁ ≥ 0, X₂ ≥ 0
+
+
+
+
+Chapter 2 · Linear Programming Models                                     20 / 32
+
+Page 21
+CASE 1 · THE ANSWER
+
+
+Example 2-1 — optimal solution
+
+
+   (X₁, X₂) = (1,500, 1,000)
+   Maximum weekly profit 18,000,000 won
+
+         Press: 0.2(1,500) + 0.4(1,000) = 700 hours — all of it
+
+         Polish: 0.5(1,500) + 0.25(1,000) = 1,000 hours — all of it
+
+         Both constraints binding → both processes are bottlenecks
+
+
+
+
+Chapter 2 · Linear Programming Models                                 21 / 32
+
+Page 22
+CASE 2 · THE DIET PROBLEM
+
+
+Example 2-2
+
+         Build a daily menu from milk, tuna, bread and spinach
+
+         Meet the daily requirement for vitamins A, C, D and iron, at least cost
+
+         For taste: tuna ≥ 0.1 kg, bread ≥ 0.5 loaf
+
+                                        Milk (L)   Tuna (kg)   Bread   Spinach (kg)   Need / day
+
+      Vitamin A (IU)                    1,600        500        0        70,000         5,000
+
+      Vitamin C (mg)                      10          0         0         140            30
+
+      Vitamin D (IU)                     120          0         0           0            100
+
+      Iron (mg)                            7          14        13         16            12
+
+      Price (won)                       1,000       3,000      650        600            —
+
+
+Chapter 2 · Linear Programming Models                                                              22 / 32
+
+Page 23
+CASE 2 · THE MODEL
+
+
+Example 2-2
+
+         Variables
+                    M, T, B, S = amount of milk, tuna, bread, spinach per day
+
+         Objective
+                    Minimize M + 3T + 0.65B + 0.6S           (thousand won)
+
+         Constraints
+                    1,600M + 500T + 70,000S ≥ 5,000           10M + 140S ≥ 30
+                    120M ≥ 100          7M + 14T + 13B + 16S ≥ 12
+                    T ≥ 0.1, B ≥ 0.5, M, T, B, S ≥ 0
+
+      (M, T, B, S) = (0.83, 0.10, 0.50, 0.155)         minimum cost ≈ 1,552 won per day
+
+
+Chapter 2 · Linear Programming Models                                                     23 / 32
+
+Page 24
+CASE 3 · PRODUCTION & DISTRIBUTION
+
+
+Example 2-3
+
+         Company A has two plants and three warehouses
+
+         Demand: 500, 2,000 and 900 units · Supply: ≤ 2,300 and ≤ 1,500
+
+         Production cost: 150,000 won/unit at plant 1, 200,000 at plant 2
+
+         Minimize production cost plus transport cost
+      Transport cost (10,000 won / unit)
+
+                                        W1   W2   W3
+
+      Plant 1                           3    9    8
+      Plant 2                           7    2    4
+
+
+
+Chapter 2 · Linear Programming Models                                       24 / 32
+
+Page 25
+CASE 3 · THE MODEL
+
+
+Example 2-3
+
+         Variables
+                    Xij = units sent from plant i to warehouse j
+
+         Objective
+                    Minimize 18X₁₁ + 24X₁₂ + 23X₁₃ + 27X₂₁ + 22X₂₂ + 24X₂₃
+
+         Constraints
+                    X₁₁ + X₂₁ = 500     X₁₂ + X₂₂ = 2,000     X₁₃ + X₂₃ = 900
+                    X₁₁ + X₁₂ + X₁₃ ≤ 2,300       X₂₁ + X₂₂ + X₂₃ ≤ 1,500
+                    Xij ≥ 0 for all i and j
+
+
+      (500, 500, 900, 0, 1,500, 0)            minimum cost 747 million won
+
+
+Chapter 2 · Linear Programming Models                                           25 / 32
+
+Page 26
+CASE 4 · PRODUCTION SCHEDULING
+
+
+Example 2-5
+
+         Company C makes three products on two types of machine
+
+         Daily output required: 300, 700 and 400 units
+
+         100 machines of type 1 and 80 of type 2, each up to 8 hours a day
+
+         Which machine should make which product, at least cost?
+                                        Cost 1   Cost 2   Cost 3   Time 1   Time 2   Time 3
+
+      Machine 1                          13        9       10       0.4      1.1      0.9
+
+      Machine 2                          11       12        8       0.5      1.2      1.3
+      Cost in 10,000 won / unit · time in hours / unit
+
+
+
+
+Chapter 2 · Linear Programming Models                                                         26 / 32
+
+Page 27
+CASE 4 · THE MODEL
+
+
+Example 2-5
+
+         Variables
+                    Xij = units of product j made on machine type i
+
+         Objective
+                    Minimize 13X₁₁ + 9X₁₂ + 10X₁₃ + 11X₂₁ + 12X₂₂ + 8X₂₃
+
+         Constraints
+                    0.4X₁₁ + 1.1X₁₂ + 0.9X₁₃ ≤ 800        0.5X₂₁ + 1.2X₂₂ + 1.3X₂₃ ≤ 640
+                    X₁₁ + X₂₁ = 300     X₁₂ + X₂₂ = 700    X₁₃ + X₂₃ = 400
+                    Xij ≥ 0 for all i and j
+
+
+      (0, 700, 23, 300, 0, 377)         minimum cost ≈ 128.5 million won
+
+
+Chapter 2 · Linear Programming Models                                                      27 / 32
+
+Page 28
+CASE 5 · PORTFOLIO SELECTION
+
+
+Example 2-6
+
+         M Asset has 20 billion won to invest across four stocks
+
+         Expected return must be at least 1.8 billion won a year
+
+         No more than 50% of the fund in any one stock
+
+         Minimize the total risk index
+      Stock                              A          B              C    D
+
+      Price (10,000 won / share)         10         5              8    4
+
+      Expected annual return (%)         12         8              3   10
+
+      Risk index per 10,000 won          0.1       0.07       0.01     0.08
+
+
+
+Chapter 2 · Linear Programming Models                                         28 / 32
+
+Page 29
+CASE 5 · THE MODEL
+
+
+Example 2-6
+
+         Variables
+                    A, B, C, D = amount invested in each stock, in units of 10,000 won
+
+         Objective
+                    Minimize 0.1A + 0.07B + 0.01C + 0.08D
+
+         Constraints
+                    A + B + C + D = 2,000,000
+                    0.12A + 0.08B + 0.03C + 0.1D ≥ 180,000
+                    A, B, C, D ≤ 1,000,000      A, B, C, D ≥ 0
+
+      A 10.0 bn · B 0 · C 5.71 bn · D 4.29 bn        total risk index 140,000
+
+
+Chapter 2 · Linear Programming Models                                                    29 / 32
+
+Page 30
+LOOKING BACK
+
+
+Five industries, one structure
+
+    Case                                   Decision variable           Objective        Constraints
+
+    Product mix                         units of each product          max profit       ≤ capacity
+
+    Diet                                amount of each food            min cost       ≥ requirement
+
+    Distribution                         units on each route           min cost     = demand, ≤ supply
+
+    Scheduling                          units on each machine          min cost      = output, ≤ hours
+
+    Portfolio                            money in each asset            min risk     = fund, ≥ return
+
+
+      Name the variable, with its unit, and the model writes itself.
+
+
+Chapter 2 · Linear Programming Models                                                                    30 / 32
+
+Page 31
+THE FINE PRINT
+
+
+Assumptions and limits of LP
+
+         Certainty — every coefficient is known, no probabilities
+
+         Proportionality — double the input, double the output
+
+         Additivity — the total is the sum of the parts
+
+         Divisibility — fractions are allowed: 0.83 litres, or 2.4 aircraft
+
+
+      Each one is a claim about the world — and each one is sometimes false.
+
+
+
+
+Chapter 2 · Linear Programming Models                                          31 / 32
+
+Page 32
+IN SUMMARY
+
+
+Chapter 2
+
+      Every LP has three parts: variables, one objective, constraints
+
+      Formulation is a procedure — five steps, every time
+
+      The keyword fixes the symbol: at least → ≥ · at most → ≤ · exactly → =
+
+      Certainty, proportionality, additivity, divisibility — the price of linearity
+
+
+Practice · formulate, do not solve, problems 2-1 to 2-5
+
+Next week · Chapter 3 — solving an LP: the graphical method

@@ -1,0 +1,472 @@
+COURSE REFERENCE: Management Science Syllabus (2026, Fall).pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/syllabus-management-science-syllabus-2026-fall.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+Syllabus
+
+Ⅰ. Basic Information
+
+    Year                    2026                    Semester                    2학기                 Class Number           0264
+
+
+Course Title                                 경영과학                                  Class Type                     FL
+
+
+ Class Time                     화)12:00∼13:30                        Classroom                       강의동207
+
+
+                          ( )    Active Use                    (√)    Conditional Use         ( )    Prohibited
+
+
+  AI Usage       1. Active Use: The use of AI is actively encouraged to support learning. However, students must be
+  Policy for     aware of the precautions for use and must submit a [Generative AI Usage Statement.]
+ This Course     2. Conditional Use: Limited use of AI is permitted for brainstorming, grammar correction, etc., during
+                 learning and assignments. However, the final output must be produced by the student. Students must
+                 submit a [Generative AI Usage Statement.]
+                 3. Prohibited: The use of AI is entirely prohibited throughout learning and assignments in this course.
+
+
+
+II. Instructor
+
+    Name                            김기태                                E-mail                   kitaekim@kau.ac.kr
+
+
+  Telephone                      02-300-0085                           Office                            본관 324
+
+
+ Office Hours                                    화14:00-16:00 / 수15:00-17:00 / 목12:00-14:00
+
+
+  Learning                             (√)   Y            ( )    N               ( )    Other Website
+ Management
+   System          ※ Other Website URL:
+
+
+
+III. Offering Information
+
+                                 Course                                          Credit Cours       Hours Lectur Lab
+           Major                                      Course Title                            Grade
+                                  Code                                             s      e          per    e    Hours
+
+           경영학부                  BD4248                 경영과학                       3      전필         2       3         3          0
+
+                                 3BD320
+           경영전공                                         경영과학                       3      전필         2       3         3          0
+                                   6
+
+           경영학과                  BD4248                 경영과학                       3      전필         2       3         3          0
+
+Page 2
+IV. Course Description
+
+                                      (√)                       ( )
+
+   Grading Method                                                 Absolute Grading
+
+                      Management Science is a field of study that uses mathematical modeling and scientific analysis
+                      techniques to find the most efficient optimal solutions to complex decision-making problems faced
+                      by companies or organizations, and applies these solutions to real-world management to support
+      Overview
+                      rational decision-making. In this course, students will learn management science knowledge and
+                      problem-solving skills through various methods including theoretical lectures, problem-solving
+                      exercises, and hands-on practice.
+                      1) Understanding the necessity of management science and real-world application cases
+                      2) Understanding various methodologies used in management science, such as optimization
+     Objectives       3) Acquiring the ability to solve optimization problems using Python
+                      4) Understanding future development directions in management science (research on artificial
+                      intelligence and quantum computing in management science)
+
+    Prerequisites     Python
+
+                                                 01주차, 02주차, 03주차, 04주차, 05주차, 06주차, 07주차, 09주차, 10주차,
+  Type of Lecture               총13주차
+                                                 11주차, 12주차, 13주차, 14주차
+
+
+
+
+                      ( )Videos taken from the CTL
+                      Studio                               (√)Quiz
+                      (√)Self-captured video               (√)Lecture                      (√)Assignment for the week
+ Teaching Methods
+                      ( )Others(Youtube or MOOC)           (√)Individual Activities        (√)Reflective log
+                                                           ( )Problem solving by team      ( )Portfolio
+                                                           (√)Discussion                   ( )Others
+                      (√)Quiz                              (√)Experiment                   ( )None
+                      (√)Submitting Questions              ( )Others
+                      ( )Others
+                      Mid-term Exam Final Exam      Quiz       Assignment Attendance Participation   Others      Total
+     Evaluation
+                           20           20          20             20          10            10        0          100
+
+      Remarks         The participation score includes the reflective logs of students.
+
+
+
+VI. Course Evaluation
+                                                                Average of Similar Courses
+Last Course Evaluation Score                 /-/-                                                       /-/-
+                                                                          Group
+
+
+    Improvement for this
+         Semester
+
+
+※ Average of Similar Courses Group : This is the average course evaluation score among all courses within a course
+group. Course groups are determined based on class sizes, grade and course classification.
+
+
+
+VII. Materials and References
+
+
+
+      Materials       Lecture Slides based on Modern Management Science 9th edition
+
+
+
+
+                      Modern Management Science 9th edition (현대경영과학 (9판), 한빛아카데미, 김세헌 저, 2023년 01월
+     References
+                      31일 발행)
+
+Page 3
+VIII. Weekly Plan
+※ For Captone Design, Weekly Plan might be omitted.
+
+               Objectives       Introduction to Management Science
+
+
+              Description       Course introduction, introduction of application cases
+
+                                    단계                    교수자                             학습자                   시간
+ 1주차
+                                  수업 전       Self-captured video            Submitting Questions                60
+           Teaching Methods
+                                  수업 중       Lecture                        Discussion                          75
+                                  수업 후       Reflective log notify          Reflective log                      30
+
+              Assignment
+
+
+               Objectives       Linear optimization models and linear programming
+
+
+              Description       Study linear optimization models and linear programming
+
+                                    단계                    교수자                             학습자                   시간
+ 2주차
+                                  수업 전       Self-captured video            Quiz                                60
+           Teaching Methods
+                                  수업 중       Quiz Solution                  Discussion                          75
+                                  수업 후       Reflective log notify          Reflective log                      30
+
+              Assignment        Reflective log notify
+
+
+               Objectives       Development, application, and limitations of linear optimization models
+
+
+              Description       Study development, application, and limitations of linear optimization models
+
+                                    단계                    교수자                             학습자                   시간
+ 3주차
+                                  수업 전       Self-captured video            Quiz                                60
+           Teaching Methods
+                                  수업 중       Quiz Solution                  Discussion                          75
+                                  수업 후       Assignment Upload              Assignment                          60
+
+              Assignment        Assignment #1
+
+
+               Objectives       Analysis of linear optimization models
+
+
+              Description       Analysis of linear optimization models using Python on Google Colab
+
+                                    단계                    교수자                             학습자                   시간
+ 4주차
+                                  수업 전       Self-captured video            Submitting Questions                60
+           Teaching Methods
+                                  수업 중       Experiment                     Individual Activities               75
+                                  수업 후       Reflective log notify          Reflective log                      30
+
+              Assignment
+
+Page 4
+VIII. Weekly Plan
+※ For Captone Design, Weekly Plan might be omitted.
+
+               Objectives       Post-optimality analysis
+
+
+              Description       Study post-optimality analysis
+
+                                    단계                     교수자                            학습자           시간
+ 5주차
+                                  수업 전       Self-captured video             Quiz                       60
+           Teaching Methods
+                                  수업 중       Quiz Solution                   Discussion                 75
+                                  수업 후       Reflective log notify           Reflective log             30
+
+              Assignment
+
+
+               Objectives       Sensitivity analysis
+
+
+              Description       Study sensitivity analysis
+
+                                    단계                     교수자                            학습자           시간
+ 6주차
+                                  수업 전       Self-captured video             Quiz                       60
+           Teaching Methods
+                                  수업 중       Quiz Solution                   Discussion                 75
+                                  수업 후       Assignment Upload               Assignment                 60
+
+              Assignment        Assignment #2
+
+
+               Objectives       Analyzing business problems using linear optimization models
+
+
+              Description       Study various applications of linear optimization models in real life
+
+                                    단계                     교수자                            학습자           시간
+ 7주차
+                                  수업 전       Self-captured video             Quiz                       60
+           Teaching Methods
+                                  수업 중       Quiz Solution                   Discussion                 75
+                                  수업 후       Reflective log notify           Reflective log             30
+
+              Assignment
+
+
+               Objectives       Mid-term Exam
+
+
+              Description       Mid-term Exam
+
+                                    단계                     교수자                            학습자           시간
+ 8주차
+                                  수업 전
+           Teaching Methods
+                                  수업 중
+                                  수업 후
+
+              Assignment
+
+Page 5
+VIII. Weekly Plan
+※ For Captone Design, Weekly Plan might be omitted.
+
+               Objectives       Integer optimization models
+
+
+              Description       Study integer optimization models
+
+                                    단계                   교수자                              학습자                  시간
+ 9주차
+                                  수업 전      Self-captured video            Submitting Questions                 60
+           Teaching Methods
+                                  수업 중      Lecture                        Discussion                           75
+                                  수업 후      Reflective log notify          Reflective log                       30
+
+              Assignment
+
+
+               Objectives       Network models and transportation
+
+
+              Description       Study linear and integer optimization models related to networks and transportation
+
+                                    단계                   교수자                              학습자                  시간
+10주차
+                                  수업 전      Self-captured video            Submitting Questions                 60
+           Teaching Methods
+                                  수업 중      Experiment                     Individual Activities                75
+                                  수업 후      Assignment Upload              Assignment                           30
+
+              Assignment        Assignment #3
+
+
+               Objectives       Multi-criteria decision making problems 1: Scoring, DEA
+
+
+              Description       Study multi-criteria decision making problems and scoring and DEA methods
+
+                                    단계                   교수자                              학습자                  시간
+11주차
+                                  수업 전      Self-captured video            Quiz                                 60
+           Teaching Methods
+                                  수업 중      Quiz Solution                  Disucssion                           75
+                                  수업 후      Reflective log notify          Reflective log                       60
+
+              Assignment
+
+
+               Objectives       Multi-criteria decision making problems 2: Goal programming
+
+
+              Description       Study the goal programming in multi-criteria decision making problems
+
+                                    단계                   교수자                              학습자                  시간
+12주차
+                                  수업 전      Self-captured video            Quiz                                 60
+           Teaching Methods
+                                  수업 중      Quiz Solution                  Disucssion                           75
+                                  수업 후      Reflective log notify          Reflective log                       30
+
+              Assignment
+
+Page 6
+VIII. Weekly Plan
+※ For Captone Design, Weekly Plan might be omitted.
+
+               Objectives       Game theory
+
+
+              Description       Introduction to game theory
+
+                                    단계                   교수자                          학습자                   시간
+13주차
+                                  수업 전       Self-captured video         Quiz                               60
+           Teaching Methods
+                                  수업 중       Quiz Solution               Disucssion                         75
+                                  수업 후       Assignment upload           Assignment                         60
+
+              Assignment        Assignment #4
+
+
+               Objectives       Future of Management Science
+
+
+              Description       Introduction to the future of management science: Agentic AI and Quantum Computing
+
+                                    단계                   교수자                          학습자                   시간
+14주차
+                                  수업 전       Self-captured video         Submitting Questions               60
+           Teaching Methods
+                                  수업 중       Lecture                     Disucssion                         75
+                                  수업 후       Reflective log notify       Reflective log                     30
+
+              Assignment
+
+
+               Objectives       Final Exam
+
+
+              Description       Final Exam
+
+                                    단계                   교수자                          학습자                   시간
+15주차
+                                  수업 전
+           Teaching Methods
+                                  수업 중
+                                  수업 후
+
+              Assignment
+
+
+               Objectives       Make-up Class (if necessary)
+
+
+              Description       Make-up Class (if necessary)
+
+                                    단계                   교수자                          학습자                   시간
+16주차
+                                  수업 전
+           Teaching Methods
+                                  수업 중
+                                  수업 후
+
+              Assignment
+
+Page 7
+IX. Regarding Disabled Students
+
+
+「Rules Pertaining to Disabled Student Support」 Disabled students are entitled to special conditions or assistance when
+taking the class, receiving materials, completing homework assignments and writing exams. Students should consult the
+professor, Academic Affairs Team or Student Affairs Team regarding particular needs prior to registering for the class.
+
+
+
+IX. Precautions for Using Generative AI
+
+
+
+Generative AI may reflect social and cultural biases embedded in its training data and can produce inaccurate or
+contextually inappropriate results due to "hallucinations" (factual inaccuracies). Therefore, students must critically
+review and verify all AI-generated content using reliable sources. If a student fails to recognize these limitations and
+submits work containing AI-generated errors, the student bears full responsibility for any resulting academic penalties.
+
+Page 8
+<Attachment>
+
+
+                          Generative AI Usage Statement
+1) Basic Information
+
+Course Information
+
+Student Information
+
+      Tool Used
+
+      Date of Use
+
+
+2) Purpose and Scope of Use (check or describe applicable items)
+
+  [       ]   Idea brainstorming and outline drafting
+
+  [       ]   Sentence correction and grammar checking
+
+  [       ]   Data analysis or draft code generation
+
+  [       ]   Requesting summaries or explanations of specific concepts
+
+  [       ]   Other (please specify:                                                 )
+※ Use of generative AI beyond the scope permitted in this course may constitute a breach of academic
+integrity.
+
+
+  Main Prompts (Questions)
+
+  Personal Contribution and
+         Revisions
+
+
+
+3) Self-Check and Pledge
+
+  [       ]   I personally verified the factual accuracy of the information generated by AI.
+
+  [       ]   I did not copy the AIs output as-is, but restructured it in my own words.
+
+  [       ]   I used AI only as an auxiliary tool, and derived the key content myself.
+              I have transparently disclosed my use of generative AI, and understand that failure to do so
+  [       ]
+              may be regarded as academic dishonesty.
+              I recognize that generative AI may produce biased or inaccurate information, and I have
+  [       ]
+              critically reviewed its output accordingly.
+
+  I confirm that the above statements are true, and that if found to be false, I may face grade penalties or
+                                            disciplinary actions.
+
+
+                                                                                  202      년       월           일
+
+
+                                                                    Name: ______________________(Signature)
+
+
+※ The content of the Generative AI Usage Statement is intended to ensure transparency and is not directly
+reflected in grading.

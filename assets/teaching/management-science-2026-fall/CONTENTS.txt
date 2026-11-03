@@ -1,0 +1,21 @@
+# Course files
+
+Snapshot: 2026-11-03
+
+Weeks 10–13 are excluded from this student bundle.
+
+- Syllabus/Management Science Syllabus (2026, Fall).pdf
+- Lecture Slides/Week 1/Chapter 1 — Introduction (English).pdf
+- Lecture Slides/Week 1/Chapter 2 — Linear Programming (English).pdf
+- Lecture Slides/Week 1/Week 1_Course Introduction (Fall 2026).pdf
+- Lecture Slides/Week 2/Chapter 3 — Analysis of LP Models.pptx
+- Lecture Slides/Week 3/Chapter 3 — Analysis of LP Models part 2.pptx
+- Lecture Slides/Week 4/Chapter 3 — Analysis of LP Models part 3 (slides).pptx
+- Lecture Slides/Week 5/Chapter 4 Post-Optimal and Sensitivity Analysis (slides).pptx
+- Lecture Slides/Week 6/Chapter 5 Business Applications of Linear Programming (Slides).pptx
+- Lecture Slides/Week 9/[Chapter 7] Integer Programming (Slides).pptx
+- Quizzes/Chapter 2/Additional examples for Chapter 2.pdf
+- Quizzes/Chapter 2/Quiz #1.pdf
+- Quizzes/Chapter 3/Additional examples for Chapter 3.docx
+- Quizzes/Chapter 3/Quiz #2.pdf
+- Assignments/Assginment #1.pdf

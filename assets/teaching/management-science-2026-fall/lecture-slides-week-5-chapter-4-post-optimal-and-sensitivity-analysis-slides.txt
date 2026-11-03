@@ -1,0 +1,412 @@
+COURSE REFERENCE: Chapter 4 Post-Optimal and Sensitivity Analysis (slides).pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Slide 1
+
+
+CHAPTER 04
+Post-Optimal and Sensitivity Analysis
+Shadow prices, reduced costs, and sensitivity analysis
+
+TEXTBOOK
+Modern Management Science, 9th ed.
+CHAPTER
+Ch. 4
+WEEK
+Week 5
+Management Science  ·  Fall 2026  ·  Kitae Kim, School of Business, Korea Aerospace University
+
+Slide 2
+CHAPTER 04
+Post-Optimal and Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Post-optimal analysis: What-if analysis performed after optimization 
+
+
+Evaluating resource values using shadow prices
+Evaluating new-product profitability using reduced costs
+Sensitivity analysis of changes in objective coefficients and resource availability (constraints)
+
+
+Slide 3
+CHAPTER 04
+Post-Optimal and Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Shadow price
+the increase in the objective function when the supply capacity of a resource increases by 1
+Dual variable
+mathematically, the shadow price is called the dual variable; it is called the shadow price when it has an economic interpretation
+
+Slide 4
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+
+Slide 5
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Variables
+X1: premium fertilizer production
+X2: regular fertilizer production
+Model
+Maximize Z = 17X1 + 10X2  (profit, ₩10,000)
+Subject to 2X1 + X2 <= 1500 (Material A, tons)
+ X1 + X2 <= 1200   (Material B, tons)
+ X1 <= 500 (Material C, tons)
+X1, X2  >= 0
+
+Slide 6
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Figure 4.1  Graphical analysis of Example 4-1
+Optimal solution? Obtained by solving the following
+2X1 + X2 = 1500
+X1 + X2 = 1200
+Optimal solution: X1=300, X2=900 
+Optimal value: Z = ₩141 million
+2X1 + X2 = 1500
+X1 + X2 = 1200
+X1 = 1200 - X2
+2*(1200-X2) + X2 = 1500
+X2 = 900
+X1= 300
+Z = 17X1 + 10X2 = 17 * 300 + 10 * 900 = 141000
+
+Slide 7
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Figure 4.2  Material A supply increases by 1 ton
+Optimal solution? Obtained by solving the following
+2X1 + X2 = 1501
+X1 + X2 = 1200
+Optimal solution: X1= 301, X2= 899 
+Optimal value: Z = ₩141.07 million
+
+Slide 8
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Original
+Material A supply +1 unit (1 ton)
+From the constraints
+2X1 + X2 = 1500
+X1 + X2 = 1200
+Opt. solution: X1= 300, X2= 900 
+Opt. value: Z = ₩141 million
+From the constraints
+2X1 + X2 = 1501
+X1 + X2 = 1200
+Opt. solution: X1= 301, X2= 899 
+Opt. value: Z = ₩141.07 million
+Material A supply +1 unit (1 ton) → optimal value (i.e., objective function) increases by ₩70,000
+Shadow price of Material A = ₩70,000/ton
+This also represents the marginal profit of Material A’s supply capacity
+X1 = 1200 – X2 2(1200-X2) + X2 = 1501 X2 = 899 X1 = 301
+
+Slide 9
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Find the shadow prices of Materials B and C in the same way
+To find the shadow price of Material B, modify the constraints as follows
+< Original > 
+Maximize Z = 17X1 + 10X2
+Subject to  2X1 + X2 <= 1500  (Material A)
+X1 + X2 <= 1200 (Material B)
+X1 <= 500  (Material C)
+X1, X2  >= 0
+< Material B capacity +1 unit > 
+Maximize Z = 17X1 + 10X2
+Subject to  2X1 + X2 <= 1500  (Material A)
+X1 + X2 <= 1201 (Material B)
+X1 <= 500  (Material C)
+X1, X2  >= 0
+
+Slide 10
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Original
+Material B supply +1 unit (1 ton)
+From the constraints
+2X1 + X2 = 1500
+X1 + X2 = 1200
+Opt. solution: X1= 300, X2= 900 
+Opt. value: Z = ₩141 million
+From the constraints
+2X1 + X2 = 1500
+X1 + X2 = 1201
+Opt. solution: X1= 299, X2= 902 
+Opt. value: Z = ₩141.03 million
+Material B supply +1 unit (1 ton) → optimal value (i.e., objective function) increases by ₩30,000
+Shadow price of Material B = ₩30,000/ton
+X1 = 1201 – X2 2(1201-X2) + X2 = 1500 X1, X2 = (299, 902) Z = 17*(299) + 10*(902)
+
+Slide 11
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Find the shadow prices of Materials B and C in the same way
+To find the shadow price of Material C, modify the constraints as follows
+< Original > 
+Maximize Z = 17X1 + 10X2
+Subject to  2X1 + X2 <= 1500  (Material A)
+X1 + X2 <= 1200 (Material B)
+X1 <= 500  (Material C)
+X1, X2  >= 0
+< Material C capacity +1 unit > 
+Maximize Z = 17X1 + 10X2
+Subject to  2X1 + X2 <= 1500  (Material A)
+X1 + X2 <= 1200 (Material B)
+X1 <= 501  (Material C)
+X1, X2  >= 0
+
+Slide 12
+Material C constraint: X1<=501
+Material C constraint: X1<=500
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Original
+Material C supply +1 unit (1 ton)
+Increasing the supply of Material C does not move the optimal solution (point B)
+Material C supply +1 unit (1 ton) → optimal value (i.e., objective function) increases by ₩0
+Shadow price of Material C = ₩0/ton
+
+Slide 13
+SHADOW PRICE
+Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Summary
+Shadow price of Material A = ₩70,000/ton
+Shadow price of Material B = ₩30,000/ton
+Shadow price of Material C = ₩0/ton
+In general, if a constraint is non-binding, its shadow price = 0
+
+Slide 14
+POST-OPTIMAL ANALYSIS
+Post-Optimal Analysis using Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Valuing additional materials
+If the shadow prices of Materials A, B, and C are ₩70,000/ton, ₩30,000/ton, and ₩0/ton, respectively, which material is worth acquiring more of to maximize profit?
+Between acquiring more Material A and more Material B, which is more profitable, and by how much?
+
+Slide 15
+POST-OPTIMAL ANALYSIS
+Post-Optimal Analysis using Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to buy more material
+Company L offers to sell Material A at a ₩40,000 premium over its price. Should we buy it?
+
+Slide 16
+POST-OPTIMAL ANALYSIS
+Post-Optimal Analysis using Shadow Price
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to produce a new product
+A new product requires 1.5 tons of A, 1.5 tons of B, and 1 ton of C. Selling it yields a profit of ₩130,000 after material costs. Is it profitable to produce this new product?
+What is the value of the A, B, C capacity used to make the new product?
+
+Slide 17
+REDUCED COST
+Reduced Cost
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Reduced cost: the change in the objective function value when a variable that equals 0 in the optimal solution is increased by 1 unit is called the reduced cost (or relative cost).
+
+Slide 18
+REDUCED COST
+Reduced Cost
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+
+Slide 19
+REDUCED COST
+Reduced Cost
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Example 4-1 (two fertilizers)
+Example 4-2 (+ super-premium)
+Maximize Z = 17X1 + 10X2 (profit, ₩10,000)
+Subject to 2X1 + X2 <= 1500 (Material A, tons)
+X1 + X2 <= 1200 (Material B, tons)
+X1 <= 500 (Material C, tons)
+ X1, X2  >= 0
+Maximize Z = 17X1 + 10X2 + 21X3 (profit, ₩10,000)
+Subject to 2X1 + X2 + 3X3 <= 1500 (Material A, tons)
+X1 + X2 + X3<= 1200 (Material B, tons)
+X1 + X3<= 500 (Material C, tons)
+ X1, X2, X3  >= 0
+Optimal solution (X1, X2, X3)= (300, 900, 0)
+Optimal value Z = ₩141 million 
+
+Slide 20
+REDUCED COST
+Reduced Cost
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Example 4-2 (+ super-premium)
+Forcing 1 ton of super-premium
+Maximize Z = 17X1 + 10X2 + 21X3 (profit, ₩10,000)
+Subject to 2X1 + X2 + 3X3 <= 1500 (Material A, tons)
+X1 + X2 + X3<= 1200 (Material B, tons)
+X1 + X3<= 500 (Material C, tons)
+ X1, X2, X3  >= 0
+Optimal solution (X1, X2, X3)= (300, 900, 0)
+Optimal value Z = ₩141 million 
+Maximize Z = 17X1 + 10X2 + 21*1 (profit, ₩10,000)
+Subject to 2X1 + X2 + 3 *1 <= 1500 (Material A, tons)
+X1 + X2 + 1<= 1200 (Material B, tons)
+X1 + 1<= 500 (Material C, tons)
+ X1, X2>= 0
+Optimal solution (X1, X2, X3)= (298, 901, 1)
+Optimal value Z = ₩140.97 million → profit falls by ₩30,000!
+
+Slide 21
+REDUCED COST
+Reduced Cost
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Reduced cost
+Forcing 1 ton of super-premium
+Maximize Z = 17X1 + 10X2 + 21*1 (profit, ₩10,000)
+Subject to 2X1 + X2 + 3 *1 <= 1500 (Material A, tons)
+X1 + X2 + 1<= 1200 (Material B, tons)
+X1 + 1<= 500 (Material C, tons)
+ X1, X2>= 0
+Optimal solution (X1, X2, X3)= (298, 901, 1)
+Optimal value Z = ₩140.97 million → profit falls by ₩30,000!
+Reduced cost: the change in the objective function value when a variable that equals 0 in the optimal solution is increased by 1 unit 
+In the example on the right, the reduced cost of X3 is –₩30,000. 
+
+Slide 22
+SENSITIVITY ANALYSIS
+Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Variables
+X1: daily production of standard lamps
+X2: daily production of high-performance lamps
+Model
+maximize Z = 20 X1 + 50 X2 (total profit, ₩10,000)
+subject to  1.2 X1 + 4 X2 <= 240 (assembly, hours)
+0.5 X1 + X2 <= 81 (inspection, hours)
+ X2 <= 40 (chip supply, units)
+  X1, X2 >= 0
+
+Slide 23
+SENSITIVITY ANALYSIS
+Sensitivity Analysis – Objective Coefficients
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Mathematically, we can use the property that “the optimal solution is unchanged if the objective’s slope lies between the slopes of the two binding constraints” to find the range over which an objective coefficient can change without changing the optimal solution (the allowable range)
+
+Slide 24
+SENSITIVITY ANALYSIS
+Sensitivity Analysis – Objective Coefficients
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Change in objective coefficient C2
+Objective function: Z = 20X1 + C2X2
+Slope of the objective function = -20/C2
+Assembly (1.2 X1 + 4 X2 <= 240) slope: -1.2/4 = -0.3
+Inspection (0.5 X1 + X2 <= 81) slope: -0.5/1 = -0.5
+-0.5 <= -20/C2 <= -0.3 → 40 <= C2 <= 200/3 (≈66.7)
+ 
+For 40 <= C2 <= 200/3, the optimal solution (X1=105, X2=28.5) does not change
+Here, the optimal value Z = 20 ⨉ 105 + C2 ⨉ 28.5 = 28.5C2 + 2,100 (₩10,000) is proportional to C2
+
+Slide 25
+SENSITIVITY ANALYSIS
+Sensitivity Analysis – Changes in the RHS
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+When the right-hand side (RHS) changes
+Changing the RHS shifts the constraint boundary, so the optimal solution itself changes
+Small changes in the RHS are captured by the shadow price
+However, when the change in the RHS is large, the shadow price itself changes
+So, we need to check how far the RHS can change while the shadow price stays the same
+
+Slide 26
+SENSITIVITY ANALYSIS
+Sensitivity Analysis – Changes in the RHS
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+When the right-hand side (RHS) changes
+
+Slide 27
+SENSITIVITY ANALYSIS
+Post-Optimal Analysis Using Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to change the production plan (objective coefficient change)
+Q: For what profit per standard lamp should we keep the current optimal daily plan (105 standard lamps, 28.5 high-performance lamps)?
+(Hint) For 15 <= C1 <= 25, the optimal solution (X1=105, X2=28.5) does not change 
+
+Slide 28
+SENSITIVITY ANALYSIS
+Post-Optimal Analysis Using Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to change the production plan (objective coefficient change)
+Q: For what profit per standard lamp should we keep the current optimal daily plan (105 standard lamps, 28.5 high-performance lamps)?
+(Hint) For 15 <= C1 <= 25, the optimal solution (X1=105, X2=28.5) does not change 
+A: If the profit per standard lamp is between ₩150,000 and ₩250,000, the current plan (105 standard lamps, 28.5 high-performance lamps) can be kept. If it falls below ₩150,000 or rises above ₩250,000, the production plan must be revised
+
+Slide 29
+SENSITIVITY ANALYSIS
+Post-Optimal Analysis Using Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to add available hours (RHS change)
+Adding 1 hour of daily labor in the assembly process costs ₩50,000. 
+Based on the current sensitivity analysis, should we add labor to the assembly process?
+If so, how much labor should we add?
+(Hint) For 194.5 ≤ b1 ≤ 258.4, the assembly shadow price stays at ₩62,500/hour
+
+Slide 30
+SENSITIVITY ANALYSIS
+Post-Optimal Analysis Using Sensitivity Analysis
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Deciding whether to add available hours (RHS change)
+Adding 1 hour of daily labor in the assembly process costs ₩50,000. 
+Based on the current sensitivity analysis, should we add labor to the assembly process?
+If so, how much labor should we add?
+(Hint) For 194.5 ≤ b1 ≤ 258.4, the assembly shadow price stays at ₩62,500/hour
+Net profit per hour: ₩62,500 – ₩50,000 = ₩12,500
+This shadow price is valid only for 194.5 ≤ b1 ≤ 258.4, so we can add at most 18.4 hours (258.4-240=18.4)
+Total additional profit = ₩12,500/hour × 18.4 hours = ₩230,000
+
+Slide 31
+SUMMARY
+Summary
+
+Chapter 4  ·  Post-Optimal and Sensitivity Analysis
+Post-optimal analysis: what-if analysis performed after optimization
+Shadow price
+The increase in the objective function when a resource’s supply capacity increases by 1
+Reduced cost
+The change in the objective function value when a variable that equals 0 in the optimal solution is increased by 1 unit
+Sensitivity analysis
+Analyzes how the optimal solution and optimal objective value change when model coefficients change
+Allowable ranges of objective coefficients and of the RHS

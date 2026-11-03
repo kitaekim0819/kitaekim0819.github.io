@@ -1,0 +1,62 @@
+COURSE REFERENCE: Additional examples for Chapter 2.pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+Management Science
+
+
+Additional examples for Chapter 2: 3 Problems
+
+
+
+   1. Fund M plans to raise 800 million won from new investors to invest in K Oil and H
+      Steel stocks. The expected annual return is 30,000 won per share for K Oil and
+      50,000 won per share for H Steel. Currently, the stock price per share is 250,000
+      won for K Oil and 500,000 won for H Steel. Fund M assesses the risk index of K
+      Oil at 0.5 per share and the risk index of H Steel at 0.25 per share and plans to
+      maintain the total risk index within 700. Additionally, as a matter of policy, the
+      fund plans not to invest more than 1,000 shares in K Oil. Formulate this problem
+      as a linear optimization model.
+
+Page 2
+Management Science
+
+
+
+2. A chili pepper wholesaler operates three warehouses nationwide and supplies
+   five cities. The transportation cost per unit (10,000 KRW/ton) from each
+   warehouse to each city, as well as the supply and demand quantities for each
+   warehouse and city, are given in the following table. Formulate a linear
+   optimization model to minimize the total transportation cost.
+
+
+                                                            (Unit: 10,000 KRW/ton)
+
+               City    A         B          C           D         E       Stock
+    Warehouse                                                             (ton)
+    1                  7         5         12         11          9        500
+    2                 13        12          6          3          8        300
+    3                  7         6          5          4         14        350
+    Demand (ton)      150       200        100        300        400
+
+Page 3
+Management Science
+
+
+3. An investment firm is investing 10 billion won across two stocks: Petroleum
+   Corporation and Steel Corporation. Based on data analysis for each company's
+   stock, they have created the following table.
+             Stock               Price per        Expected Annual       Risk index
+                                  share           Return per share      per share
+                               (KRW/share)         (KRW/share)          (1/share)
+    Petroleum Corporation             25,000                   6,000            0.5
+      Steel Corporation               50,000                  10,000           0.25
+
+   The risk index per share indicates the risk level of each stock. Petroleum
+   Corporation appears to have a higher risk level than its peers. The firm invests
+   subject to the constraints that the portfolio’s total risk index does not exceed
+   70,000 and that its investment in Petroleum Corporation does not exceed
+   100,000 shares. Develop a linear optimization model that maximizes the total
+   annual return.

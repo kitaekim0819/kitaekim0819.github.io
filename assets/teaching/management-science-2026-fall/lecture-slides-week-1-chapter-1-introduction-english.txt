@@ -1,0 +1,344 @@
+COURSE REFERENCE: Chapter 1 — Introduction (English).pdf
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf
+
+Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
+
+Page 1
+CHAPTER 01
+
+
+
+
+Introduction
+What management science is, how it developed,
+and how an analysis actually proceeds
+
+
+    TEXTBOOK                                               CHAPTER                           WEEK
+
+    Modern Management Science, 9th ed.                     Ch. 1, pp. 3–19                   Week 1
+
+
+
+Management Science · Fall 2026 · Kitae Kim, School of Business, Korea Aerospace University
+
+Page 2
+CHAPTER CONTENTS
+
+
+Five sections, one question
+The chapter is built around a single question: when a manager faces a decision, what does a scientific approach actually add?
+
+
+       1       The development of quantitative decision making Where the field came from — from Taylor to operations research          p. 3
+
+
+
+
+       2       Characteristics of management science                    The five features that distinguish it from other approaches    p. 5
+
+
+
+
+       3       The steps of management science analysis                 Figure 1.3 — the analysis cycle, and why it loops              p. 9
+
+
+
+
+       4       Management science techniques                            The toolbox, and which tools this course covers               p. 11
+
+
+
+
+       5       Information systems and management science               Where the models live once they leave the classroom           p. 14
+
+
+
+
+Chapter 1 · Introduction                                                                                                               2 / 11
+
+Page 3
+FIGURE 1.1
+
+
+The systematic decision-making process
+Every decision follows this shape, whether or not anyone writes it down. Management science makes the middle steps explicit.
+
+
+
+                                                                                 Gather quantitative information
+
+
+                                                                                               ↓
+
+
+         Grasp                  Recognize            Present feasible          Set decision             Evaluate the          Select the best            Act on the
+       the reality         →   the problem    →        alternatives     →        criteria      →        alternatives   →        alternative     →         decision
+
+
+                                                                                               ↑
+                                                                                  Gather qualitative information
+
+
+
+
+      Information is gathered only once the alternatives are on the table — and both kinds matter. Numbers alone do not set the criteria, and judgement alone
+      does not evaluate the options. Management science works on the quantitative half without pretending the other half does not exist.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                              3 / 11
+
+Page 4
+SECTION 1          ·   B EFO RE WO RL D WA R II
+
+
+Five people who made decisions calculable
+Before the field had a name, individual problems were being solved mathematically — each one still taught today.
+
+
+    1909                              1911                           1913                             1914                            1917
+
+    Erlang                            Taylor                         Harris                           Lanchester                      Gantt
+    Queueing theory                   Scientific management          The EOQ model                    Attrition models                The Gantt chart
+
+
+    Telephone traffic: how            Time-and-motion study —        Economic order quantity          Differential equations for      Scheduling made visible —
+    many lines are enough?            measuring work instead of      — the first inventory            the outcome of a military       still on every project plan
+    Waiting made calculable           estimating it                  optimization model               engagement                      today
+
+
+
+
+      What they share: each replaced a judgement call with a model that could be checked. None of them called it management science — the name comes later,
+      and only after a war made the approach unavoidable.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                        4 / 11
+
+Page 5
+SECTION 1          ·   T H E WA R A N D A F T E R
+
+
+A war gave the field its name and its method
+
+      D U R I N G T H E WA R                                                            A F T E R T H E WA R
+
+
+      Operations Research                                                               Management Science
+      British and American teams were asked military questions that had no              The same teams turned to industry. Dantzig's simplex method (1947)
+      precedent: how should radar stations be sited, how large should a                 made linear programming solvable at scale, and the arrival of the
+      convoy be, where should depth charges be set to explode.                          computer made large models practical.
+
+      The answers came from interdisciplinary teams — physicists,                       In business the field took the name management science; in
+      mathematicians, economists — working on operational data rather                   engineering and the military it stayed operations research. The two
+      than laboratory data. That working method is the one the field kept.              names describe the same discipline.
+
+
+
+
+      The simplex method is where this course begins in earnest: Chapter 2, next week. Everything in Weeks 2–7 rests on it.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                      5 / 11
+
+Page 6
+SECTION 2
+
+
+Five characteristics of management science
+
+       01                                                           02                                                            03
+
+
+     A focus on managerial problems                              A systems approach                                             The scientific research method
+
+     The subject is a decision someone actually has              The unit of analysis is the whole system, not                  Observe, formulate, model, test against data,
+     to make, not a phenomenon to be described.                  the department. Optimizing one part in                         revise. A model that has not been validated is a
+     The test of the work is whether the decision                isolation routinely makes the whole worse.                     hypothesis, not an answer.
+     improves.
+
+
+
+
+       04       Interdisciplinary teamwork                                                        05      Mathematical methods and computers
+                Real problems do not respect subject boundaries. The wartime teams                        Models large enough to be realistic are too large to solve by hand.
+                mixed disciplines deliberately, and the field kept the habit.                             This is why Week 4 puts you in Python.
+
+
+
+
+Notice that only the last of the five is about mathematics. The other four are about how you frame the problem and who you frame it with.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                                           6 / 11
+
+Page 7
+FIGURE 1.3
+
+
+The steps of a management science analysis
+
+                                      Identify decision variables             Qualitative factors
+
+
+
+                                                 ↓                                   ↓
+
+
+           Define the                       Develop the                           Validate                           Make the                Act on the
+            problem           →               model                 →           the solution          →              decision            →    decision
+
+
+                ↑                                ↑
+
+                                          Prepare input data
+
+
+
+
+                                          Revise the model
+
+
+
+
+The loop is the point. A first model is almost never right — validation sends you back to the definition, not forward to the decision.
+
+
+Chapter 1 · Introduction                                                                                                                                  7 / 11
+
+Page 8
+SECTION 4
+
+
+The toolbox — and what this course covers
+          Linear programming                                 Ch. 2–5 · Weeks 2–7               Forecasting                                          not covered this term
+
+
+
+          Network models and transportation                      Ch. 6 · Week 10               Markov process models                                not covered this term
+
+
+
+          Integer linear programming                               Ch. 7 · Week 9              Project scheduling: PERT / CPM                       not covered this term
+
+
+
+          Multi-criteria decision making                     Ch. 8 · Weeks 11–12               Inventory systems                                    not covered this term
+
+
+
+          Decision analysis                                  not covered this term             Queueing systems                                     not covered this term
+
+
+
+          Simulation                                         not covered this term             Game theory                                             Ch. 11 · Week 13
+
+
+
+Eleven techniques are listed in the chapter; this course covers four of them plus game theory, which the chapter's list does not mention. The rest are the natural follow-
+on reading.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                                8 / 11
+
+Page 9
+SECTION 5
+
+
+Where these models actually live
+A model that runs once in a classroom is an exercise. A model that runs every night against live data is a management science system.
+
+
+     01                                              02                                          03                                           04
+
+     Transaction systems                             Database                                    The model                                    Decision support
+     Sales, inventory, and operations
+                                             →       The organized record that analysis
+                                                                                          →      Optimization, forecasting, or
+                                                                                                                                       →      Results delivered to a manager
+     data recorded as the business runs              draws on                                    simulation applied to that data              who still makes the call
+
+
+
+
+      Why it matters for the model                                                            Why it matters for you
+      The quality of a decision is bounded by the quality of the data behind it.              This is the reason the course is taught in Python on Google Colab rather
+      Much of the effort in a real project goes into the third step of Figure 1.3 —           than by hand. From Week 4 you will be building models that read data, not
+      preparing input data — not into the mathematics.                                        models that fit on a whiteboard.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                                  9 / 11
+
+Page 10
+A P P L I C AT I O N C A S E   ·   P. 1 7
+
+
+Taco Bell's SMART labor management system
+
+     3                                                                  15 min                                                              1996
+     models combined                                                    forecast interval                                                   Edelman Award
+     forecasting, simulation,                                           customer transactions predicted                                     INFORMS Franz Edelman Award
+     and integer programming                                            in quarter-hour buckets                                             for applied operations research
+
+
+
+
+      The problem                                                                                         The management science answer
+      A fast-food restaurant's demand swings enormously within a single day,                              Forecast transactions per 15-minute interval, simulate how the restaurant
+      and labor is the largest controllable cost. Schedule too many crew and you                          behaves under a given crew, then solve an integer program for the
+      burn margin; too few and service collapses at exactly the busiest moment.                           schedule that meets the service target at least cost. Three techniques from
+                                                                                                          this chapter's list, working as one system.
+
+
+
+Source: textbook Ch. 1 application case, p. 17; Hueter & Swart, “An Integrated Labor-Management System for Taco Bell,” Interfaces 28(1), 1998; INFORMS Franz Edelman Award. Verify reported figures
+before citing them.
+
+
+
+
+Chapter 1 · Introduction                                                                                                                                                                      10 / 11
+
+Page 11
+CHAPTER 1     ·   IN SUMMARY
+
+
+Four things to take away
+                                                                   Not description, not explanation — the work is judged by whether the decision it supports
+   01        Management science is about decisions
+                                                                   is better.
+
+
+
+             The method came from solving real                     From Taylor's stopwatch to wartime operations research to Dantzig's simplex method in
+   02
+             problems                                              1947.
+
+
+
+                                                                   Figure 1.3 returns from validation to problem definition. Expect to go round it more than
+   03        The analysis is a loop, not a line
+                                                                   once.
+
+
+
+                                                                   Figure 1.1 puts qualitative information in the diagram on purpose. The model informs the
+   04        Quantitative does not mean exclusive
+                                                                   decision; it does not make it.
+
+
+
+
+Next week · Chapter 2 — Linear optimization models and linear programming

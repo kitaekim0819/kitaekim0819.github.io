@@ -1,0 +1,38 @@
+# Management Science Tutor — Student Setup
+
+## Start on any AI platform
+
+Open the [course materials page](https://kitaekim0819.github.io/teaching/management-science-2026-fall/). No login is required to download the materials.
+
+1. Open Claude, Gemini, or ChatGPT.
+2. Paste the contents of [TUTOR_INSTRUCTIONS.txt](https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt) into a new chat, or attach TUTOR_INSTRUCTIONS.md and ask the assistant to follow it.
+3. Ask your question and share your attempt. If the AI has browsing tools, ask it to retrieve the relevant material from the course page.
+4. If it cannot access the website or read a file, download the relevant course document and attach it yourself. You do not need to upload every document.
+
+Example prompt:
+
+“Please act as my Management Science tutor using the instructions and materials at https://kitaekim0819.github.io/teaching/management-science-2026-fall/. Help me understand [topic]. Here is my attempt: [your work]. If you cannot access the materials, tell me which file to attach.”
+
+The website supplies course files and instructions; it is not itself a chatbot. Different AI platforms have different browsing and file-reading capabilities. Plain-text companions help with text retrieval but may omit diagrams and equations, so consult the original documents when needed. A new chat may need the instructions and files again.
+
+## Optional saved setups
+
+- Claude: Add the instructions and relevant files to a Project. Organization project sharing requires supported Team/Enterprise access and administrator settings. A personal project is a fallback when a shared organization project is unavailable.
+- Gemini: Where Gems are available, add the instructions and course files to a Gem. Share with Viewer access rather than Editor access for students. Anyone with access can view its instructions and attached files.
+- ChatGPT: Where Plugin Creator is enabled, create a tutor plugin with these instructions and references, test it, and share it using the permitted workspace settings. Use the ordinary-chat method if your account does not offer this feature.
+
+The instructor can share the public course-page URL through the LMS. The page and downloads do not grant access to private Dropbox folders or grading systems. The tutor instructions guide learning behavior; data-access restrictions are enforced by publishing only this selected set of files.
+
+## Included materials
+
+The four folders contain the syllabus, lecture slides, quiz/practice questions, and assignment questions. Weeks 10–13 are excluded. Lecture slides include worked teaching examples. Separate solution documents, exams, grade records, recordings, backups, and student submissions are not included. Public syllabus grading policies and exam dates remain included.
+
+This is a snapshot, not an automatic sync. Download a new version when the instructor announces an update. Use CONTENTS.md to check which files are included.
+
+## Official platform guides
+
+Setup guidance checked 2026-11-03. Account interfaces may change.
+
+- Claude project sharing: https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing
+- Gemini Gem sharing: https://support.google.com/gemini/answer/16504957?hl=en
+- ChatGPT plugin creation and sharing: https://learn.chatgpt.com/docs/build-plugins

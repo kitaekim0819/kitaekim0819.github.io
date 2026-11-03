@@ -10,6 +10,7 @@ The syllabi below are publicly available as PDF downloads.
 
 - **Management Science** — Undergraduate (Fall 2026)
   - An introduction to mathematical modeling, linear programming, and optimization techniques for business decision-making.
+  - [Course materials and AI tutor]({{ '/teaching/management-science-2026-fall/' | relative_url }}) — slides, practice questions, assignments, and direct downloads.
   - <a href="{{ '/assets/files/management-science-syllabus-fall-2026.pdf' | relative_url }}" download aria-label="Download Management Science syllabus (PDF)">Download syllabus (PDF)</a>
 
 - **Introduction to Management Information Systems** — Undergraduate (Fall 2026)

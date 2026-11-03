@@ -1,0 +1,158 @@
+{
+  "course": "Management Science, Fall 2026",
+  "updated": "2026-11-03",
+  "page_url": "https://kitaekim0819.github.io/teaching/management-science-2026-fall/",
+  "tutor_instructions_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt",
+  "files": [
+    {
+      "section": "Syllabus",
+      "title": "Management Science Syllabus (2026, Fall)",
+      "group": "",
+      "filename": "syllabus-management-science-syllabus-2026-fall.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/syllabus-management-science-syllabus-2026-fall.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/syllabus-management-science-syllabus-2026-fall.txt",
+      "bytes": 81876,
+      "sha256": "49ee296a3b51b3390b8920785a97d5c84f4519729efe6dbfafa8037e5d36b33e"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 1 — Introduction (English)",
+      "group": "Week 1",
+      "filename": "lecture-slides-week-1-chapter-1-introduction-english.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.txt",
+      "bytes": 382605,
+      "sha256": "5ef632195ed9acca4e0af4c3058782bdc423030b535df8b77be4e35af6796499"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 2 — Linear Programming (English)",
+      "group": "Week 1",
+      "filename": "lecture-slides-week-1-chapter-2-linear-programming-english.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.txt",
+      "bytes": 323565,
+      "sha256": "6834f81be1c6684c830f1abf34d6e2a708101436252f6c9fe6289c41a08be9a6"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Week 1_Course Introduction (Fall 2026)",
+      "group": "Week 1",
+      "filename": "lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.txt",
+      "bytes": 427480,
+      "sha256": "e624c9b809eb9f3b7e04dc78cef55e847cf921ee18b0ae50deb91cc9440e0b8c"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 3 — Analysis of LP Models",
+      "group": "Week 2",
+      "filename": "lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.txt",
+      "bytes": 986379,
+      "sha256": "d20cfb567a59e4070614ba1f2d18654f7093aad14909c84d4976bf2cf02dd8a9"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 3 — Analysis of LP Models part 2",
+      "group": "Week 3",
+      "filename": "lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.txt",
+      "bytes": 352750,
+      "sha256": "1ea22aeadcf11fc85b3b824e57b24a26f0c88e75309a8a75dc37a38c45c1cc01"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 3 — Analysis of LP Models part 3 (slides)",
+      "group": "Week 4",
+      "filename": "lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.txt",
+      "bytes": 273654,
+      "sha256": "22a6d46efd8b10344426bba16687dd7e0621d9582947b80faa41de858b6a8302"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 4 Post-Optimal and Sensitivity Analysis (slides)",
+      "group": "Week 5",
+      "filename": "lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.txt",
+      "bytes": 23843699,
+      "sha256": "402fe4162c200911107a9af96b6609a76c65056ddad7b749014fbf987f0329e6"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 5 Business Applications of Linear Programming (Slides)",
+      "group": "Week 6",
+      "filename": "lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.txt",
+      "bytes": 1378058,
+      "sha256": "5aad938c79a47269df2a4ad5ebc87eccb7bcab819c9c8b5e62c70a5141e7e9c4"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "[Chapter 7] Integer Programming (Slides)",
+      "group": "Week 9",
+      "filename": "lecture-slides-week-9-chapter-7-integer-programming-slides.pptx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.txt",
+      "bytes": 610473,
+      "sha256": "435bbe8df5a184261733c31fd2762b857dc2d6269d04dc7d28b4f650ca4eb8f2"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Additional examples for Chapter 2",
+      "group": "Chapter 2",
+      "filename": "quizzes-chapter-2-additional-examples-for-chapter-2.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.txt",
+      "bytes": 34972,
+      "sha256": "4ed57ca291423c496f5ae139f89a77231faa431c253ce2a310563224ae9d0ef0"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Quiz #1",
+      "group": "Chapter 2",
+      "filename": "quizzes-chapter-2-quiz-1.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.txt",
+      "bytes": 44663,
+      "sha256": "2ec83a40b795ccfcdf884a88900ed09462faad2f22130c4a7a784af4de17dbcf"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Additional examples for Chapter 3",
+      "group": "Chapter 3",
+      "filename": "quizzes-chapter-3-additional-examples-for-chapter-3.docx",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.txt",
+      "bytes": 26304,
+      "sha256": "65897de86453beaa2288a2e24b5298637fc3277d81a4c9ce56769d1ad6b3fe14"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Quiz #2",
+      "group": "Chapter 3",
+      "filename": "quizzes-chapter-3-quiz-2.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.txt",
+      "bytes": 5992719,
+      "sha256": "6043de2ca5fd0bb8d972f3dcfe68fd46ddb83aa07db1013246f412bc02dd525e"
+    },
+    {
+      "section": "Assignments",
+      "title": "Assginment #1",
+      "group": "",
+      "filename": "assignments-assignment-1.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignments-assignment-1.txt",
+      "bytes": 52344,
+      "sha256": "eea78217ce92074824e185238d5fde9a564af972055fe6f45f04d571ebba1967"
+    }
+  ]
+}
