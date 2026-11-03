@@ -32,7 +32,7 @@ The one-sentence prompt above starts a normal conversation; saving a Gem retains
 
 ### Download and install ms_tutor
 
-[Download ms_tutor.zip](/assets/teaching/management-science-2026-fall/ms_tutor.zip) — includes the tutor instructions, all 20 approved course documents, and text companions. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+[Download ms_tutor.zip](/assets/teaching/management-science-2026-fall/ms_tutor.zip) — a small skill containing tutor instructions and a Python download helper; it retrieves current course references when needed. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
 
 **Download → Upload to your AI service → Enable → Start studying.** The download is named `ms_tutor.zip`; the skill inside is named `ms-tutor` to follow the skill naming format. Choose an AI service with custom skill uploads. Uploading this ZIP as an ordinary chat attachment does not necessarily install it.
 
@@ -44,7 +44,7 @@ The one-sentence prompt above starts a normal conversation; saving a Gem retains
 
 For another AI service, use its custom-skill import feature and follow its supported file-format requirements; some services require an extracted folder. If skill import is unavailable, paste the [full tutor instructions](#full-tutor-instructions) and attach relevant course files instead. This package has not been installation-tested across AI services.
 
-Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This package uses bundled files, so setup does not depend on Claude fetching the website. It is a snapshot: upload an updated package when course materials change. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
+Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This skill downloads relevant references from the public course website and checks original files against the current file index. It requires permitted web access or Python execution with network access; installing it does not remove an AI service’s download restrictions. If downloads are blocked, attach the requested course files from the links below. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
 
 [Claude skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [Interface changes](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page) · [Inspect SKILL.md](/assets/teaching/management-science-2026-fall/ms_tutor-SKILL.md)
 
