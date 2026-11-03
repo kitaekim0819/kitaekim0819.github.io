@@ -10,11 +10,27 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 **kau-ms-tutor** uses this webpage as its course reference source. Start a new AI chat with web browsing available, copy the prompt below, and ask about a lecture, quiz, or assignment by name.
 
-### Start the tutor
+### 1. Try AI Tutor
 
 {% include course-tutor/start.html %}
 
-This starts the tutor in the current conversation; it does not install a permanent skill. Use a fresh prompt from this page when starting a new chat. The tutor instructions and reference text are included directly on this page. Figures and mathematical notation may require the original documents below.
+Try the tutor in **one conversation**: click **Copy tutor prompt**, paste it into a new AI chat with browsing available, and ask a study question. This does not create an installed skill. Start a new chat with a fresh prompt if you want to try it again.
+
+To check that it is working, ask: **“Tell me the materials version you read, then summarize Quiz 2’s Problem 1 without solving it.”** The tutor should read the page and identify what it actually accessed. If you like the tutor, install it below for repeated use.
+
+### 2. Install AI Tutor
+
+**[Download tutor skill (ZIP)](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)** · <a href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md" download="SKILL.md">Download SKILL.md</a>
+
+The ZIP contains **SKILL.md and all 22 reference text files**. Upload the complete ZIP to install the tutor with its materials; SKILL.md alone contains the instructions but not the references.
+
+1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
+2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
+3. **Start a new chat** and say: **“Use kau-ms-tutor and help me with Quiz 2.”**
+
+Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. It includes a snapshot of the course text: import a new ZIP when materials are updated, then start a new chat. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+
+Figures and mathematical notation may require the original documents below.
 
 ### Course materials
 
@@ -42,9 +58,5 @@ All course materials are organized by week below. Problem sets include quizzes, 
 The sections below contain the tutor’s instructions and the course text it reads. Expand a section to read it yourself. If your AI cannot read a section, you can copy its text into the chat.
 
 {% include course-tutor/references.html %}
-
-### Optional skill download
-
-For AI services with custom skill uploads, the [kau-ms-tutor ZIP](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) includes a snapshot of the reference text. Import the complete ZIP, enable the skill, and start a new chat. Installed copies require a new upload when materials change. [View the packaged SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md).
 
 <script src="{{ '/assets/js/course-tutor.js' | relative_url }}" defer></script>
