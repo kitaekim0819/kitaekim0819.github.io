@@ -1,16 +1,4 @@
-/* Loaded only by the course materials page. */
-.page-content > .wrapper {
-  max-width: none;
-  width: auto;
-  padding-inline: clamp(16px, 4vw, 72px);
-}
-
-.post-content > p,
-.post-content > ol,
-.post-content > blockquote {
-  max-width: 90ch;
-}
-
+/* Course table rules; page width is defined in the shared theme. */
 .course-materials-table {
   width: 100%;
   overflow-x: auto;
@@ -38,6 +26,5 @@
 .course-materials-table th:nth-child(4) { width: 34%; }
 
 @media (max-width: 700px) {
-  .post-title { font-size: clamp(26px, 6vw, 36px); }
   .course-materials-table table { font-size: 14px; }
 }

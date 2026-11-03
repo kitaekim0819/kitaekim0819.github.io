@@ -1,0 +1,33 @@
+---
+---
+
+@import "minima";
+
+/* Shared fluid layout for every page using the site theme. */
+.wrapper {
+  box-sizing: border-box;
+  max-width: none;
+  width: 100%;
+  padding-inline: clamp(16px, 4vw, 72px);
+}
+
+.page-content {
+  min-width: 0;
+}
+
+.post-content,
+.home {
+  overflow-wrap: break-word;
+}
+
+.post-content img,
+.home img,
+.post-content iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .post-title {
+    font-size: clamp(26px, 6vw, 36px);
+  }
+}
