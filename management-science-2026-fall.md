@@ -26,6 +26,12 @@ For a reusable tutor, open [Gemini](https://gemini.google.com/) on the web, choo
 
 The one-sentence prompt above starts a normal conversation; saving a Gem retains its instructions for future Gem chats. A website link alone does not upload all course files into the Gem. See [Google’s Gem setup guide](https://support.google.com/gemini/answer/15235603?hl=en).
 
+### Save the tutor in Claude
+
+Open [Claude Projects](https://claude.ai/projects), click **+ New Project**, and name it **Management Science Tutor**. Choose **Set project instructions**, paste the full contents of [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt), and click **Save instructions**. Add the course documents you need to **project knowledge** using the **+** button, then start your study chats inside that project. Download and extract the student ZIP before uploading individual files; if a format is unsupported, use its text companion and provide original figures separately when needed.
+
+Project instructions apply to chats within that project. The one-sentence prompt also works as a request in a normal Claude chat, with file uploads as a fallback when links cannot be read. See [Claude’s Project setup guide](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects).
+
 ### Course downloads
 
 The files below include public course policies and worked lecture examples. Problem sets and released solutions are available separately below. Weeks 10–13, private exams, individual grades, and unreleased answer keys are excluded from this collection.
