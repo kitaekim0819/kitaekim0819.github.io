@@ -32,7 +32,7 @@ The one-sentence prompt above starts a normal conversation; saving a Gem retains
 
 ### Download and install kau-ms-tutor
 
-[Download kau-ms-tutor.zip](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) — a small skill containing tutor instructions, a reference-list snapshot, and a Python download helper; it lists files offline and retrieves course documents when permitted. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
+[Download kau-ms-tutor.zip](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) — a small, text-only skill containing tutor instructions and all 20 reference-webpage links; it reads webpage text using the AI service’s browsing tool, without a download script. Keep this ZIP intact when uploading it as a skill; it is different from the general student bundle.
 
 **Download → Upload to your AI service → Enable → Start studying.** The download is named `kau-ms-tutor.zip`; the skill inside is named `kau-ms-tutor` to follow the skill naming format. Choose an AI service with custom skill uploads. Uploading this ZIP as an ordinary chat attachment does not necessarily install it.
 
@@ -44,7 +44,7 @@ The one-sentence prompt above starts a normal conversation; saving a Gem retains
 
 For another AI service, use its custom-skill import feature and follow its supported file-format requirements; some services require an extracted folder. If skill import is unavailable, paste the [full tutor instructions](#full-tutor-instructions) and attach relevant course files instead. This package has not been installation-tested across AI services.
 
-Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This skill downloads relevant references from the public course website and checks original files against the current file index. It requires permitted web access or Python execution with network access; installing it does not remove an AI service’s download restrictions. If downloads are blocked, attach the requested course files from the links below. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
+Claude’s documentation lists custom skills as available on the Free plan; your own account’s usage limits still apply. This version reads HTML reference pages with the AI service’s browsing tool. It does not run a download helper or retrieve references through the code sandbox. If browsing requires a URL in your message, copy the exact “Read online” link below into your chat. If access remains blocked, paste the reference text or attach the relevant page. The package structure and file integrity have been checked; installation in a student’s Claude account still needs to be tried.
 
 [Claude skill instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [Interface changes](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page) · [Inspect SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md)
 
@@ -53,6 +53,12 @@ Claude’s documentation lists custom skills as available on the Free plan; your
 Open [Claude Projects](https://claude.ai/projects), click **+ New Project**, and name it **Management Science Tutor**. Choose **Set project instructions**, paste the full contents of [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt), and click **Save instructions**. Add the course documents you need to **project knowledge** using the **+** button, then start your study chats inside that project. Download and extract the student ZIP before uploading individual files; if a format is unsupported, use its text companion and provide original figures separately when needed.
 
 Project instructions apply to chats within that project. The one-sentence prompt also works as a request in a normal Claude chat, with file uploads as a fallback when links cannot be read. See [Claude’s Project setup guide](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects).
+
+### If Claude asks you to provide the URL
+
+Paste the reference’s exact **Read online** link directly into your chat. A link inside a skill may not satisfy the browsing tool’s requirement for a user-supplied URL. For Assignment 1, copy this complete prompt:
+
+> Use kau-ms-tutor to read https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/assignments-assignment-1.html and summarize Problem 1 without solving it; if browsing is blocked, tell me rather than guessing.
 
 ### Course downloads
 
