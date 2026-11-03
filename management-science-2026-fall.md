@@ -14,11 +14,17 @@ Download course materials or use them with Claude, Gemini, or ChatGPT. **No logi
 
 Open a new chat in Claude, Gemini, or ChatGPT, then **copy and paste the entire prompt below**. This sets up the tutor for that conversation; repeat it when starting a new chat. Link access depends on the AI service and its available tools. If it cannot open the links, the prompt will guide you to attach the files instead.
 
-> Act as my Management Science tutor for Professor Kitae Kim’s Fall 2026 course at Korea Aerospace University. First open and read https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt and follow those tutoring instructions throughout this chat. Use https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/materials.json to find the syllabus and relevant course materials; retrieve documents as needed and cite the file and page or slide. Help me learn through explanations, one hint at a time, and feedback on my attempts. Follow the syllabus’s AI-use rules and do not assist during live exams or quizzes. If you cannot open either link, tell me clearly and ask me to attach TUTOR_INSTRUCTIONS.md from the student bundle and the relevant course file; do not pretend you have read them. Once you have read the tutor instructions, briefly confirm you are ready and ask which topic I want to study and whether I prefer English or Korean.
+> Act as my Management Science tutor by reading and following the tutor instructions and course materials at https://kitaekim0819.github.io/teaching/management-science-2026-fall/, and if you cannot access them, ask me to upload the tutor instructions and relevant course files.
 
 [Open the prompt as plain text](/assets/teaching/management-science-2026-fall/START_TUTOR.txt)
 
 The tutor helps you work through a problem with hints, checks your formulation, and explains relevant concepts. Follow the syllabus’s AI-use policy. Do not use the tutor during exams or quizzes, and disclose AI assistance when required.
+
+### Save the tutor in Gemini
+
+For a reusable tutor, open [Gemini](https://gemini.google.com/) on the web, choose **Gems → New Gem**, and name it **Management Science Tutor**. Paste the full contents of [Tutor instructions](/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt) into the **Instructions** field, then click **Save**. You can add downloaded course files under **Knowledge → Add files**. Use the original documents for figures and equations; add only the files you need if you reach your account’s upload limits.
+
+The one-sentence prompt above starts a normal conversation; saving a Gem retains its instructions for future Gem chats. A website link alone does not upload all course files into the Gem. See [Google’s Gem setup guide](https://support.google.com/gemini/answer/15235603?hl=en).
 
 ### Course downloads
 
