@@ -1,5 +1,5 @@
 COURSE REFERENCE: Chapter 4 Post-Optimal and Sensitivity Analysis (slides).pptx
-Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pdf
 
 Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
 

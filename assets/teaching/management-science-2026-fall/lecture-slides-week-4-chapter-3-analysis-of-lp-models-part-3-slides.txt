@@ -1,5 +1,5 @@
 COURSE REFERENCE: Chapter 3 — Analysis of LP Models part 3 (slides).pptx
-Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pdf
 
 Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
 

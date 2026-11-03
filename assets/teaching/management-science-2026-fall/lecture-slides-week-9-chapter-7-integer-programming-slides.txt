@@ -1,5 +1,5 @@
 COURSE REFERENCE: [Chapter 7] Integer Programming (Slides).pptx
-Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pdf
 
 Text extraction only. Diagrams, image-based equations, and table layout may be missing. Consult the original document for complete mathematical notation and figures.
 
