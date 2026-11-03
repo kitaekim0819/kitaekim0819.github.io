@@ -8,17 +8,9 @@ permalink: /teaching/management-science-2026-fall/
 
 Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
-**kau-ms-tutor** uses this webpage as its course reference source. Start a new AI chat with web browsing available, copy the prompt below, and ask about a lecture, quiz, or assignment by name.
+**kau-ms-tutor** is your study companion for Management Science. Install the tutor, give it a name of your own, and explore the course materials with it.
 
-### 1. Try AI Tutor
-
-{% include course-tutor/start.html %}
-
-Try the tutor in **one conversation**: click **Copy tutor prompt**, paste it into a new AI chat with browsing available, and ask a study question. The copied prompt includes direct HTML text links so the tutor can read course content without opening PDFs. This does not create an installed skill. Start a new chat with a fresh prompt if you want to try it again.
-
-To check that it is working, ask: **“Tell me the materials version you read, then summarize Quiz 2’s Problem 1 without solving it.”** The tutor should read the page and identify what it actually accessed. If you like the tutor, install it below for repeated use.
-
-### 2. Install AI Tutor
+### Install AI Tutor
 
 **[Download AI Tutor](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)**
 
@@ -26,9 +18,23 @@ Download the tutor package, then upload it to Claude using the steps below. The 
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
 2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
-3. **Start a new chat** and say: **“Use kau-ms-tutor and help me with Quiz 2.”**
+3. **Start a new chat** and send the two prompts below, one at a time.
 
 Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. It includes a snapshot of the course text: import a new ZIP when materials are updated, then start a new chat. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+
+#### First prompt — Name your tutor
+
+Copy this prompt into your new chat. Choose a name when the tutor asks you.
+
+> Use kau-ms-tutor as my Management Science study tutor. Let me give you a name: ask what I would like to call you, then wait for my answer. Once I choose, use that name in this conversation and briefly explain how you can help me learn.
+
+The name is your personal nickname for the tutor. In a new chat, remind it of your chosen name if needed.
+
+#### Second prompt — Explore your course materials
+
+After naming your tutor, send this prompt to check which materials it can actually read.
+
+> Use kau-ms-tutor and inspect the course references included in the installed skill. List the available materials by week or topic, including the syllabus, lecture slides, quizzes and examples, assignments, CVXPY practice, and released solutions. Read each accessible reference and give a brief summary of what it covers without solving any problems. Distinguish files you actually read from titles you could only list, and clearly identify anything inaccessible. Do not guess missing contents. Finish by asking which topic I would like to study first.
 
 Figures and mathematical notation may require the original documents below.
 
