@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Management Science — Course Materials & AI Tutor
+title: Course Materials & AI Tutor
 permalink: /teaching/management-science-2026-fall/
 ---
 
