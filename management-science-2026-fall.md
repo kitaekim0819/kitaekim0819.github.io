@@ -37,15 +37,15 @@ Published lecture and practice materials by week. Download a notebook to use it 
 
 | Week | Topic | Materials |
 | --- | --- | --- |
-| Week 1 | Course introduction and linear programming | [Course Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf)<br>[Chapter 1: Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf)<br>[Chapter 2: Linear Programming (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf) |
-| Week 2 | Chapter 3: Analysis of LP Models — Part 1 | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx) |
-| Week 3 | Chapter 3: Analysis of LP Models — Part 2 | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx) |
-| Week 4 | Chapter 3: Analysis of LP Models — Part 3 | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx) |
-| Week 5 | Chapter 4: Post-Optimal and Sensitivity Analysis | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx) |
-| Week 6 | Chapter 5: Business Applications of Linear Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx) |
-| Week 7 | Chapter 5: CVXPY practice — portfolio, advertising, make-or-buy, staffing, and airline tickets | [Practice notebook (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb)<br>[Solutions (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb) |
+| Week 1 | Course introduction and linear programming | [Course Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf)<br>[Chapter 1 - Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf)<br>[Chapter 2 - Linear Programming (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf) |
+| Week 2 | Chapter 3 - Analysis of LP Models (Part 1) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx) |
+| Week 3 | Chapter 3 - Analysis of LP Models (Part 2) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx) |
+| Week 4 | Chapter 3 - Analysis of LP Models (Part 3) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx) |
+| Week 5 | Chapter 4 - Post-Optimal and Sensitivity Analysis | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx) |
+| Week 6 | Chapter 5 - Business Applications of Linear Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx) |
+| Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice notebook (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb)<br>[Solutions (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb) |
 | Week 8 | Midterm exam | Exam materials are not published. |
-| Week 9 | Chapter 7: Integer Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx) |
+| Week 9 | Chapter 7 - Integer Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx) |
 
 #### Quizzes
 
