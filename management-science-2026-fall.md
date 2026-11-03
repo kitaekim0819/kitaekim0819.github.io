@@ -20,9 +20,9 @@ To check that it is working, ask: **“Tell me the materials version you read, t
 
 ### 2. Install AI Tutor
 
-**[Download tutor skill (ZIP)](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)** · <a href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md" download="SKILL.md">Download SKILL.md</a>
+**[Download AI Tutor](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)**
 
-The ZIP contains **SKILL.md and all 22 reference text files**. Upload the complete ZIP to install the tutor with its materials; SKILL.md alone contains the instructions but not the references.
+Download the tutor package, then upload it to Claude using the steps below. The package includes the tutor instructions and all 22 course references.
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
 2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
