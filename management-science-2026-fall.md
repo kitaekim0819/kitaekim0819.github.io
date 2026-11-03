@@ -33,26 +33,19 @@ Download original documents for complete figures, equations, and formatting. Qui
 
 #### Lecture Slides
 
-Published lecture and practice materials by week. Download a notebook to use it in Jupyter or Google Colab.
+Published lecture and practice materials by week. Quizzes and additional examples are grouped with the related lecture topic. Download a notebook to use it in Jupyter or Google Colab.
 
-| Week | Topic | Materials |
-| --- | --- | --- |
-| Week 1 | Course introduction and linear programming | [Course Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf)<br>[Chapter 1 - Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf)<br>[Chapter 2 - Linear Programming (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf) |
-| Week 2 | Chapter 3 - Analysis of LP Models (Part 1) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx) |
-| Week 3 | Chapter 3 - Analysis of LP Models (Part 2) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx) |
-| Week 4 | Chapter 3 - Analysis of LP Models (Part 3) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx) |
-| Week 5 | Chapter 4 - Post-Optimal and Sensitivity Analysis | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx) |
-| Week 6 | Chapter 5 - Business Applications of Linear Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx) |
-| Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice notebook (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb)<br>[Solutions (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb) |
-| Week 8 | Midterm exam | Exam materials are not published. |
-| Week 9 | Chapter 7 - Integer Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx) |
-
-#### Quizzes
-
-- **Chapter 2 — Additional examples for Chapter 2** · [Problem set](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf)
-- **Chapter 2 — Quiz #1** · [Problem set](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf)
-- **Chapter 3 — Additional examples for Chapter 3** · [Problem set](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx)
-- **Chapter 3 — Quiz #2** · [Problem set](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.docx)
+| Week | Topic | Lecture materials | Quizzes & examples |
+| --- | --- | --- | --- |
+| Week 1 | Course introduction and linear programming | [Course Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-week-1-course-introduction-fall-2026.pdf)<br>[Chapter 1 - Introduction (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-1-introduction-english.pdf)<br>[Chapter 2 - Linear Programming (PDF)](/assets/teaching/management-science-2026-fall/lecture-slides-week-1-chapter-2-linear-programming-english.pdf) Quiz 1: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-quiz-1-solutions.pdf)<br>Chapter 2 examples: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-2-additional-examples-for-chapter-2-solutions.pdf) |
+| Week 2 | Chapter 3 - Analysis of LP Models (Part 1) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-2-chapter-3-analysis-of-lp-models.pptx) Quiz 2: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2.pdf) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-quiz-2-solutions.docx)<br>Chapter 3 examples: [Problems](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3.docx) · [Solutions](/assets/teaching/management-science-2026-fall/quizzes-chapter-3-additional-examples-for-chapter-3-solutions.docx) |
+| Week 3 | Chapter 3 - Analysis of LP Models (Part 2) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-3-chapter-3-analysis-of-lp-models-part-2.pptx) — |
+| Week 4 | Chapter 3 - Analysis of LP Models (Part 3) | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-4-chapter-3-analysis-of-lp-models-part-3-slides.pptx) — |
+| Week 5 | Chapter 4 - Post-Optimal and Sensitivity Analysis | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-5-chapter-4-post-optimal-and-sensitivity-analysis-slides.pptx) — |
+| Week 6 | Chapter 5 - Business Applications of Linear Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-6-chapter-5-business-applications-of-linear-programming-slides.pptx) — |
+| Week 7 | Chapter 5 - Business Applications of Linear Programming (CVXPY Practice) | [Practice notebook (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice.ipynb)<br>[Solutions (IPYNB)](/assets/teaching/management-science-2026-fall/week-7-chapter-5-practice-solutions.ipynb) — |
+| Week 8 | Midterm exam | Exam materials are not published. — |
+| Week 9 | Chapter 7 - Integer Programming | [Slides (PPTX)](/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pptx) — |
 
 #### Assignments
 
