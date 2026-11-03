@@ -59,12 +59,9 @@ All course materials are organized by week below. Problem sets include quizzes, 
 
 </div>
 
-<details class="tutor-reference" id="tutor-reference-library">
-<summary>Tutor instructions and reference text</summary>
-<p>The sections below contain the tutor’s instructions and the course text it reads. Expand a section to read it yourself. If your AI cannot read a section, you can copy its text into the chat.</p>
-
+<!-- Reference text retained in HTML for tools that can read hidden content. -->
+<div id="tutor-reference-library" hidden>
 {% include course-tutor/references.html %}
-
-</details>
+</div>
 
 <script src="{{ '/assets/js/course-tutor.js' | relative_url }}" defer></script>
