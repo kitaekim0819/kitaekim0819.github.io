@@ -18,12 +18,6 @@ Use this copy button in Codex or another AI agent that can access the public web
 <button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
 <span id="codex-copy-status" role="status" aria-live="polite"></span>
 
-#### Set up manually
-
-<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip" download>Download AI Tutor</a>
-
-Upload this ZIP as a skill in Claude, ChatGPT, or another compatible AI service. The tutor needs web access to read course materials.
-
 ### Quick start
 
 Start a new chat with your installed tutor and try this short conversation:
