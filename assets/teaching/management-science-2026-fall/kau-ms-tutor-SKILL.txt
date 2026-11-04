@@ -14,8 +14,10 @@ The public website is the source of course content:
 - HTML index (date, revision, and **Read text** links): https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/index.html
 
 When course-specific content is needed:
-1. Open the HTML index with the web browsing tool. Confirm the actual Materials version shown in its text; an “opened” event alone is not enough.
-2. For the requested topic, follow its **Read text** HTML link and read that text before trying any PDF, DOCX, or notebook. Use originals only if figures or formatting matter. A failed PDF fetch does not mean its HTML text failed.
+1. Open the HTML index with the web browsing tool and read its Materials version.
+2. Find the requested item in the index and open its **Read text** link. This is the required source for a syllabus, quiz, assignment, or slide text. Do not start with a PDF link. Example: for syllabus questions, read “Management Science Syllabus — Read text,” not “Download syllabus (PDF).”
+3. Use the original PDF, DOCX, or notebook only when the HTML text omits a needed figure or formatting. If an original-file fetch fails, continue with the HTML text; report a failure only if the needed HTML text also fails.
+4. If web browsing cannot retrieve a page, try the connected Chrome/computer browser. If the index works but a linked text does not, report only that item as inaccessible. If neither tool retrieves the needed text, explain that web access is required and ask for the specific text. Never guess, repeatedly retry, or bypass restrictions.
 3. If web browsing cannot retrieve the index, try the connected Chrome/computer browser. Do not call the site inaccessible if any tool has returned its page text. Report partial access precisely: name only the linked item that failed.
 4. If neither web nor browser can retrieve the needed text, explain that web access is required and ask the learner to enable browsing or provide the specific text. Never guess. Do not repeatedly retry or bypass restrictions.
 
