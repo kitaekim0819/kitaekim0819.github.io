@@ -12,6 +12,19 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 ### Install AI Tutor
 
+#### Set up with an AI agent
+
+Use this copy button in Codex or another AI agent that can access the public web and install local skills:
+
+<textarea id="codex-setup-prompt" hidden readonly aria-label="AI tutor setup prompt">Set up the kau-ms-tutor skill from https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip for this Codex account. First inspect the package and official Codex skill installation instructions. Explain the installation steps before making changes. Do not install software, run downloaded scripts, change MCP settings, or authenticate with any service unless you show me the exact commands and I approve them. Never ask me to provide or paste an API key, password, or access token. If installation is supported and I approve, install the skill in my user skills folder, then verify it is available in a new Codex session. The skill requires public web access to the course website; tell me if that access is unavailable. Do not access private exams, grades, or student records.</textarea>
+<button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
+<span id="codex-copy-status" role="status" aria-live="polite"></span>
+
+This installs the tutor instructions as a local skill. It does not install the third-party `@hasna/skills` CLI or register that service’s MCP server.
+
+<details>
+<summary>Download AI Tutor</summary>
+
 **[Download AI Tutor](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)**
 
 Download the tutor package, then upload it to Claude using the steps below. The package contains tutor instructions. **Web browsing is required:** the tutor reads the current course materials directly from this website.
@@ -21,16 +34,6 @@ Download the tutor package, then upload it to Claude using the steps below. The 
 3. **Start a new chat** and send the two prompts below, one at a time.
 
 Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. On first use in each chat, it checks the website and reuses materials it has read during that conversation for faster replies. This is not permanent storage. Ask it to check the website again for updates. Course material changes do not require reinstalling the skill; instruction changes may require a new download. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
-
-#### Set up skills.md on this machine
-
-If you use Codex, copy this prompt and paste it into Codex to set up the public [kau-ms-tutor skill package](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip):
-
-<textarea id="codex-setup-prompt" readonly rows="7" aria-label="Codex skill setup prompt">Set up the kau-ms-tutor skill from https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip for this Codex account. First inspect the package and official Codex skill installation instructions. Explain the installation steps before making changes. Do not install software, run downloaded scripts, change MCP settings, or authenticate with any service unless you show me the exact commands and I approve them. Never ask me to provide or paste an API key, password, or access token. If installation is supported and I approve, install the skill in my user skills folder, then verify it is available in a new Codex session. The skill requires public web access to the course website; tell me if that access is unavailable. Do not access private exams, grades, or student records.</textarea>
-<button type="button" id="copy-codex-setup-prompt">Copy prompt for Codex</button>
-<span id="codex-copy-status" role="status" aria-live="polite"></span>
-
-This prompt guides Codex through setting up the tutor instructions as a local skill; it does not install the third-party `@hasna/skills` CLI or register its MCP server. Codex skills are reusable instruction folders, while an MCP server supplies live tools and actions. [OpenAI skill overview](https://developers.openai.com/plugins/concepts/skills), [Codex skill setup guidance](https://developers.openai.com/plugins/build/skills).
 
 #### First prompt — Name your tutor
 
@@ -45,6 +48,8 @@ The name is your personal nickname for the tutor. In a new chat, remind it of yo
 After naming your tutor, send this prompt to check which materials it can actually read.
 
 > Use kau-ms-tutor and open the current HTML reference index at https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/index.html. Report the materials date and revision you actually read, then inspect the linked HTML course texts. List the available materials by week or topic, including the syllabus, lecture slides, quizzes and examples, assignments, CVXPY practice, and released solutions. Read each accessible reference and give a brief summary of what it covers without solving any problems. Distinguish files you actually read from titles you could only list, and clearly identify anything inaccessible. Reuse the materials you read within this conversation. If web access is unavailable, explain that this tutor requires web access and identify what could not be read. Do not guess missing contents. Finish by asking which topic I would like to study first.
+
+</details>
 
 Figures and mathematical notation may require the original documents below.
 
