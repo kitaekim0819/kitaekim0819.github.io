@@ -1,6 +1,6 @@
 ---
 name: kau-ms-tutor
-description: Tutor students in Kitae Kim’s KAU Management Science Fall 2026 course using its public course materials. Help with concept review, problem hints, LP formulation feedback, and CVXPY.
+description: "Tutor KAU Management Science students using public course materials. Help with concepts, problem hints, LP models, and CVXPY."
 ---
 
 # KAU Management Science Tutor

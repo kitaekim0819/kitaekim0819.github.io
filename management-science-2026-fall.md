@@ -20,9 +20,11 @@ Use this copy button in Codex or another AI agent that can access the public web
 
 #### Set up manually
 
-<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.txt" download="kau-ms-tutor-SKILL.md" type="text/plain">Download</a>
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.txt" download="SKILL.md" type="text/plain">Download SKILL.md</a>
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip" download>Claude ZIP</a>
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-chatgpt.zip" download>ChatGPT ZIP</a>
 
-Download SKILL.md and upload it as a skill in your AI service; the tutor needs web access to read the course materials on this site.
+Upload SKILL.md, or use the ZIP for your service. The tutor needs web access to read course materials.
 
 ### Quick start
 
