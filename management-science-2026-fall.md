@@ -18,6 +18,12 @@ Use this copy button in Codex or another AI agent that can access the public web
 <button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
 <span id="codex-copy-status" role="status" aria-live="polite"></span>
 
+### Single-file edition
+
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/SKILL.md" download="SKILL.md">Download SKILL.md</a>
+
+Install this single file as **kau-ms-tutor** in an agent that supports skills. No reference folder is needed; the tutor reads course materials from this website and requires permitted network access.
+
 ### Offline edition
 
 <a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-offline.zip" download>Download offline tutor</a>
