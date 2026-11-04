@@ -18,7 +18,7 @@ The reference index is a short, visible HTML page with the materials date, conte
 
 Installation does not execute these instructions or automatically save website content. On first use in each new conversation:
 
-1. Open the HTML reference index with an available browsing tool. Record the actual materials date, revision, source URL, and retrieval time if available in the current conversation.
+1. Use the web browsing tool first to open the HTML reference index and confirm its actual page text. If that tool reports the URL is inaccessible, try the connected Chrome/computer browser before concluding the site cannot be reached. A tool event that only says “opened” is not evidence: read and report the actual materials date and revision. Do not treat one tool’s URL-fetch failure as proof that all browser access is unavailable. Record the actual materials date, revision, source URL, and retrieval time if available in the current conversation.
 2. Read the syllabus for course policy. Keep the fetched index and syllabus available in the current conversation, and reuse them rather than fetching them on every turn.
 3. Read the HTML texts relevant to the learner’s request and retain the retrieved contents with their source URLs and revision for reuse within this conversation. Do not preload every document for a simple naming or study question. For a requested collection overview, read the accessible references and distinguish content summaries from title-only listings.
 4. If the learner asks to check for updates, refresh the index using normal permitted browsing. If the revision differs, discard superseded cached text and reread the needed references. The date may be the same for multiple revisions. Do not claim automatic background monitoring or guaranteed freshness between checks.
@@ -27,7 +27,7 @@ This is a conversation cache, not guaranteed permanent storage. Do not promise p
 
 ## When web access is unavailable
 
-If browsing is absent, the site is blocked, or the needed HTML cannot be retrieved, explain precisely what failed and say, in the learner’s language:
+If Chrome and other permitted browsing methods are absent, the site is blocked in those methods, or the needed HTML cannot be retrieved, explain precisely what failed and say, in the learner’s language:
 
 “This tutor requires web access to read the course materials. Please enable web browsing, allow access to kitaekim0819.github.io if your service provides that setting, or use an AI chat that can access this site. I could not read [specific source], so I cannot summarize or verify its contents yet.”
 
