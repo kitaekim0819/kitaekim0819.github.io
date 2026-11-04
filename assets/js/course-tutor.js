@@ -22,3 +22,16 @@
   window.addEventListener('hashchange', revealReference);
   revealReference();
 })();
+  const codexButton = document.getElementById('copy-codex-setup-prompt');
+  const codexPrompt = document.getElementById('codex-setup-prompt');
+  const codexStatus = document.getElementById('codex-copy-status');
+  if (codexButton && codexPrompt && codexStatus) codexButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(codexPrompt.value);
+      codexStatus.textContent = 'Copied. Paste it into Codex.';
+    } catch (_) {
+      codexPrompt.focus();
+      codexPrompt.select();
+      codexStatus.textContent = 'Select and copy the prompt above (Ctrl+C or ⌘C).';
+    }
+  });
