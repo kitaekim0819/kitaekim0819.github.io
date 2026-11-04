@@ -26,13 +26,15 @@ Download SKILL.md and upload it as a skill in your AI service; the tutor needs w
 
 ### Quick start
 
-Start a new chat with your installed tutor. For your first prompt, ask it to use the tutor and choose a name:
+Start a new chat with your installed tutor and try this short conversation:
 
-> Use kau-ms-tutor as my Management Science study tutor. Ask what I would like to call you, then wait for my answer.
+**You:** Use kau-ms-tutor as my Management Science study tutor. Ask what I would like to call you, then wait for my answer.
 
-For example, if you choose “Mina,” the tutor might reply:
+**AI tutor:** What would you like to call me?
 
-> Great, you can call me Mina. I can help you review course concepts, work through problems with step-by-step hints, and check your LP formulations or CVXPY code. What would you like to study first?
+**You:** Mina.
+
+**AI tutor:** Great, you can call me Mina. I can help you review course concepts, work through problems with step-by-step hints, and check your LP formulations or CVXPY code. What would you like to study first?
 
 Figures and mathematical notation may require the original documents below.
 
