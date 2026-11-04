@@ -18,6 +18,12 @@ Use this copy button in Codex or another AI agent that can access the public web
 <button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
 <span id="codex-copy-status" role="status" aria-live="polite"></span>
 
+### Offline edition
+
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-offline.zip" download>Download offline tutor</a>
+
+35.4 MB · Snapshot: November 4, 2026 · Includes 30 course reference texts and their original documents. Install the entire ZIP as **kau-ms-tutor-offline**, keeping its references folder. Course materials can be read without website access; your AI service may still need an internet connection. Future material updates require a new package.
+
 ### Quick start
 
 Start a new chat with your installed tutor and try this short conversation:
