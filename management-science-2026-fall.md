@@ -22,6 +22,14 @@ Download the tutor package, then upload it to Claude using the steps below. The 
 
 Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. On first use in each chat, it checks the website and reuses materials it has read during that conversation for faster replies. This is not permanent storage. Ask it to check the website again for updates. Course material changes do not require reinstalling the skill; instruction changes may require a new download. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
+#### Set up skills.md on this machine
+
+If you use Codex, you can ask it to set up the public [kau-ms-tutor skill package](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip) on your machine. Paste this prompt into Codex:
+
+> Set up the kau-ms-tutor skill from https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip for this Codex account. First inspect the package and official Codex skill installation instructions. Explain the installation steps before making changes. Do not install software, run downloaded scripts, change MCP settings, or authenticate with any service unless you show me the exact commands and I approve them. Never ask me to provide or paste an API key, password, or access token. If installation is supported and I approve, install the skill in my user skills folder, then verify it is available in a new Codex session. The skill requires public web access to the course website; tell me if that access is unavailable. Do not access private exams, grades, or student records.
+
+This prompt guides Codex through setting up the tutor instructions as a local skill; it does not install the third-party `@hasna/skills` CLI or register its MCP server. Codex skills are reusable instruction folders, while an MCP server supplies live tools and actions. [OpenAI skill overview](https://developers.openai.com/plugins/concepts/skills), [Codex skill setup guidance](https://developers.openai.com/plugins/build/skills).
+
 #### First prompt — Name your tutor
 
 Copy this prompt into your new chat. Choose a name when the tutor asks you.
