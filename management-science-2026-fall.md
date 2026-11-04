@@ -20,7 +20,7 @@ Use this copy button in Codex or another AI agent that can access the public web
 
 #### Set up manually
 
-**[Download SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md)**
+<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md" download>Download SKILL.md</a>
 
 Download SKILL.md and upload it as a skill in your AI service; the tutor needs web access to read the course materials on this site.
 
@@ -33,28 +33,6 @@ Start a new chat with your installed tutor. For your first prompt, ask it to use
 For example, if you choose “Mina,” the tutor might reply:
 
 > Great, you can call me Mina. I can help you review course concepts, work through problems with step-by-step hints, and check your LP formulations or CVXPY code. What would you like to study first?
-
-1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
-2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
-3. **Start a new chat** and send the two prompts below, one at a time.
-
-Your installed skill remains available for future chats, subject to your AI service’s settings and your own account’s usage limits. On first use in each chat, it checks the website and reuses materials it has read during that conversation for faster replies. This is not permanent storage. Ask it to check the website again for updates. Course material changes do not require reinstalling the skill; instruction changes may require a new download. [Claude installation guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
-
-#### First prompt — Name your tutor
-
-Copy this prompt into your new chat. Choose a name when the tutor asks you.
-
-> Use kau-ms-tutor as my Management Science study tutor. Let me give you a name: ask what I would like to call you, then wait for my answer. Once I choose, use that name in this conversation and briefly explain how you can help me learn.
-
-The name is your personal nickname for the tutor. In a new chat, remind it of your chosen name if needed.
-
-#### Second prompt — Explore your course materials
-
-After naming your tutor, send this prompt to check which materials it can actually read.
-
-> Use kau-ms-tutor and open the current HTML reference index at https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/index.html. Report the materials date and revision you actually read, then inspect the linked HTML course texts. List the available materials by week or topic, including the syllabus, lecture slides, quizzes and examples, assignments, CVXPY practice, and released solutions. Read each accessible reference and give a brief summary of what it covers without solving any problems. Distinguish files you actually read from titles you could only list, and clearly identify anything inaccessible. Reuse the materials you read within this conversation. If web access is unavailable, explain that this tutor requires web access and identify what could not be read. Do not guess missing contents. Finish by asking which topic I would like to study first.
-
-</details>
 
 Figures and mathematical notation may require the original documents below.
 

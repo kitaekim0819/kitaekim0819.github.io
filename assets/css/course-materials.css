@@ -74,7 +74,9 @@
   resize: vertical;
 }
 #codex-setup-prompt[hidden] { display: none; }
+.tutor-action-button,
 #copy-codex-setup-prompt {
+  display: inline-block;
   padding: 10px 18px;
   border: 1px solid #224b66;
   border-radius: 4px;
@@ -83,5 +85,6 @@
   font: inherit;
   cursor: pointer;
 }
+.tutor-action-button { text-decoration: none; }
 #copy-codex-setup-prompt:focus-visible { outline: 3px solid #cd8e2f; outline-offset: 3px; }
 #codex-copy-status { margin-left: 10px; }
