@@ -77,6 +77,7 @@
 .tutor-action-button,
 #copy-codex-setup-prompt {
   display: inline-block;
+  box-sizing: border-box;
   padding: 10px 18px;
   border: 1px solid #224b66;
   border-radius: 4px;
