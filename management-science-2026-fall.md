@@ -21,11 +21,11 @@ Use this copy button in Codex or another AI agent that can access the public web
 This installs the tutor instructions as a local skill. It does not install the third-party `@hasna/skills` CLI or register that service’s MCP server.
 
 <details>
-<summary>Download AI Tutor</summary>
+<summary>Set up manually</summary>
 
-**[Download AI Tutor](/assets/teaching/management-science-2026-fall/kau-ms-tutor.zip)**
+**[Download SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md)**
 
-Download the tutor package, then upload it to Claude using the steps below. The package contains tutor instructions. **Web browsing is required:** the tutor reads the current course materials directly from this website.
+Download SKILL.md and upload it as a skill in your AI service; the tutor needs web access to read the course materials on this site.
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
 2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
