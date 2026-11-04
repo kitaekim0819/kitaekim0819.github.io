@@ -28,7 +28,7 @@
   if (codexButton && codexPrompt && codexStatus) codexButton.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(codexPrompt.value);
-      codexStatus.textContent = 'Copied. Paste it into Codex.';
+      codexStatus.textContent = 'Copied. Paste it into your AI agent.';
     } catch (_) {
       codexPrompt.focus();
       codexPrompt.select();
