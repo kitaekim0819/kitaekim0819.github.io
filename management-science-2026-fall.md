@@ -10,8 +10,6 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 
 **kau-ms-tutor** is your study companion for Management Science. Install the tutor, give it a name of your own, and explore the course materials with it.
 
-### Install AI Tutor
-
 #### Set up with an AI agent
 
 Use this copy button in Codex or another AI agent that can access the public web and install local skills:
