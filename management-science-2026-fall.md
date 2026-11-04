@@ -18,14 +18,11 @@ Use this copy button in Codex or another AI agent that can access the public web
 <button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
 <span id="codex-copy-status" role="status" aria-live="polite"></span>
 
-<details>
-<summary>Set up manually</summary>
+#### Set up manually
 
 **[Download SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md)**
 
 Download SKILL.md and upload it as a skill in your AI service; the tutor needs web access to read the course materials on this site.
-
-</details>
 
 ### Quick start
 
