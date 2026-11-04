@@ -18,14 +18,24 @@ Use this copy button in Codex or another AI agent that can access the public web
 <button type="button" id="copy-codex-setup-prompt">Copy prompt for Agent</button>
 <span id="codex-copy-status" role="status" aria-live="polite"></span>
 
-This installs the tutor instructions as a local skill. It does not install the third-party `@hasna/skills` CLI or register that service’s MCP server.
-
 <details>
 <summary>Set up manually</summary>
 
 **[Download SKILL.md](/assets/teaching/management-science-2026-fall/kau-ms-tutor-SKILL.md)**
 
 Download SKILL.md and upload it as a skill in your AI service; the tutor needs web access to read the course materials on this site.
+
+</details>
+
+### Quick start
+
+Start a new chat with your installed tutor. For your first prompt, ask it to use the tutor and choose a name:
+
+> Use kau-ms-tutor as my Management Science study tutor. Ask what I would like to call you, then wait for my answer.
+
+For example, if you choose “Mina,” the tutor might reply:
+
+> Great, you can call me Mina. I can help you review course concepts, work through problems with step-by-step hints, and check your LP formulations or CVXPY code. What would you like to study first?
 
 1. In Claude, enable **Settings → Capabilities → Code execution and file creation** (or **Create and edit files**).
 2. Open **Customize → Skills → Create skill → Upload a skill**, upload the ZIP, and enable **kau-ms-tutor**. In the updated interface, look under **Plugins**.
