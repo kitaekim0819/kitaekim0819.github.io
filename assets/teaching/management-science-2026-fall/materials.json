@@ -1,6 +1,6 @@
 {
   "course": "Management Science, Fall 2026",
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "page_url": "https://kitaekim0819.github.io/teaching/management-science-2026-fall/",
   "tutor_instructions_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt",
   "files": [
@@ -390,6 +390,30 @@
       "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-9-quiz-4-integer-programming.html",
       "resource_type": "problem_set",
       "lxp_activity_id": 14481
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 6 - Network Models and Transportation Problems",
+      "group": "Week 10",
+      "filename": "week-10-network-models-and-transportation.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-network-models-and-transportation.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-network-models-and-transportation.txt",
+      "bytes": 569870,
+      "sha256": "b0f0c28f4958eeaad4de6f1864db473baf3e440dd314b522317d6c93b60bea96",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-10-network-models-and-transportation.html",
+      "source_pptx_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-network-models-and-transportation.pptx"
+    },
+    {
+      "section": "Quizzes",
+      "title": "Quiz for Chapters 6 and 7 - CVXPY Problems",
+      "group": "Week 10",
+      "filename": "week-10-quiz-chapters-6-and-7.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.txt",
+      "bytes": 703145,
+      "sha256": "d568f77d621566a4317d9ca4b7e321e59a9a392bed5eff4df03f200288c85665",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-10-quiz-chapters-6-and-7.html",
+      "source_docx_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.docx"
     }
   ]
 }

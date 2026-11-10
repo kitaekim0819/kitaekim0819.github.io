@@ -1,0 +1,582 @@
+COURSE REFERENCE: Chapter 6 - Network Models and Transportation Problems
+Week 10
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-network-models-and-transportation.pdf
+
+Extracted text. Network diagrams and equation layout may require the original PDF. Do not infer missing arc connections or values.
+
+Page 1
+CHAPTER 06
+Network Models and
+Transportation Problems
+
+Decision Making / Game Theory / Systems Analysis
+
+
+
+
+   TEXTBOOK                                     CHAPTER                       WEEK
+   Modern Management Science, 9th ed.           Ch. 6                         Week 10
+
+
+
+Management Science  ·  Kitae Kim, 2026 Spring, Korea Aerospace University
+
+Made by Kitae Kim, formatted by Codex.
+
+Page 2
+Graphs and Networks
+
+                                                                                         Graph
+ GRAPH = (NODES, EDGES)
+ A graph represents the pattern of connections
+ between nodes.
+
+ NETWORK = (NODES, EDGES, ATTRIBUTES)
+                                                                                         Weighted network
+ A network adds information about nodes or edges.
+ It helps us study flows and identify important nodes.
+
+ Categorical: gender, occupation, region, date, type
+ Numerical: strength, cost, distance, time, capacity
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                             3
+
+Page 3
+Types of Network Problems
+
+
+ Facility layout / design                      Arrange or connect facilities, such as machines or base stations.
+
+
+ Routing                                       Find the best route between an origin and a destination.
+
+
+ Flow optimization                             Determine how much traffic or material to send through a network.
+
+
+ Transportation                                Ship directly from supply locations to demand locations.
+
+
+ Transshipment                                 Ship through intermediate locations or distribution hubs.
+
+
+ Assignment                                    Assign N workers or machines to N tasks, one to one.
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                    4
+
+Page 4
+Example 6-1: Connecting Six Offices
+
+
+
+
+ Company A has offices in Seoul, Busan, Gwangju,                                                  30
+ Daejeon, Gangneung, and Pohang.                                             Seoul                                   Gangneung
+
+                                                                                 20          50            40
+ It plans to build a private data network                                                                                    35
+ connecting all six offices. Data may pass through
+ intermediate offices using a store-and-forward                          50            Daejeon              25
+                                                                                                 60                          Pohang
+ system.
+                                                                                20                        25                 15
+ Find a set of links that connects every office at
+ minimum total cost.                                                    Gwangju                                        Busan
+                                                                                                 30
+
+
+                                                                           Link costs are in units of KRW 100 million
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                 5
+
+Page 5
+Example 6-1: Minimum Spanning Tree
+
+
+
+ Minimal Spanning Tree
+
+                                                                             Seoul                 30                Gangneung
+ 1. Start with any node.                                                                      50           40
+                                                                                  20                                          35
+ 2. Add the lowest-cost edge connecting a node
+ in the current tree to a node outside it.                                50           Daejeon              25
+                                                                                                 60                          Pohang
+ 3. Repeat until all nodes are connected.                                       20                         25
+                                                                                                                              15
+ Do not add an edge that creates a cycle.
+                                                                        Gwangju                  30                    Busan
+
+
+                                                                          Illustration: start with Seoul → Daejeon (20).
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                 6
+
+Page 6
+Example 6-2: Shortest Path Problem
+
+
+
+
+ A commuter travels from home (S) to work
+ (T). The number on each directed arc is the
+ travel time in minutes.
+
+ Possible routes include S → 1 → 4 → T and S
+ → 3 → 5 → T.
+
+ Formulate an integer programming model to
+ find the shortest route.
+
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                 7
+
+Page 7
+Example 6-2: Shortest-Path Model
+
+
+ VARIABLES AND OBJECTIVE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                    9
+
+Page 8
+Example 6-2: Shortest-Path Model
+
+
+                                                                                     FLOW-BALANCE CONSTRAINTS
+
+
+                                                                                     xS1 = x12 + x13 + x14
+                                                                                     xS2 + x12 = x24 + x2T
+                                                                                     xS3 + x13 = x34 + x35
+                                                                                     x14 + x24 + x34 + x54 = x4T
+                                                                                     x35 = x54 + x5T
+                                                                                     xS1 + xS2 + xS3 = 1
+                                                                                     x2T + x4T + x5T = 1
+
+                                                                                     xij    {0,1}∈
+
+
+
+                                                                                     An algorithmic alternative: Dijkstra’s algorithm.
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                                   9
+
+Page 9
+Example 6-2: Shortest-Path Model
+
+
+ VARIABLES AND OBJECTIVE                                                            FLOW-BALANCE CONSTRAINTS
+
+
+                                                                                    xS1 = x12 + x13 + x14
+                                                                                    xS2 + x12 = x24 + x2T
+                                                                                    xS3 + x13 = x34 + x35
+                                                                                    x14 + x24 + x34 + x54 = x4T
+                                                                                    x35 = x54 + x5T
+                                                                                    xS1 + xS2 + xS3 = 1
+                                                                                    x2T + x4T + x5T = 1
+
+                                                                                    xij    {0,1} for every available arc.∈
+
+
+
+                                                                                    An algorithmic alternative: Dijkstra’s algorithm.
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                                 9
+
+Page 10
+Example 6-3: Maximum Flow Problem
+
+
+
+
+ A dam (H) supplies water to cities 1–5 through
+ a pipeline network. An earthquake has
+ destroyed the water-storage facility in city 5.
+
+ Determine the maximum amount of water that
+ can be sent from the dam to city 5.
+
+ The numbers indicate capacities per unit of
+ time; a capacity of 0 means that flow is not
+ allowed in that direction.
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                     10
+
+Page 11
+Example 6-3: Maximum-Flow Model
+
+
+ VARIABLES AND OBJECTIVE
+ •   xij = water sent from node i to node j per unit of time.
+ •   Maximize  x15 + x25 + x45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                          12
+
+Page 12
+Example 6-3: Maximum-Flow Model
+
+                                                                                           FLOW BALANCE AT INTERMEDIATE CITIES
+
+
+                                                                                           xH1 + x21 = x12 + x15
+                                                                                           xH2 + x12 + x32 + x42 = x21 + x23 + x24 + x25
+                                                                                           xH3 + x23 = x32 + x34
+                                                                                           x24 + x34 = x42 + x45
+
+                                                                                           CAPACITY CONSTRAINTS
+                                                                                           xH1 ≤ 5;  xH2 ≤ 6;  xH3 ≤ 3
+                                                                                           x12 ≤ 1;  x21 ≤ 1
+                                                                                           x23 ≤ 2;  x32 ≤ 2
+                                                                                           x15 ≤ 3;  x25 ≤ 4
+                                                                                           x24 ≤ 1;  x42 ≤ 1
+                                                                                           x34 ≤ 3;  x45 ≤ 4
+                                                                                           xij ≥ 0 for all allowed arcs. All zero-capacity directions
+                                                                                           carry no flow.
+Chapter 6  ·  Network Models and Transportation                                                                                                     12
+
+Page 13
+Example 6-3: Maximum-Flow Model
+
+ VARIABLES AND OBJECTIVE                                                                 FLOW BALANCE AT INTERMEDIATE CITIES
+
+ •    xij = water sent from node i to node j per unit of time.                           x    + x   = x    + x
+ •    Maximize  x15 + x25 + x45                                                            H1    21     12    15
+                                                                                         xH2 + x12 + x32 + x42 = x21 + x23 + x24 + x25
+                                                                                         xH3 + x23 = x32 + x34
+                                                                                         x24 + x34 = x42 + x45
+
+                                                                                         CAPACITY CONSTRAINTS
+                                                                                         xH1 ≤ 5;  xH2 ≤ 6;  xH3 ≤ 3
+                                                                                         x12 ≤ 1;  x21 ≤ 1
+                                                                                         x23 ≤ 2;  x32 ≤ 2
+                                                                                         x15 ≤ 3;  x25 ≤ 4
+                                                                                         x24 ≤ 1;  x42 ≤ 1
+                                                                                         x34 ≤ 3;  x45 ≤ 4
+                                                                                         xij ≥ 0 for all allowed arcs. All zero-capacity directions
+                                                                                         carry no flow.
+Chapter 6  ·  Network Models and Transportation                                                                                                  12
+
+Page 14
+Example 6-4: Transportation Problem
+
+ Samsung Cider operates plants in Masan, Daejeon, and Gunsan and warehouses in Busan,
+ Daegu, Gwangju, and Seoul.
+ Find the shipping plan that meets demand at minimum transportation cost.
+ Assume that supply must exactly meet demand.
+
+  Plant                    Busan               Daegu              Gwangju              Seoul               Supply
+
+  Masan                       8                   9                  11                  16                  50
+
+  Daejeon                    12                   7                   5                   8                  80
+
+  Gunsan                     14                  10                   6                   7                 120
+
+  Demand                     90                  70                  40                  50                 250
+
+
+ Unit shipping costs are shown in KRW millions. Supply and demand are in units.
+
+
+Chapter 6  ·  Network Models and Transportation                                                                     13
+
+Page 15
+Example 6-4: Formulate the Model
+
+
+
+  Plant          Busan        Daegu       Gwangju        Seoul        Supply           Decision variables
+
+  Masan             8            9            11           16           50             •   xij = units shipped from plant i to
+                                                                                           warehouse j.
+  Daejeon          12            7            5            8            80             •   i = 1: Masan, 2: Daejeon, 3: Gunsan;
+  Gunsan           14           10            6            7           120             •   j = 1: Busan, 2: Daegu, 3: Gwangju, 4:
+                                                                                           Seoul.
+  Demand           90           70            40           50          250
+                                                                                      Objective function
+ Balanced transportation model:                                                       Minimize 8x11 + 9x12 + 11x13 + 16x14
+ Total supply = total demand = 250 units.                                                          + 12x21 + 7x22 + 5x23 + 8x24
+                                                                                                   + 14x31 + 10x32 + 6x33 + 7x34
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                     14
+
+Page 16
+Example 6-4: Formulate the Model
+
+                                                                                        Constraints
+
+  Plant           Busan        Daegu       Gwangju        Seoul       Supply               SUPPLY
+
+  Masan             8            9            11           16            50                Σ xⱼ1j = 50
+                                                                                           Σ xⱼ2j = 80
+  Daejeon          12            7             5            8            80                Σ xⱼ  = 120
+                                                                                               3j
+  Gunsan           14            10            6            7           120                DEMAND
+
+  Demand           90            70           40           50           250                Σᵢ xi1 = 90;   Σᵢ xi2 = 70
+                                                                                           Σᵢ xi3 = 40;   Σᵢ xi4 = 50
+ Balanced transportation model:                                                            xij ≥ 0 for all i and j.
+ Total supply = total demand = 250 units.
+
+
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                      14
+
+Page 17
+Example 6-4: Transportation Model
+
+
+ DECISION VARIABLES                                                     Constraints
+ •   xij = units shipped from plant i to warehouse j.                      SUPPLY
+ •   i = 1: Masan, 2: Daejeon, 3: Gunsan;                                  Σ xⱼ  = 50
+ •   j = 1: Busan, 2: Daegu, 3: Gwangju, 4: Seoul.                             1j
+                                                                           Σ xⱼ2j = 80
+                                                                           Σ xⱼ3j = 120
+
+ MINIMIZE TOTAL TRANSPORTATION COST                                        DEMAND
+ Minimize 8x11 + 9x12 + 11x13 + 16x14                                      Σᵢ xi1 = 90;   Σᵢ xi2 = 70
+              + 12x21 + 7x22 + 5x23 + 8x24                                 Σᵢ xi3 = 40;   Σᵢ xi4 = 50
+              + 14x31 + 10x32 + 6x33 + 7x34                                xij ≥ 0 for all i and j.
+
+
+
+
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                      15
+
+Page 18
+Example 6-5: Transshipment Problem
+
+
+ R Electronics ships from plants in Denver and Atlanta through hubs in Kansas City and Louisville to
+ four destinations. Find the least-cost shipping plan.
+
+ PLANT → HUB  ($ PER UNIT)
+  Plant                                   Kansas City                      Louisville                       Supply
+  Denver                                      200                             300                            6000
+  Atlanta                                     300                             100                            4000
+
+ HUB → DESTINATION  ($ PER UNIT)
+  Hub                              Detroit                   Miami                     Dallas                New Orleans
+  Kansas City                        200                      600                       300                      600
+  Louisville                         400                      400                       600                      500
+  Demand                            2000                      1500                     3500                      3000
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                             18
+
+Page 19
+Example 6-5: Formulate the Model
+
+
+
+
+  PLANT → HUB  ($ PER UNIT)                                                              Decision variables
+   Plant                Kansas City         Louisville          Supply                   •   Xik: units from plant i to hub k.
+   Denver                   200                300                6000                   •   Ykj: units from hub k to destination j.
+
+   Atlanta                  300                100                4000
+  HUB → DESTINATION  ($ PER UNIT)                                                        Objective function
+
+   Hub               Detroit        Miami           Dallas          New                  Minimize Z
+                                                                  Orleans                      = 200X11 + 300X12 + 300X21 + 100X22
+   Kansas City         200            600            300            600                        + 200Y11 + 600Y12 + 300Y13 + 600Y14
+   Louisville          400            400            600            500                        + 400Y21 + 400Y22 + 600Y23 + 500Y24
+
+   Demand             2000           1500           3500            3000
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                     19
+
+Page 20
+Example 6-5: Formulate the Model
+
+
+
+
+  PLANT → HUB  ($ PER UNIT)                                                               Constraints
+   Plant                Kansas City         Louisville           Supply                      SUPPLY AND HUB FLOW BALANCE
+   Denver                   200                 300               6000                       X11 + X12 = 6,000
+   Atlanta                  300                 100               4000                       X21 + X22 = 4,000
+  HUB → DESTINATION  ($ PER UNIT)                                                            X11 + X21 = Σ Yⱼ 1j
+                                                                                             X12 + X22 = Σ Yⱼ 2j
+   Hub               Detroit         Miami          Dallas          New                      DEMAND
+                                                                   Orleans
+   Kansas City         200            600             300            600                     Y11 + Y21 = 2,000
+   Louisville          400            400             600            500                     Y12 + Y22 = 1,500
+   Demand             2000           1500            3500           3000                     Y13 + Y23 = 3,500
+                                                                                             Y14 + Y24 = 3,000
+                                                                                             All Xik, Ykj ≥ 0.
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                      19
+
+Page 21
+Example 6-5: Formulate the Model
+
+
+
+
+      Decision variables                                                   Constraints
+      •  X  : units from plant i to hub k.                                     SUPPLY AND HUB FLOW BALANCE
+           ik
+      •  Ykj: units from hub k to destination j.                               X11 + X12 = 6,000
+                                                                               X21 + X22 = 4,000
+      Objective function                                                       X11 + X21 = Σ Yⱼ 1j
+                                                                               X12 + X22 = Σ Yⱼ 2j
+      Minimize Z                                                               DEMAND
+            = 200X11 + 300X12 + 300X21 + 100X22                                Y   + Y   = 2,000
+            + 200Y     + 600Y     + 300Y      + 600Y                             11   21
+                    11          12         13         14                       Y   + Y   = 1,500
+            + 400Y     + 400Y     + 600Y      + 500Y                             12   22
+                    21          22         23         24                       Y   + Y   = 3,500
+                                                                                 13   23
+                                                                               Y14 + Y24 = 3,000
+                                                                               All Xik, Ykj ≥ 0.
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                                           19
+
+Page 22
+Summary
+
+
+
+ Network vs. Graph
+ •   Graphs describe connections.
+ •   Networks add node and edge attributes.
+
+ SELECT A NETWORK MODEL
+ •   Minimum spanning tree
+ •   Shortest path
+ •   Maximum flow
+ •   Transportation
+ •   Transshipment
+ •   Assignment
+
+
+
+
+
+
+Chapter 6  ·  Network Models and Transportation                                                                   24

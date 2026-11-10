@@ -1,0 +1,622 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quiz for Chapters 6 and 7 - CVXPY Problems — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Quiz for Chapters 6 and 7 - CVXPY Problems</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.pdf">Original document</a></p><main><pre>COURSE REFERENCE: Quiz for Chapters 6 and 7 - CVXPY Problems
+Week 10
+Original: https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.pdf
+
+Extracted text. Network diagrams and equation layout may require the original PDF. Do not infer missing arc connections or values.
+
+Page 1
+Integer Programming and Netwo rk  Mo d el s
+
+Submission instructions
+
+Solve all problems below using CVXPY and submit one Jupyter notebook (.ipynb). Organize the notebook
+into sections labeled with the example numbers.
+For each problem, include: (1) a Markdown cell defining the decision variables, objective, constraints, and
+variable domains; (2) executable CVXPY code; and (3) the solver status, optimal decisions, objective value
+with units, and a brief interpretation. Check that the reported solution satisfies the constraints.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                         1
+
+Page 2
+Example 7-1
+
+Hankook Supermarket has secured KRW 15.5 billion to expand by opening stores and storage facilities.
+Each new store costs KRW 1 billion and earns KRW 30 million per month. Each storage facility costs KRW
+3 billion and earns KRW 72 million per month. Management plans to open at least one storage facility and
+no more than five stores.
+Formulate and solve an integer programming model in CVXPY. Report the optimal numbers of stores and
+storage facilities and the maximum monthly profit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                               2
+
+Page 3
+Example 7-2
+
+H Group is considering three projects over the next three years. The table gives each project’s annual
+funding needs and present value of profit.
+Table. Investment plan (KRW 100 million)
+
+      Project                                       Profit PV             Year 1             Year 2             Year 3
+      Factory expansion                                450                 100                100                100
+      New warehouse                                    200                 150                 50                 50
+      Advanced machinery                               350                  50                200                100
+      Available funds                                   —                  250                400                200
+
+Each project is either selected in full or not selected. Formulate and solve a binary integer programming
+model in CVXPY. Report the selected projects, the maximum present value of profit, and the funds used in
+each year.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                 3
+
+Page 4
+Example 7-3
+
+K Manufacturing must produce 20,000 units using three machines. Each machine incurs a fixed cost when
+activated. The table lists each machine’s fixed cost, variable cost, and production capacity.
+
+      Machine                 Fixed cost                         Variable cost                         Capacity
+                            (KRW 10,000)                      (KRW 10,000/unit)                          (units)
+      1                           300                                   2                                8,000
+      2                           100                                   10                               13,000
+      3                           200                                   5                                14,000
+
+Formulate and solve an integer programming model in CVXPY. Produce exactly 20,000 units. Report
+which machines are activated, each machine’s production quantity, and the minimum total cost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                               4
+
+Page 5
+Example 6-2
+
+A commuter travels from home (S) to work (T). The number on each directed arc is the travel time in
+minutes. Possible routes include S → 1 → 4 → T and S → 3 → 5 → T.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Formulate and solve an integer programming model in CVXPY to find the shortest route. Report the
+selected arcs, the route from S to T, and the minimum travel time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                               5
+
+Page 6
+Example 6-3
+
+A dam (H) supplies water to cities 1–5 through a pipeline network. An earthquake has destroyed the water-
+storage facility in city 5. Determine the maximum amount of water that can be sent from the dam to city 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The numbers indicate directional capacities per unit of time; a capacity of 0 means that flow is not allowed
+in that direction. Formulate and solve a maximum-flow model in CVXPY. Report the maximum flow to city 5
+and the flow on each allowed arc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                  6
+
+Page 7
+Example 6-4  Transportation
+
+Samsung Cider operates plants in Masan, Daejeon, and Gunsan and warehouses in Busan, Daegu,
+Gwangju, and Seoul. Find the shipping plan that meets demand at minimum transportation cost.
+
+              Plant               Busan              Daegu           Gwangju              Seoul            Supply
+
+             Masan                   8                  9                11                 16                50
+
+            Daejeon                  12                 7                 5                 8                 80
+            Gunsan                   14                10                 6                 7                120
+
+            Demand                   90                70                40                 50               250
+Unit shipping costs are in KRW millions. Supply and demand are in units.
+Formulate and solve a linear programming model in CVXPY. The quantity delivered to each destination
+must exactly equal its demand. Report the optimal shipping quantities in a table and the minimum
+transportation cost. Check the supply and demand constraints.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                             7
+
+Page 8
+Example 6-5  Transshipment
+
+R Electronics ships from plants in Denver and Atlanta through hubs in Kansas City and Louisville to four
+destinations. Find the least-cost shipping plan. All shipments pass through a hub.
+
+Plant to hub shipping costs (unit: $ per unit) and Supply constraints (unit: unit)
+
+                 Plant                      Kansas City                     Louisville                      Supply
+
+                Denver                           200                            300                          6,000
+                Atlanta                          300                            100                          4,000
+
+Hub to destination shipping costs (unit: $ per unit) and demand constraints (unit: unit)
+
+                 Hub                    Detroit               Miami                Dallas               New Orleans
+
+             Kansas City                   200                  600                  300                      600
+              Louisville                   400                  400                  600                      500
+
+               Demand                    2,000                 1,500                3,500                    3,000
+Supply and demand are in units. Formulate and solve a linear programming model in CVXPY, including
+plant supply, hub flow-balance, and destination demand constraints. The quantity delivered to each
+destination must exactly equal its demand. Report both shipping tables and the minimum total cost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                   8
+
+Page 9
+Example 6-6
+
+Sewon Industry must assign three jobs to three machines. Each job must be processed entirely on one
+machine, and each machine receives exactly one job. Determine the assignment that minimizes total
+processing cost.
+
+                 Job                      Machine 1                    Machine 2                     Machine 3
+
+                Job 1                         27                            31                            60
+
+                Job 2                         49                            38                            37
+                Job 3                         34                            27                            35
+Processing costs are in units of KRW 10,000.
+Formulate and solve a binary integer programming model in CVXPY, including one-machine-per-job and
+one-job-per-machine constraints. Report the optimal job-to-machine assignments and the minimum total
+processing cost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                              9</pre></main></body></html>
