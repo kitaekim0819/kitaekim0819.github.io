@@ -25,7 +25,6 @@ The instructor can share the public course-page URL through the LMS. The page an
 
 ## Included materials
 
-The four folders contain the syllabus, lecture slides, quiz/practice and assignment problem sets, and their released solutions. Weeks 10–13 are excluded. Lecture slides include worked teaching examples. Private exams, unreleased answer keys, grade records, recordings, backups, and student submissions are not included. Public syllabus grading policies and exam dates remain included.
 
 This is a snapshot, not an automatic sync. Download a new version when the instructor announces an update. Use CONTENTS.md to check which files are included.
 
@@ -36,3 +35,5 @@ Setup guidance checked 2026-11-03. Account interfaces may change.
 - Claude project sharing: https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing
 - Gemini Gem sharing: https://support.google.com/gemini/answer/16504957?hl=en
 - ChatGPT plugin creation and sharing: https://learn.chatgpt.com/docs/build-plugins
+
+Separate solution files are excluded. Consult the current materials index for available course resources.

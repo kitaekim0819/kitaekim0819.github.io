@@ -2,9 +2,7 @@
 
 Snapshot: 2026-11-03
 
-Includes released quiz, additional-example, and assignment solutions. Weeks 10–13 and private exam and grading records are excluded.
 
-- Assignments/Assginment #1 - Solutions.pdf
 - Assignments/Assginment #1.pdf
 - Lecture Slides/Week 1/Chapter 1 — Introduction (English).pdf
 - Lecture Slides/Week 1/Chapter 2 — Linear Programming (English).pdf
@@ -15,12 +13,10 @@ Includes released quiz, additional-example, and assignment solutions. Weeks 10�
 - Lecture Slides/Week 5/Chapter 4 Post-Optimal and Sensitivity Analysis (slides).pptx
 - Lecture Slides/Week 6/Chapter 5 Business Applications of Linear Programming (Slides).pptx
 - Lecture Slides/Week 9/[Chapter 7] Integer Programming (Slides).pptx
-- Quizzes/Chapter 2/Additional examples for Chapter 2 with Solutions.pdf
 - Quizzes/Chapter 2/Additional examples for Chapter 2.pdf
-- Quizzes/Chapter 2/Quiz #1 with Solutions.pdf
 - Quizzes/Chapter 2/Quiz #1.pdf
-- Quizzes/Chapter 3/Additional examples for Chapter 3 with Solutions.docx
 - Quizzes/Chapter 3/Additional examples for Chapter 3.docx
-- Quizzes/Chapter 3/Quiz #2 with Solutions.docx
 - Quizzes/Chapter 3/Quiz #2.pdf
 - Syllabus/Management Science Syllabus (2026, Fall).pdf
+
+Separate solution files are excluded. Consult the current materials index for available course resources.
