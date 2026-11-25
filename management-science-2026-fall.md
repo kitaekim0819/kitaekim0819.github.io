@@ -24,12 +24,6 @@ Supported environments: **ChatGPT Work and Codex CLI only**. Use the copy button
 
 Supported environments: **ChatGPT Work and Codex CLI only**. Install this single file as **kau-ms-tutor**. No reference folder is needed; the tutor reads course materials from this website and requires permitted network access.
 
-### Offline edition
-
-<a class="tutor-action-button" href="/assets/teaching/management-science-2026-fall/kau-ms-tutor-offline.zip" download>Download offline tutor</a>
-
-34.1 MB · Snapshot: November 10, 2026 · Includes 24 course reference texts and their original documents. Install the entire ZIP as **kau-ms-tutor-offline**, keeping its references folder. Course materials can be read without website access; your AI service may still need an internet connection. Future material updates require a new package.
-
 ### Quick start
 
 Start a new chat with your installed tutor and try this short conversation:
