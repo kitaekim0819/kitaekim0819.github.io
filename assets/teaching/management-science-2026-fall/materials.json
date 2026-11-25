@@ -1,6 +1,6 @@
 {
   "course": "Management Science, Fall 2026",
-  "updated": "2026-11-10",
+  "updated": "2026-11-25",
   "page_url": "https://kitaekim0819.github.io/teaching/management-science-2026-fall/",
   "tutor_instructions_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/TUTOR_INSTRUCTIONS.txt",
   "files": [
@@ -298,6 +298,50 @@
       "sha256": "d568f77d621566a4317d9ca4b7e321e59a9a392bed5eff4df03f200288c85665",
       "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-10-quiz-chapters-6-and-7.html",
       "source_docx_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.docx"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 8 - Multi-criteria Decision Making",
+      "group": "Week 11",
+      "filename": "week-11-multi-criteria-decision-making.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-11-multi-criteria-decision-making.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-11-multi-criteria-decision-making.txt",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-11-multi-criteria-decision-making.html",
+      "bytes": 430888,
+      "sha256": "b1809c8a3628ebf74d3f25397571f2ac246a95ef0a84ba54dd5e7797a34ac078"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 10 - Game Theory 1",
+      "group": "Week 12",
+      "filename": "week-12-game-theory-1.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-12-game-theory-1.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-12-game-theory-1.txt",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-12-game-theory-1.html",
+      "bytes": 244300,
+      "sha256": "51404a70f571a3f994c6d304692b6477595a3e5a0a9e06316329c26c5b21347d"
+    },
+    {
+      "section": "Lecture Slides",
+      "title": "Chapter 10 - Game Theory 2",
+      "group": "Week 13",
+      "filename": "week-13-game-theory-2.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-13-game-theory-2.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-13-game-theory-2.txt",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/week-13-game-theory-2.html",
+      "bytes": 141015,
+      "sha256": "1c7f9aba678f3fb36f59973b7a666d5396eb109b4409a998f0358fcbf5a33c96"
+    },
+    {
+      "section": "Assignments",
+      "title": "Assignment #2",
+      "group": "",
+      "filename": "assignment-2.pdf",
+      "url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignment-2.pdf",
+      "text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/assignment-2.txt",
+      "web_text_url": "https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/read/assignment-2.html",
+      "bytes": 173547,
+      "sha256": "62b60f9f7e1030b6e3c3f83a3d178eb38f43195bb9106cf3f570253de9b0070b"
     }
   ]
 }

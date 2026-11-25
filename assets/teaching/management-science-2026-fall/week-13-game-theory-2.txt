@@ -1,0 +1,318 @@
+Page 1
+CHAPTER 10
+
+
+
+
+Game Theory 2: Game Theory Applications
+Decision Making / Game Theory / Systems Analysis
+
+     TEXTBOOK                                            C HA PT E R    WEEK
+
+     Modern Management Science, 9th ed.                  Ch. 10         Week 13
+
+
+
+Management Science · Kitae Kim, 2026 Fall, Korea Aerospace University
+
+Made by Kitae Kim, formatted by Codex.
+
+Page 2
+Game Structures and Their Insights
+
+ Category                  Game                  Relationship between choices and key insight
+ Dominant strategy         Prisoner’s Dilemma    “I prefer to defect regardless of your choice.”
+ for each player                                 Both defect, although both would gain from cooperation.
+
+                           Harmony               “I prefer to cooperate regardless of your choice.”
+                                                 Individual incentives support mutual cooperation.
+
+                           Deadlock              “I prefer to defect regardless of your choice.”
+                                                 Both gain from mutual defection; social harm is omitted.
+
+ Best choice depends       Coordination          “I want to match your commitment.”
+ on the other player                             Fear of acting alone can prevent a better joint outcome.
+
+                           Chicken               “I want to choose the opposite of your choice.”
+                           (anti-coordination)   Each wants the other to yield; neither yielding is worst.
+
+
+Chapter 10 · Game Theory                                                                                     2
+
+Page 3
+A DOMINANT STRATEGY FOR EACH PLAYER
+
+
+
+Prisoner’s Dilemma
+“I prefer to defect regardless of your choice.”
+
+
+Individual incentives lead to mutual defection, although cooperation would benefit both.
+
+
+
+
+                                                                                           3
+
+Page 4
+Example 10-7: The Prisoner’s Dilemma
+
+ Kim and Lee are accomplices who have been arrested and placed in separate cells. While awaiting
+ trial, each can confess or remain silent. Their choices determine the prison sentences below.
+
+
+
+
+                                Lee                  Confess                             Remain silent
+   Kim
+   Confess                                             (4, 4)                                (1, 8)
+
+   Remain silent                                       (8, 1)                                (2, 2)
+
+
+ Entries are prison terms in years (Kim, Lee). Each player prefers a shorter sentence.
+
+Chapter 10 · Game Theory                                                                                 5
+
+Page 5
+Example 10-6: Price Competition
+ A prisoner’s dilemma occurs when individually optimal choices lead to an outcome that is worse for both
+ players than mutual cooperation.
+
+ S Electronics and L Electronics sell TVs. At regular prices, each earns KRW 100 billion. If only one
+ discounts, it earns KRW 200 billion while its rival loses KRW 50 billion. If both discount, neither earns
+ a profit.
+
+                                         L         Regular price                 Discount price
+   S
+   Regular price                                       (1, 1)                        (−0.5, 2)
+
+   Discount price                                    (2, −0.5)                        (0, 0)
+
+
+ Payoff pairs (S, L). Profit in KRW 100 billion.
+Chapter 10 · Game Theory                                                                               4
+
+Page 6
+A DOMINANT STRATEGY FOR EACH PLAYER
+
+
+
+Harmony
+“I prefer to cooperate regardless of your choice.”
+
+
+Individual incentives and mutual benefit are aligned.
+
+
+
+
+                                                        6
+
+Page 7
+Price Competition: Revised Payoffs
+
+ Compare this revised payoff matrix with Example 10-6.
+
+
+
+                                     L                Regular price           Discount price
+   S
+   Regular price                                           (1, 1)                (0.5, −1)
+
+   Discount price                                        (−1, 0.5)                (0, 0)
+
+
+ Payoff pairs (S, L). The revised numerical values follow the source slide.
+
+
+
+Chapter 10 · Game Theory                                                                       7
+
+Page 8
+BEST CHOICE DEPENDS ON THE OTHER PLAYER
+
+
+
+Coordination
+“I want to match your choice.”
+
+
+Stag Hunt: mutual cooperation offers a greater reward, but cooperating alone is risky.
+
+
+
+
+                                                                                         8
+
+Page 9
+Example 10-11: The Partnership Dilemma
+
+ Kim and Lee jointly open a small restaurant. Each can focus on the restaurant or take an outside
+ part-time job.
+
+
+                                    Lee            Focus on restaurant                  Take outside job
+   Kim
+   Focus on restaurant                                      (5, 5)                            (2, 4)
+
+   Take outside job                                         (4, 2)                            (3, 3)
+
+
+ If both focus on the restaurant, each expects KRW 50 million per year, although success is uncertain. If one takes
+ an outside job, that person expects KRW 40 million and the partner KRW 20 million.
+
+ If both take outside jobs, each expects KRW 30 million. Units: KRW 10 million/year.
+Chapter 10 · Game Theory                                                                                         9
+
+Page 10
+BEST CHOICE DEPENDS ON THE OTHER PLAYER
+
+
+
+Chicken (Anti-coordination)
+“I want to choose the opposite of your choice.”
+
+
+Each wants the other to yield. Neither yielding produces the worst outcome for both.
+
+
+
+
+                                                                                       10
+
+Page 11
+Example 10-10: The Free-Rider Dilemma
+
+ Kim and Lee meet for dinner. Before eating, each decides whether to contribute to the KRW 40,000
+ bill or refuse to pay.
+
+
+                                Lee                Contribute                           Refuse to pay
+   Kim
+   Contribute                                          (2, 2)                                (4, 0)
+
+   Refuse to pay                                       (0, 4)                              (10, 10)
+
+ If both contribute, each pays KRW 20,000. If only one contributes, that person pays the full bill and the other
+ eats for free.
+
+ If neither pays, dinner is canceled. The disappointment is valued at KRW 100,000 each. Entries are costs in KRW
+ 10,000; lower is better.
+Chapter 10 · Game Theory                                                                                       12
+
+Page 12
+Example 10-8: Capacity Expansion
+
+ A and B supply an advanced electronic component worldwide. Each holds 50% of the market and
+ earns KRW 800 billion per year. Both are considering adding a production line.
+
+
+ If only one expands, its profit rises and its rival’s falls. If both expand, excess capacity lowers
+ utilization and severely reduces profitability.
+
+
+                                         B            Maintain capacity                 Expand
+   A
+   Maintain capacity                                        (8, 8)                      (4, 16)
+
+   Expand                                                  (16, 4)                       (2, 2)
+ Payoff pairs (A, B). Annual profit in KRW 100 billion.
+Chapter 10 · Game Theory                                                                               11
+
+Page 13
+Capacity Expansion: A Commitment
+
+ Commitment changes the incentives: expanding becomes A’s dominant strategy.
+
+
+
+                                         B           Maintain capacity    Expand
+   A
+   Maintain capacity                                       (5, 8)          (1, 16)
+   (reverse stated plan)
+   Expand                                                 (16, 4)          (2, 2)
+
+
+
+ Payoff pairs (A, B). Annual profit in KRW 100 billion.
+
+
+Chapter 10 · Game Theory                                                             13
+
+Page 14
+ADDITIONAL APPLICATIONS
+
+
+
+Social Dilemma
+Free Rider, Moral Hazard, Challenging Wrongdoing
+
+
+
+
+                                                   14
+
+Page 15
+Example 10-9: Moral Hazard (Deadlock)
+
+ Kim and Lee run civil engineering businesses and plan to bid for a new government project. Each can
+ follow the normal process or seek improper favors from a government official.
+
+
+ If both follow the normal process, each has a 30% chance of winning. If only one seeks favors, the
+ chances become 60% for that bidder and 10% for the other. If both seek favors, each has a 40% chance.
+
+
+                                       Lee                 Normal process          Seek improper favors
+   Kim
+   Normal process                                               (30, 30)                 (10, 60)
+
+   Seek improper favors                                         (60, 10)                 (40, 40)
+
+
+ Entries are probabilities of winning the contract (%), in the order (Kim, Lee).
+Chapter 10 · Game Theory                                                                                  15
+
+Page 16
+Example 10-12: Challenging Wrongdoing
+
+ New employees Kim and Lee discover wrongdoing at their company. Each can accept the
+ situation or protest.
+
+
+                                               Lee                          Accept          Protest
+   Kim
+   Accept                                                                     (3, 3)         (4, 2)
+
+   Protest                                                                    (2, 4)         (5, 5)
+
+ The narrative says both receive satisfaction 3 if they accept. A lone protester faces difficulties and receives
+ satisfaction 2. If both protest, the wrongdoing is resolved and both receive satisfaction 5.
+
+
+ Source inconsistency: the (Protest, Accept) cell is (4, 2), unlike the narrative.
+Chapter 10 · Game Theory                                                                                           16
+
+Page 17
+Summary
+
+ Category                  Game                  Relationship between choices and key insight
+ Dominant strategy         Prisoner’s Dilemma    “I prefer to defect regardless of your choice.”
+ for each player                                 Both defect, although both would gain from cooperation.
+
+                           Harmony               “I prefer to cooperate regardless of your choice.”
+                                                 Individual incentives support mutual cooperation.
+
+                           Deadlock              “I prefer to defect regardless of your choice.”
+                                                 Both gain from mutual defection; social harm is omitted.
+
+ Best choice depends       Coordination          “I want to match your commitment.”
+ on the other player                             Fear of acting alone can prevent a better joint outcome.
+
+                           Chicken               “I want to choose the opposite of your choice.”
+                           (anti-coordination)   Each wants the other to yield; neither yielding is worst.
+
+
+Chapter 10 · Game Theory                                                                                     17

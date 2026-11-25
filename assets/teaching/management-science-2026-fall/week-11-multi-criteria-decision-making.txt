@@ -1,0 +1,510 @@
+Page 1
+CHAPTER 08
+
+
+Multi-criteria
+Decision Making
+Decision Making / Game Theory / Systems Analysis
+
+    TEXTBOOK                                             C HA PT E R    WEEK
+
+    Modern Management Science, 9th ed.                   Ch. 8          Week 11
+
+
+
+Management Science · Kitae Kim, 2026 Fall, Korea Aerospace University
+
+Page 2
+Multi-criteria Decision Making
+
+ MULTIPLE OBJECTIVES
+ Choose among alternatives while considering
+ several objectives at the same time.
+
+
+ PARETO OPTIMAL SOLUTION
+ No objective can improve without
+ worsening at least one other objective.
+
+
+ PARETO FRONT
+ The set of Pareto optimal outcomes.           Both X and Y are to be maximized.
+                                               D is on the frontier; C is dominated.
+
+
+Chapter 8 · Multi-criteria Decision Making                                             2
+
+Page 3
+Methods for Multiple Criteria
+
+ SCORING MODELS
+ Assign criterion weights and compare weighted scores.
+
+
+ DATA ENVELOPMENT ANALYSIS
+ Use linear programming to evaluate relative efficiency.
+
+
+ GOAL PROGRAMMING
+ Minimize unwanted deviations from specified targets.
+ Use priorities or a weighted sum of deviations.
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                 3
+
+Page 4
+Scoring Models
+
+ A scoring model combines criterion weights and alternative ratings into a total score.
+
+
+
+   Criterion                                 Weight                A       B          C
+   1                                           0.4                 9       6          5
+   2                                           0.3                 7       9          8
+   3                                           0.2                 6       7          9
+   4                                           0.1                 8       5          6
+   Total score                                 1.0                7.7      7.0       6.8
+
+ Sj = Σᵢ wi rij             SA = 0.4(9) + 0.3(7) + 0.2(6) + 0.1(8) = 7.7
+
+ Select the alternative with the highest score: A.
+Chapter 8 · Multi-criteria Decision Making                                                 4
+
+Page 5
+Example 8-1: Choosing a Job
+
+ After completing an MBA, Mr. Kim receives three job offers:
+
+
+   Location                                      Organization                                   Position
+
+   Seoul                                      Investment company                            Financial analysis
+
+   Daejeon                                   Manufacturing company                             Accounting
+
+   Busan                                        Accounting firm                                 Auditing
+
+ He prefers financial analysis as a job, Daejeon as a place to live, and the accounting firm’s work environment.
+ Use a scoring model to compare these trade-offs.
+
+
+ Process: choose criteria → assign weights → rate alternatives → calculate scores → rank.
+
+Chapter 8 · Multi-criteria Decision Making                                                                       5
+
+Page 6
+Example 8-1: Criteria and Weights
+
+   Criterion                                 Weight wi
+                                                         IMPORTANCE SCALE
+   Career development                           5
+                                                         5 Very important
+   Job location                                 3        4 Quite important
+   Management philosophy                        4        3 Moderately important
+                                                         2 Slightly important
+   Annual salary                                3
+                                                         1 Not important
+   Company reputation                           2
+
+   Job security                                 4
+
+   Job satisfaction                             5
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                        6
+
+Page 7
+Example 8-1: Ratings by Alternative
+
+ Rate each job on each criterion using a nine-point satisfaction scale.
+
+   Criterion                                                                       Seoul               Daejeon   Busan
+   Career development                                                                 8                  6         4
+   Job location                                                                       3                  8         7
+   Management philosophy                                                              5                  6         9
+   Annual salary                                                                      6                  7         5
+   Company reputation                                                                 7                  5         4
+   Job security                                                                       4                  7         6
+   Job satisfaction                                                                   8                  6         5
+ Scale: 9 almost completely satisfied; 8 very satisfied; 7 satisfied; 6 somewhat satisfied;
+ 5 neutral; 4 somewhat dissatisfied; 3 dissatisfied; 2 very dissatisfied; 1 completely dissatisfied.
+Chapter 8 · Multi-criteria Decision Making                                                                               7
+
+Page 8
+Example 8-1: Weighted Scores
+
+                                                             Seoul            Daejeon           Busan
+   Criterion                                 Weight
+                                                         weighted score    weighted score   weighted score
+   Career development                          5              40                30               20
+   Job location                                3               9                24               21
+   Management philosophy                       4              20                24               36
+   Annual salary                               3              18                21               15
+   Company reputation                          2              14                10                8
+   Job security                                4              16                28               24
+   Job satisfaction                            5              40                30               25
+   Total                                                      157               167              149
+
+ Sj = Σᵢ wi rij                                       Daejeon has the highest score: 167.
+
+Chapter 8 · Multi-criteria Decision Making                                                                   8
+
+Page 9
+Data Envelopment Analysis
+
+ DEA uses linear programming to measure the relative efficiency of decision-making units (DMUs)
+ with multiple inputs and outputs.
+
+
+ COMPARABLE UNITS
+
+ Examples include bank branches, hospitals,
+ and schools with similar activities.
+
+
+ RELATIVE BENCHMARK
+
+ Compare each unit with combinations
+ of observed peer units.
+
+Chapter 8 · Multi-criteria Decision Making                                                        9
+
+Page 10
+Example 8-2: Hospital Performance
+
+ A medical foundation operates four hospitals in the Seoul metropolitan area. Use one year of input and
+ output data to identify relatively inefficient hospitals.
+
+   Measure                                                             A                    B    C     D
+   Non-medical staff                                                 285                162      286   210
+   Supplies expense                                                  124                129      369   154
+   Available beds                                                    107                    64   114   104
+   Insured patients                                                   48                    35   36    33
+   Uninsured patients                                                 43                    27   45    56
+   Nurses trained                                                    253                148      165   160
+   Interns trained                                                    41                    27   22    84
+
+ Inputs: staff, supplies, beds. Outputs: patient counts, nurses trained, interns trained.
+
+Chapter 8 · Multi-criteria Decision Making                                                                   10
+
+Page 11
+Example 8-2: DEA Model for Hospital C
+
+
+        Measure                              A     B     C     D
+                                                                     DECISION VARIABLE
+        Non-medical staff                    285   162   286   210
+                                                                     WA ,WB , WC , WD : weight of each option
+        Supplies expense                     124   129   369   154
+        Available beds                       107   64    114   104   OBJECTIVE FUNCTION
+        Insured patients                     48    35    36    33    Minimize E
+        Uninsured patients                   43    27    45    56
+                                                                     SUM of the WEIGHTS Constraint
+        Nurses trained                       253   148   165   160
+                                                                     W A + W B + WC + WD = 1
+        Interns trained                      41    27    22    84
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                                                      11
+
+Page 12
+Example 8-2: Input Constraints
+
+
+        Measure                              A     B     C     D
+        Non-medical staff                    285   162   286   210
+        Supplies expense                     124   129   369   154   INPUT
+
+        Available beds                       107   64    114   104
+        Insured patients                     48    35    36    33
+        Uninsured patients                   43    27    45    56
+        Nurses trained                       253   148   165   160
+        Interns trained                      41    27    22    84
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                   11
+
+Page 13
+Example 8-2: Output Constraints
+
+
+        Measure                              A     B     C     D     OUTPUT
+        Non-medical staff                    285   162   286   210   48WA + 35WB + 36WC + 33WD ≥ 36
+        Supplies expense                     124   129   369   154   43WA + 27WB + 45WC + 56WD ≥ 45
+        Available beds                       107   64    114   104
+                                                                     253WA + 148WB + 165WC + 160WD ≥ 165
+        Insured patients                     48    35    36    33
+                                                                     41WA + 27WB + 22WC + 84WD ≥ 22
+        Uninsured patients                   43    27    45    56
+                                                                     NON-NEGATIVITY
+        Nurses trained                       253   148   165   160
+                                                                     WA, WB, WC, WD, E ≥ 0
+        Interns trained                      41    27    22    84
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                                                 11
+
+Page 14
+Example 8-2: Answer
+                                             INPUT
+
+
+DECISION VARIABLE
+WA ,WB , WC , WD : weight of each option
+
+OBJECTIVE FUNCTION
+Minimize E                                   OUTPUT
+                                                 48WA + 35WB + 36WC + 33WD ≥ 36
+SUM of the WEIGHTS Constraint
+ W A + W B + W C + WD = 1                        43WA + 27WB + 45WC + 56WD ≥ 45
+                                                 253WA + 148WB + 165WC + 160WD ≥ 165
+                                                 41WA + 27WB + 22WC + 84WD ≥ 22
+                                                                                       12
+                                             NON-NEGATIVITY
+                                                 WA, WB, WC, WD, E ≥ 0
+Chapter 8 · Multi-criteria Decision Making
+
+Page 15
+Example 8-2: Results and Interpretation
+
+ REPORTED SOLUTION                           DISCUSSION
+
+ E = 0.80837 ≈ 0.81
+                                             •   What does E mean?
+ WA = 0.15892 WB = 0.30807
+ WC = 0 WD = 0.53301                         •   Is hospital C efficient?
+
+                                             •   What does DEA tell us?
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                  13
+
+Page 16
+Goal Programming
+
+ Goal programming minimizes unwanted deviations from specified target levels when several goals
+ conflict.
+
+
+ TWO APPROACHES
+
+ Preemptive goal programming
+ Protect higher-priority goals first.
+
+
+ Weighted goal programming
+ Combine penalized deviations in
+ one objective function.
+                                                        Targets may lie beyond the feasible region.
+
+Chapter 8 · Multi-criteria Decision Making                                                            14
+
+Page 17
+Example 8-3: Road Maintenance Employment
+
+ The ministry plans a road maintenance program to reduce unemployment among construction workers.
+ Skilled workers are immediately available. General workers require retraining. Total budget is KRW 240 billion.
+
+
+ Worker type                                 Cost per worker-day
+
+ Skilled workers                                KRW 120,000
+
+ General workers, including retraining          KRW 200,000
+
+ Goals in priority order:
+ 1. At least 1,000,000 worker-days in total.
+ 2. General worker-days at least as high as skilled worker-days.
+ 3. No more than 400,000 general worker-days.
+
+
+Chapter 8 · Multi-criteria Decision Making                                                                  16
+
+Page 18
+Example 8-3: Goal Deviations
+
+ X1 = skilled worker-days; X2 = general worker-days, both in thousands.
+ Ek = excess above goal k; Dk = deficiency below goal k.
+
+
+ Three goals
+
+ 1. X1 + X2 >= 1,000 
+ 2. X2 >= X1 
+ 3. X2 < = 400 
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                17
+
+Page 19
+Example 8-3: Goal 1
+ LP for goal 1                                                 OPTIMAL SOLUTION
+
+ Minimize D1                                                   X1 = 500
+ Subject to:
+                                                               X2 = 500
+          X1 + X2 − 1,000 = E1 − D1
+                                                               D1 = 0
+          X2 − X 1 = E 2 − D 2
+          X2 − 400 = E3 − D3
+          12X1 + 20X2 ≤ 24,000
+          Either E1 or D1 is 0,
+          Either E2 or D2 is 0,
+          Either E3 or D3 is 0,
+          All variables (X1, X2, E1, D1, E2, D2, E3, D3) ≥ 0
+Chapter 8 · Multi-criteria Decision Making                                        18
+
+Page 20
+Example 8-3: Goal 2
+ LP for goal 2                                                 OPTIMAL SOLUTION
+
+ Minimize D2                                                   X1 = 500
+ Subject to:
+                                                               X2 = 500
+          X1 + X2 − 1,000 = E1 − D1
+                                                               D1 = 0
+          X2 − X 1 = E 2 − D 2
+                                                               D2 = 0
+          X2 − 400 = E3 − D3
+          12X1 + 20X2 ≤ 24,000
+          Either E1 or D1 is 0,
+          Either E2 or D2 is 0,
+          Either E3 or D3 is 0,
+          All variables (X1, X2, E1, D1, E2, D2, E3, D3) ≥ 0
+          D1 = 0
+Chapter 8 · Multi-criteria Decision Making                                        18
+
+Page 21
+Example 8-3: Goal 3
+ LP for goal 3                                                 OPTIMAL SOLUTION
+
+ Minimize E3                                                   X1 = 500
+ Subject to:
+                                                               X2 = 500
+          X1 + X2 − 1,000 = E1 − D1
+                                                               D1 = 0
+          X2 − X 1 = E 2 − D 2
+                                                               D2 = 0
+          X2 − 400 = E3 − D3
+          12X1 + 20X2 ≤ 24,000
+                                                               E3 = 100
+
+          Either E1 or D1 is 0,
+          Either E2 or D2 is 0,
+          Either E3 or D3 is 0,
+          All variables (X1, X2, E1, D1, E2, D2, E3, D3) ≥ 0
+          D1 = 0, D2 = 0
+Chapter 8 · Multi-criteria Decision Making                                        18
+
+Page 22
+Example 8-3: Complete Goal Programming Model
+
+Minimize P1(D1) + P2(D2) + P3(E3)
+Subject to:
+        X1 + X2 − 1,000 = E1 − D1
+        X2 − X1 = E 2 − D 2
+        X2 − 400 = E3 − D3
+        12X1 + 20X2 ≤ 24,000
+        All variables (X1, X2, E1, D1, E2, D2, E3, D3) ≥ 0
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                   21
+
+Page 23
+Weighted Goal Programming
+
+ Assign a weight to each unwanted deviation and minimize their weighted sum in a single
+ objective.
+
+
+   Example goal                                                     Weight   Penalized deviation
+
+   Profit ≥ KRW 10 million                                           0.5        D1: shortfall
+
+   Advertising cost ≤ KRW 2 million                                  0.3         E2: excess
+
+   Employment ≥ 50 people                                            0.2        D3: shortfall
+
+
+ Minimize Z = 0.5D1 + 0.3E2 + 0.2D3
+ Weights must account for the scales and units of the deviations.
+Chapter 8 · Multi-criteria Decision Making                                                         22
+
+Page 24
+Example 8-4: Production Planning
+
+ D Chemical will replace its existing products with three new products. Choose production levels while
+ considering long-term profit, current employment, and capital investment.
+
+
+
+   Coefficient per production unit                                  Product 1   Product 2   Product 3
+
+   Long-term profit (KRW 100 million)                                   12         9           15
+
+   Employment (100 workers)                                             5          3           4
+
+   Capital required (KRW 100 million)                                   5          7           8
+
+ X1, X2, X3: annual production in thousands of tons.
+ Targets in these units: profit 125, employment 40, capital investment 55.
+Chapter 8 · Multi-criteria Decision Making                                                              23
+
+Page 25
+Example 8-4: Weighted Goal Model
+
+ PENALTIES                                   MODEL
+
+ Profit shortfall: 5 per KRW 100 million     Minimize 5D1 + 2E2 + 4D2 + 3E3
+ Employment excess: 2 per 100 workers
+ Employment shortfall: 4 per 100 workers
+                                             12X1 + 9X2 + 15X3 + D1 − E1 = 125
+ Capital excess: 3 per KRW 100 million
+                                             5X1 + 3X2 + 4X3 + D2 − E2 = 40
+                                             5X1 + 7X2 + 8X3 + D3 − E3 = 55
+                                             All variables ≥ 0.
+ OPTIMAL SOLUTION
+
+ X1 = 8.33, X2 = 0, X3 = 1.67
+ E2 = 8.33; all other deviations = 0.
+ Objective value ≈ 16.67
+
+Chapter 8 · Multi-criteria Decision Making                                       24
+
+Page 26
+Summary
+
+ SCORING MODELS
+ Simple and intuitive. Weights and ratings depend on judgment.
+
+ DATA ENVELOPMENT ANALYSIS (DEA)
+ Compares efficiency with observed peers. E = 1 alone does not rule out slacks.
+
+ GOAL PROGRAMMING
+ Strictly protects higher priorities, but may leave lower goals unmet.
+
+ WEIGHTED GOAL PROGRAMMING
+ Allows trade-offs in one LP. Results depend on weights and the units used.
+
+
+
+
+Chapter 8 · Multi-criteria Decision Making                                        25

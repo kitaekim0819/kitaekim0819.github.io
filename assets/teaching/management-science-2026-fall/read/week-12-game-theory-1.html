@@ -1,0 +1,271 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Chapter 10 - Game Theory 1 — KAU Management Science</title><style>body{max-width:980px;margin:2rem auto;padding:0 1rem;font:17px/1.6 system-ui,sans-serif;color:#222}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 ui-monospace,monospace}a{color:#1459a1}</style></head><body><nav><a href="/teaching/management-science-2026-fall/">Course materials and tutor</a> · <a href="index.html">Reference index</a></nav><h1>Chapter 10 - Game Theory 1</h1><p>KAU Management Science — Fall 2026. Extracted reference text; check the original document for diagrams and complete notation.</p><p><a href="https://kitaekim0819.github.io/assets/teaching/management-science-2026-fall/week-12-game-theory-1.pdf">Original document</a></p><main><pre>Page 1
+CHAPTER 10
+
+
+
+
+Game Theory
+Decision Making / Game Theory / Systems Analysis
+
+     TEXTBOOK                                            C HA PT E R    WEEK
+
+     Modern Management Science, 9th ed.                  Ch. 10         Week 12
+
+
+
+Management Science · Kitae Kim, 2026 Fall, Korea Aerospace University
+
+Made by Kitae Kim, formatted by Codex.
+
+Page 2
+Course Overview
+
+ • Key terminologies of Game theory
+ • Dominant strategy
+ • Nash equilibrium
+ • Maximin
+ • Mixed strategy
+ • Non-zero-sum game
+
+
+
+
+Chapter 10 · Game Theory              2
+
+Page 3
+What is game theory?
+
+
+
+
+Chapter 10 · Game Theory   13
+
+Page 4
+Game Theory: Key Terms
+
+ • Player: a decision maker who chooses a strategy and receives a
+         payoff.
+         • A player may be an individual, a firm, or a country.
+ • Payoff: the gain or loss from a combination of strategies, expressed in
+         money or utility and summarized in a payoff matrix
+
+
+
+Chapter 10 · Game Theory                                                14
+
+Page 5
+Game Theory: Types of Games
+
+ • Types by number of players: two-person or n-person games.
+ • Types by sum of payoff
+   • Zero-sum: total payoff is zero. One player’s gain equals another’s
+      loss.
+   • Non-zero-sum: payoffs need not sum to zero. Joint gains or losses
+      are possible.
+ • Others
+   • cooperative vs. non-cooperative
+   • simultaneous vs. sequential.
+
+
+Chapter 10 · Game Theory                                              14
+
+Page 6
+Game Theory: Solution Concepts
+
+ • A solution predicts or prescribes the strategies that players choose.
+         • Dominant-strategy solution: each player chooses a strategy that performs better than their
+               alternatives regardless of others’ choices. Such a solution need not exist.
+         • Maximin solution: choose the strategy with the highest worst-case payoff. This is a
+               conservative criterion and a standard approach in two-person zero-sum games.
+         • Nash equilibrium: no player can improve their payoff by changing only their own strategy,
+               given the others’ strategies.
+                 • Best response strategy: a strategy that maximizes a player’s payoff given others’
+                       strategies. At a Nash equilibrium, all players choose best responses.
+
+
+Chapter 10 · Game Theory                                                                                15
+
+Page 7
+Pure and Mixed Strategies
+
+ Pure strategy
+
+ Choose one strategy with certainty.
+
+
+
+ Mixed strategy
+
+ Randomize among available strategies according to a probability distribution.
+
+
+
+
+Chapter 10 · Game Theory                                                         16
+
+Page 8
+Example 10-1: Dominant-strategy solution
+
+ Company A’s management and labor union disagree about a wage increase.
+ The union wants to maximize the increase. Management wants to minimize it.
+                                                                                    (Unit: %)
+                   Management   Very tough      Tough             Flexible    Accommodating
+   Union
+   Hard line                        6             5                     4           7
+
+   Moderate                         7             6                     5          10
+
+   Concessionary                   −2             0                     2           3
+
+
+ Given these strategies and outcomes, what should each player choose?
+
+
+Chapter 10 · Game Theory                                                                   17
+
+Page 9
+Example 10-1: Dominant-strategy solution
+
+ Wage increases (Unit: %)
+                    Management    Very tough   Tough   Flexible   Accommodating
+   Union
+   Hard line                          6         5         4             7
+   Moderate                           7         6         5            10
+   Concessionary                     −2         0         2             3
+
+ Payoff matrix (union, management)
+                     Management   Very tough   Tough   Flexible   Accommodating
+   Union
+   Hard line
+   Moderate
+   Concessionary
+
+Chapter 10 · Game Theory                                                          18
+
+Page 10
+Example 10-1: Solution
+ Payoff matrix (union, management)
+                     Management   Very tough   Tough     Flexible   Accommodating
+   Union
+   Hard line                        (6, -6)    (5, -5)   (4, -4)        (7, -7)
+   Moderate                         (7, -7)    (6, -6)   (5, -5)       (10, -10)
+   Concessionary                    (-2, 2)    (0, 0)    (2, -2)        (3, -3)
+
+
+
+
+Chapter 10 · Game Theory                                                            18
+
+Page 11
+Example 10-2: Nash Equilibrium
+
+ Kim and Lee are candidates in Party M’s presidential primary. On the evening before voting, each
+ chooses a campaign strategy without knowing the other’s choice.
+
+                           Lee   Unity rally           Attack opponent           Visit party elders
+   Kim
+   Unity rally                     (0, 0)                 (50, −50)                  (−10, 10)
+
+   Attack opponent               (10, −10)                  (0, 0)                   (90, −90)
+
+   Target moderates              (30, −30)                (40, −40)                  (70, −70)
+
+  Which strategy should each candidate choose? Identify the Nash equilibrium.
+
+
+
+
+Chapter 10 · Game Theory                                                                              19
+
+Page 12
+Example 10-2: Maximin
+
+ Use the same campaign game. Each candidate chooses a strategy to protect against the worst
+ possible outcome.
+                           Lee   Unity rally           Attack opponent              Visit party elders
+   Kim
+   Unity rally                     (0, 0)                  (50, −50)                    (−10, 10)
+
+   Attack opponent                (10, −10)                 (0, 0)                      (90, −90)
+
+   Target moderates               (30, −30)                (40, −40)                    (70, −70)
+
+
+  Find each candidate’s minimum payoff for each strategy (i.e., maximin solution)
+
+
+
+
+Chapter 10 · Game Theory                                                                                 20
+
+Page 13
+Example 10-3: Mixed Strategies
+
+ Suppose the payoff matrix in Example 10-2 changes as shown below.
+ What strategies should Kim and Lee choose?
+                               Unity rally          Attack opponent   Visit party elders
+   Lee
+   Kim
+   Unity rally                   (0, 0)                (10, −10)          (−10, 10)
+
+   Attack opponent              (30, −30)              (10, −10)          (90, −90)
+
+   Target moderates             (20, −20)              (40, −40)          (70, −70)
+
+
+
+
+Chapter 10 · Game Theory                                                                   21
+
+Page 14
+Example 10-4: A Non-Zero-Sum Game
+
+ Two neighboring restaurants, A and B, decide whether to distribute promotional leaflets. Current profits
+ are KRW 200 million for A and KRW 100 million for B.
+ Advertising can attract the rival’s customers and bring new visitors to the seaside city.
+                                 B              No advertising                        Advertising
+   A
+   No advertising                                   (20, 10)                            (18, 20)
+
+   Advertising                                      (30, 8)                             (28, 18)
+
+  Payoff pairs (A, B), in KRW 10 million. Find the dominant-strategy solution and Nash Equilibrium.
+
+
+
+
+Chapter 10 · Game Theory                                                                               22
+
+Page 15
+Example 10-5: Cooperation and Transfers
+
+ Q1) Suppose the restaurant payoffs change as follows. What should A and B choose?
+
+
+                               B             No advertising                      Advertising
+   A
+   No advertising                               (20, 10)                           (22, 8)
+
+   Advertising                                   (30, 8)                           (38, 7)
+
+ Q2) Now suppose A promises to give 4 payoff units to B if both advertise. How does this agreement
+ affect their decisions?
+
+
+
+
+Chapter 10 · Game Theory                                                                             23
+
+Page 16
+Summary
+
+ • Players choose strategies and receive payoffs. A solution describes their choices.
+ • A dominant strategy performs better regardless of the opponent’s choice.
+ • At a Nash equilibrium, all players choose best responses, and no unilateral change
+       improves a player’s payoff.
+ • Maximin selects the highest worst-case payoff.
+ • Pure strategies choose one action. Mixed strategies assign probabilities to actions.
+ • In non-zero-sum games, total payoffs need not equal zero.
+
+
+Chapter 10 · Game Theory                                                                24</pre></main></body></html>

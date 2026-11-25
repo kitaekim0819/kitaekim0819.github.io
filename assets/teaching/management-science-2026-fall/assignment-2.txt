@@ -1,0 +1,159 @@
+Page 1
+Management Science
+
+
+
+Assignment 2
+Total 6 problems
+
+
+
+
+Department: ______________________________
+
+Student ID: ______________________________
+
+Name: __________________________________
+
+
+
+
+                                     -1-
+
+Page 2
+Problem 1
+The production planning problem for a shipbuilding company is given below.
+
+Maximize      Z = 30X₁ + 60X₂      (profit, USD million)
+subject to   12X₁ + 20X₂ ≤ 120     (budget, USD million)
+              X₁ + X₂ ≤ 7         (production capacity)
+              X₁ ≤ X₂             (product mix)
+              X₁ ≥ 1               (minimum production)
+              X₁, X₂ ≥ 0, and X₁, X₂ are integers.
+
+Here, X₁ is the number of Type A ships and X₂ is the number of Type B ships.
+
+  (a) Find the LP relaxation solution. If the optimal solution is not integer-valued, construct
+  an approximate integer solution.
+
+
+
+
+                                              -2-
+
+Page 3
+(b) Find the optimal solution to the integer programming model using branch-and-bound
+method.
+
+
+
+
+(c) Compare and evaluate the solutions obtained in (a) and (b).
+
+
+
+
+                                          -3-
+
+Page 4
+Problem 2
+Write Python code using CVXPY to find the optimal solution to the integer programming
+model in Problem 1.
+
+
+
+
+                                           -4-
+
+Page 5
+Problem 3
+Consider the transshipment problem below. The number on each arrow indicates the
+transportation cost per liter, measured in units of KRW 10,000. Plants P₁ and P₂ have supply
+capacities of 400 and 600 liters, respectively. Destinations R₁ and R₂ have demands of 750
+and 250 liters, respectively. Formulate a linear programming model that minimizes total
+transportation cost
+
+
+
+
+                                            -5-
+
+Page 6
+Problem 4
+A medical foundation operates four general hospitals in the Seoul metropolitan area. It has
+selected the following three inputs and four outputs as important measures of hospital
+operations.
+ Inputs                                            Outputs
+ 1. Nonmedical staff (full-time equivalent         1. Insured patient care (1,000 patient-days)
+ employees)                                        2. Uninsured patient care (1,000 patient-
+ 2. Supplies expense (KRW 10,000 per day)          days)
+ 3. Available bed capacity (1,000 bed-days)        3. Number of nurses trained
+                                                   4. Number of interns trained
+The table below reports each hospital’s performance over one year.
+                Hospital                     A               B             C             D
+ Nonmedical staff                            285             162          286           210
+ Supplies expense                            124             129          369           154
+ Bed capacity                                107             64           114           104
+ Insured patient care                        48              35           36            33
+ Uninsured patient care                      43              27           45            56
+ Nurses trained                              253             148          165           160
+ Interns trained                             41              27           22            84
+Use data envelopment analysis (DEA) to evaluate the efficiency of Hospital B and interpret
+your results.
+
+
+
+
+                                              -6-
+
+Page 7
+Problem 5
+Pharmaceutical Company A is planning its advertising for next month using magazines and
+television. Each one-page magazine advertisement costs KRW 12 million and reaches
+approximately 500,000 people. Each TV advertisement costs KRW 30 million and reaches
+approximately 1 million people. The advertising budget is KRW 1 billion. Management has
+established the following goals, listed in order of priority.
+
+1. Do not exceed the budget.
+2. Run no more than 10 TV advertisements.
+3. Run at least 5 magazine advertisements.
+4. Reach at least 30 million people.
+
+Develop a goal programming model to determine the numbers of magazine and TV
+advertisements.
+
+
+
+
+                                             -7-
+
+Page 8
+Problem 6
+Consider the following game.
+                         Pla           Cooperate                        Defect
+              yer A
+ Player B
+            Cooperate                     (3, 3)                           (2, 5)
+             Defect                       (5, 2)                           (4, 4)
+
+  (a) Describe a real-world situation that could give rise to this game.
+
+
+
+
+  (b) Solve the game by eliminating dominated strategies. Show all steps.
+
+
+
+
+  (c) Find the Nash equilibrium. Show all steps.
+
+
+
+
+  (d) Find the maximin solution. Show all steps.
+
+
+
+
+                                           -8-

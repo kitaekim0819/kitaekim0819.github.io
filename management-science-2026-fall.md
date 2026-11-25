@@ -63,6 +63,10 @@ All course materials are organized by week below. Problem sets include quizzes, 
 | Week 8 | Midterm exam | Exam materials are not published. | — |
 | Week 9 | Chapter 7 - Integer Programming | <a href="/assets/teaching/management-science-2026-fall/lecture-slides-week-9-chapter-7-integer-programming-slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | Quiz 4: <a href="/assets/teaching/management-science-2026-fall/week-9-quiz-4-integer-programming.pdf" target="_blank" rel="noopener noreferrer">Integer programming problems</a> |
 | Week 10 | Chapter 6 - Network Models and Transportation Problems | <a href="/assets/teaching/management-science-2026-fall/week-10-network-models-and-transportation.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | <a href="/assets/teaching/management-science-2026-fall/week-10-quiz-chapters-6-and-7.pdf" target="_blank" rel="noopener noreferrer">Quiz for Chapters 6 and 7 — CVXPY problems</a> |
+| Week 11 | Chapter 8 - Multi-criteria Decision Making | <a href="/assets/teaching/management-science-2026-fall/week-11-multi-criteria-decision-making.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | — |
+| Week 12 | Chapter 10 - Game Theory 1 | <a href="/assets/teaching/management-science-2026-fall/week-12-game-theory-1.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | — |
+| Week 13 | Chapter 10 - Game Theory 2 | <a href="/assets/teaching/management-science-2026-fall/week-13-game-theory-2.pdf" target="_blank" rel="noopener noreferrer">Slides</a> | — |
+| — | Assignment #2 | — | <a href="/assets/teaching/management-science-2026-fall/assignment-2.pdf" target="_blank" rel="noopener noreferrer">Problem set</a> |
 
 </div>
 
