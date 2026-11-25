@@ -15,6 +15,7 @@ The syllabi below are publicly available as PDF downloads.
 
 - **Introduction to Management Information Systems** — Undergraduate (Fall 2026)
   - A foundational course covering how information technology, digital platforms, data infrastructure, and enterprise systems drive modern business operations and competitive strategy.
+  - [Course Materials]({{ '/teaching/management-information-systems-2026-fall/' | relative_url }}) — lecture slides and downloads.
   - <a href="{{ '/assets/files/management-information-systems-syllabus-fall-2026.pdf' | relative_url }}" download aria-label="Download Introduction to Management Information Systems syllabus (PDF)">Download syllabus (PDF)</a>
 
 - **Generative AI for Business** — Undergraduate & Master's (Fall 2026)
