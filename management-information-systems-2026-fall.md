@@ -18,7 +18,6 @@ Fall 2026 · Professor Kitae Kim · Korea Aerospace University
 | Chapter | Topic | Materials | Format |
 | --- | --- | --- | --- |
 | — | 강의계획서 | [Syllabus](/assets/files/management-information-systems-syllabus-fall-2026.pdf) | PDF |
-
 | 1 | 정보의 가치 | <a href="/assets/teaching/management-information-systems-2026-fall/chapter-01.pptx" download>PPTX 다운로드</a> | PPTX |
 | 2 | 정보 시스템의 개요 | <a href="/assets/teaching/management-information-systems-2026-fall/chapter-02.pptx" download>PPTX 다운로드</a> | PPTX |
 | 3 | 정보 평가 | <a href="/assets/teaching/management-information-systems-2026-fall/chapter-03.pptx" download>PPTX 다운로드</a> | PPTX |
